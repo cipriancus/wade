@@ -1,0 +1,411 @@
+﻿<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Online Hobby</title>
+    <link rel="stylesheet" href="scholarly.css">
+    <link rel="stylesheet" href="node_modules/prismjs/themes/prism-coy.css">
+    <script src="node_modules/prismjs/prism.js" defer></script>
+  </head>
+  <body prefix="schema: http://schema.org/ xsd: http://www.w3.org/2001/XMLSchema# sa: https://ns.science.ai/">
+    <header>
+      <p class="title">Online Hobbby</p>
+      <p class="subtitle">Makeing hobbies smart</p>
+    </header>
+    <article id="what" typeof="schema:ScholarlyArticle" resource="#">
+      <h1>Online Hobbies</h1>
+      <section>
+        <ol>
+          <li property="schema:author" typeof="sa:ContributorRole">
+              <a property="schema:author" href="https://www.facebook.com/ciprian.gabriel1/" typeof="schema:Person">
+                  <span property="schema:givenName">Cusmuliuc</span>
+                  <span property="schema:familyName">Ciprian-Gabriel</span>
+              </a>
+              <a href="#scienceai" property="sa:roleAffiliation" resource="https://github.com/cipriancus/OHO">a</a>
+            <sup property="sa:roleContactPoint" typeof="schema:ContactPoint">
+              <a property="schema:email" href="mailto:cipriancus@gmail.com" title="corresponding author">&#9993;</a>
+            </sup>
+          </li>
+
+          <li property="schema:contributor" typeof="sa:ContributorRole">
+            <a property="schema:contributor" typeof="schema:Person">
+              <span property="schema:givenName">Tanaselea</span>
+              <span property="schema:familyName">Alexandru</span>
+            </a>
+          </li>
+
+            <li property="schema:contributor" typeof="sa:ContributorRole">
+                <a property="schema:contributor" typeof="schema:Person">
+                    <span property="schema:givenName">Aga</span>
+                    <span property="schema:familyName">Alexandru</span>
+                </a>
+            </li>
+
+            <li property="schema:contributor" typeof="sa:ContributorRole">
+                <a property="schema:contributor" typeof="schema:Person">
+                    <span property="schema:givenName">Grosu</span>
+                    <span property="schema:familyName">Alie-Andrei</span>
+                </a>
+            </li>
+        </ol>
+      </section>
+
+      <section typeof="sa:Abstract" id="abstract">
+        <h2>Abstract</h2>
+        <p>
+          Online Hobbies, pe scurt OHO, este o aplicatie sociala a carui scop principal este
+          impartasirea utilizatorilor de pasiuni ( hobby-uri ), fiecare user are o serie de 
+          hobby-uri pe care le impartaseste cu prietenii sai via Facebook. Fiecare hobby nou 
+          il inscrie pe acesta intr-un nou grup unde poate descoperi si alti oameni pasionati
+          de acelasi lucruri ca si acesta, ei putand comunica prin platforma pusa la dispozitie.
+        </p>
+      </section>
+      <section typeof="sa:MaterialsAndMethods" id="motivation">
+        <h2>Motivation</h2>
+        <p>
+          Aplicatiile sociale moderne sunt construite in jurul relatiilor umane de prietenie, relatii
+          formate (deseori) prin cunoasterea a priori a acestora. Aplicatia noastra pune accentul 
+          pe socializarea umana ce nu s-a produs printr-un context social ci mai degraba 
+          prin pasiunile individului.
+        </p>
+        <p>
+          Mergand pe ideea sistemelor de recomandare, care presupun ca indivizii care au luat decizii 
+          asemanatoare in trecut (in cazul nostru au hobby-uri comune) vor lua decizii asemanatoare si
+          in viitor sistemul inscrie utilizatorii cu pasiuni comune in diferite grupuri ce au o serie
+          de pasiuni comune.
+        </p>
+        <p>
+          Aplicatia creeaza un context social familiar pentru user si prin combinarea de mai multe
+          hobby-uri intr-un grup le ofera mai multe subiecte de discutie pentru acestia. Acestia
+          pot face schimb de informatii prin intermediul chat-ului.
+        </p>
+      </section>
+        <section typeof="sa:MaterialsAndMethods" id="motivation">
+            <h1>Facilitati</h1>
+            <p>
+                Pe langa postarile in grupuri utilizatorii pot posta si in hobby-ul lor favorit, daca
+                sunt useri care doresc a vorbi stric pe anumite teme acestia ne fiind limitati de aplicatie.
+            </p>
+            <p>
+                O facilitate foarte utila a sistemului este crearea de hobby-uri noi, utilizatorii 
+                pot crea hobby-uri noi dand un nume, descriere, o poza si un videoclip sugestiv.
+                Dupa ce se face submit hobby-ul va trebui mai apoi aprobat de un administrator.
+            </p>
+            <p>
+                Sistemul recomanda userilor hobby-uri noi.
+            </p>
+            <p>
+                Alte facilitati ale aplicatiei sunt reprezentate de: profilul utilizatorului in
+                care apare poza sa de profil, date despre acesta cum ar fi numele, data nasterii etc.
+                Apar postarile sale in hobby-uri ( dar nu si in grupuri ).
+            </p>
+            <p>
+                Pe langa cele enuntate mai sus, utilizatorii au posibilitatea de a contacta
+                administratorii printr-un formular dedicat din sectiunea de contact.
+            </p>
+            <p>
+                Pe partea de administrare, un administrator poate vedea hobby-urile ce trebuie aprobate
+                si le poate modifica dupa bunul plac sau sa le stearga.
+                Un administrator mai poate da rol de administrator altor useri si vedea diverse
+                statistici despre sistem in formate cum ar fi html, pdf si csv.
+            </p>
+            <p>
+                Scopurile noastre:
+            </p>
+            <ul>
+                <li>
+                    Usurinta de folosire printr-un design intuitiv si atractiv al aplicatiei.
+                </li>
+                <li>
+                    Robustete si functionalitate.
+                </li>
+                <li>
+                    Suport si asistenta pentru userii cu intrebari sau care intampina dificultati.
+                </li>
+                <li>
+                    Implementarea unei idei noi de socializare.
+                </li>
+                <li>
+                    Crearea de comunitati
+                </li>
+            </ul>
+            <p>
+                Pentru ca utilizatorul sa impartaseasca si altor oameni pesiunile sale am introdus
+                optiunea de share pe Facebook, tot ce trebuie sa faca utilizatorul este sa isi
+                introduca hobby-ul preferat si cateva motive (sau doar unul) pentru care ii place,
+                la o apasare pe butonul "Share" va fi informat cu privire la distribuirea continutului.
+            </p>
+        </section>
+      <section typeof="sa:Results" id="definition">
+        <h2>Arhitectura</h2>
+        <p>
+          In cele ce urmeaza vom prezenta arhitectura aplicatiei si tehnologiile ce au intrat in aceasta.
+        </p>
+        <section id="file-headers">
+          <h3>Baza de date</h3>
+          <p>
+           Baza de date foloseste tehnologiile puse la dispozitie de platforma <a href="https://www.oracle.com/database/index.html">Oracle</a> varianta XE.
+          </p>
+            <figure typeof="sa:Image">
+                <img src="BD.png" width="900" height="700">
+                <figcaption>
+                   Aceasta este intreaga baza de date a aplicatiei, fara procedurile ce creeaza logica sa.
+                </figcaption>
+            </figure>
+             <p>
+           Baza de date contine pachete create special pentru diversele operatii frecvente din aplicatie.
+           Exemple de pachete si proceduri
+                 <ul>
+                     <li>
+                         Userskill.postIT posteaza in baza de date un mesaj intr-un hobby facand toate
+                         verificarile necesare, daca exista hobby-ul, userul etc
+                     </li>
+                     <li>
+                         Procedura Paginare_Hobby_Recomandat care pentru o anume pagina returneaza o serie 
+                         de hobby-uri sugerate pentru un user
+                     </li>
+                     <li>
+                         Procedura GenerateGroups care genereaza toate grupurile si inscrie utilizatorii in ele
+                     </li>
+              </ul>
+          </p>
+        </section>
+        <section id="article">
+          <h3>Back-End</h3>
+          <p>
+            Aplicatia foloseste tehnologia <a href="http://www.oracle.com/technetwork/java/javaee/overview/index.html">Java EE</a> 
+            si ruleaza pe un server de  <a href="http://tomcat.apache.org/">Tomcat </a> versiunea 8.
+            Pe langa aceste 2 tehnologii s-a mai folosit si un sistem de management al proiectului
+            numit <a href="https://maven.apache.org/">Maven</a> ce ofera suport pentru
+            importarea dependintelor necesare proiectului, universalitate, proces de build al 
+            serverului mai usor. Nu s-au folosit framework-uri pentru proiect.
+          </p>
+           <p>
+            Sistemul are implementat o serie de servleti care 
+            asculta la diverse adrese url si raspund la diversele cereri venite din retea.
+           </p>
+          <p>
+            Cererile vin asincron de la client, care are implementat o tehnologie de tip AJAX,
+            servlet-ul o proceseaza si ii trimite raspunsul. De multe ori o cerere catre server
+            implica si o interogare la baza de date, pentru asta am impartit server-ul in 3 nivele
+              <ul>
+                  <li><code>Servlet</code> primeste cererea si asambleaza raspunsul prin alte interogari</li>
+                  <li><code>Facade</code> preia raspunsul Servlet-ului si al DAO si il adapreaza dupa nevoi</li>
+                  <li><code>DAO</code> face interogarea propriu-zisa</li>
+              </ul>
+          </p>
+            <p>
+               Server-ul modeleaza orientat-obiect aspecte ca
+                <ul>
+                    <li><code>Hooby</code> ce are idHobby, Nume, Descriere, Poza, Video</li>
+                    <li><code>User</code> ce are idUser, Nume, Prenume, Email, Data Nasterii, Poza</li>
+                    <li><code>Grup</code> ce are un idGrup, Nume si Descriere</li>
+                    <li><code>Postare</code> ce are un idPostare, idHobby, idUser, Data, Mesaj</li>
+
+                </ul>
+            </p>
+            <p>
+                Server-ul este impartit strategic in pachete pentru grupuri de functionalitati, un 
+                exemplu de pachet este <code>ro.oho.rest.facadeDataBase</code>
+            </p>
+            <p>
+                Pe partea de mesagerie, server-ul memoreaza o lista de clienti si de fiecare data
+                cand cineva posteaza intr-un grup sau un hobby va face un push al mesajului catre
+                acestia, eliminand astfel nevoia utilizatorului de a da refresh la pagina.
+            </p>
+         </section>
+          <section id="article">
+              <h3>Front-End</h3>
+              <p>
+                 Pe partea de front end a aplicatiei se foloseste <code>html</code>, <code>css</code> si <code>javaScript</code>, paginile sunt
+                 generate pe de o parte de server si pe de alta parte de codul javaScript ce face cereri
+                 la acesta asincron folosind <code>AJAX</code> pentru a elimina nevoia continua de a da refresh
+                 si de a-i oferi utilizatorului o senzatie placuta si dinamica a paginilor. 
+              </p>
+              <p>
+                  Toate input-urile sunt validate de javaScript si notifica utilizatorul daca 
+                  un input nu este bun prin sugestii de diferite culori la field-ul in cauza
+              </p>
+              <p>
+                  S-a incercat implementarea unui design simplu si atractiv care sa atraga user-ul
+                  in folosirea aplicatiei.
+              </p>
+          </section>
+        </section>
+
+        <section id="authors">
+            <h1>Use-Case-uri</h1>
+            <p>
+               In continuare vom prezenta un mini-manual al aplicatiei
+            </p>
+
+            <section id="article">
+                <h3>Logarea si Inregistrarea</h3>
+                <p>
+                    Logarea si Inregistrarea sunt pasi extrem de simpli, pe pagina
+                    de login exista un buton de logare cu Facebook, odata apasat acesta redirecteaza
+                    utilizatorul catre pagina de Facebook pentru a aproba aplicatia ( daca nu are cont )
+                    sau direct pe pagina principala a aplicatiei daca are.
+                </p>
+                <p>
+                   Aplicatia incearca sa fie cat mai simpla si sa nu incarce utilizatorul, de accea
+                   am preferat autentificarea cu Facebook.
+                </p> 
+            </section>
+
+
+            <section id="article">
+                <h3>Prima pagina</h3>
+                <p>
+                    Pe prima pagina 
+                </p>
+                <p>
+                    Pe prima pagina utilizatorul poate vedea tot ce s-a discutat intr-un hobby pe news
+                    feed, in dreapta ii apar sugestii de hobby, in stanga hobby-urile sale si grupurile 
+                    din care face parte.
+                </p>
+                <p>
+                    In head-ul paginii utilizatorul are box-ul cu 
+                    <code>I like Hobby because of reasons </code> si butonul de share,
+                    camp in care acesta isi poate exprima pasiunile si a face share pe Facebook
+                </p>
+                <figure typeof="sa:Image">
+                    <img src="prima_pagina.png" width="900" height="700">
+                    <figcaption>
+                        Aceasta este prima pagina, casutele cu rosu marcheaza discutiile de mai sus.
+                    </figcaption>
+                </figure>
+            </section>
+
+            <section id="article">
+                <h3>I like Hobby because of reasons</h3>
+                <p>
+                    Odata ce userul incepe a completa campul de Hobby o sa ii apara sugestii, daca 
+                    nu exista acest hobby va fi redirectionat pe o pagina noua de creare.
+                </p>
+                <p>
+                    Daca totusi exista hobby-ul acesta va fi adaugat la el (sau nu, daca il are)
+                    si i se va posta mesajul de I like Hobby because of reasons.
+                </p>
+                <p>
+                    Mai jos sunt atasate paginile de share si creare de hobby
+                </p>
+                <figure typeof="sa:Image">
+                    <img src="share.png" width="900" height="700">
+                    <figcaption>
+                        Pagina de share catre Facebook.
+                    </figcaption>
+                </figure>
+
+                <figure typeof="sa:Image">
+                    <img src="hobby_create.png" width="900" height="700">
+                    <figcaption>
+                        Pagina de creare de hobby. Dupa ce completeaza campurile se da add si i se va
+                        arata un mesaj de confirmare daca totul e ok si redirectionat pe prima pagina.
+                    </figcaption>
+                </figure>
+            </section>
+            <section id="article">
+                <h3>Pagina de hobby</h3>
+                <p>
+                   Un hobby are o descriere, imagine, nume si video, dupa cum se vede mai jos, la aceasta pagina
+                   se poate ajunge daca user-ul nu este membru si vrea sa dea add, dupa ce da add va fi dus spre
+                   pagina de comunicare din hobby.
+                </p>
+     
+                <figure typeof="sa:Image">
+                    <img src="pagina_hobby.png" width="900" height="700">
+                    <figcaption>
+                        Pagina de hobby.
+                    </figcaption>
+                </figure>
+
+                
+            </section>
+            <section id="article">
+                <h3>Pagina de comunicare a hobby-ului si grupului</h3>
+                <p>
+                    In paginile de hobby si grup utilizatorii pot comunica intre ei, acestia vad mesajele
+                    postate, utilizatorii prezenti si au o lista de alte hobby-uri sau grupuri in care pot inta.
+                </p>
+                <p>
+                   Actiunea de postare este foarte simpla si intuitiva
+                </p>
+                <figure typeof="sa:Image">
+                    <img src="pagina_hobby_add.png" width="900" height="700">
+                    <figcaption>
+                        Pagina de hobby in care utilizatorii pot posta
+                    </figcaption>
+                </figure>
+                <figure typeof="sa:Image">
+                    <img src="pagina_grup.png" width="900" height="700">
+                    <figcaption>
+                        Pagina de grup in care utilizatorii pot posta
+                    </figcaption>
+                </figure>
+
+            </section>
+
+
+            <section id="article">
+                <h3>Admin</h3>
+                <p>
+                    Pe pagina de administrator acesta vede toate hobby-urile ce au fost cerute de utilizatori
+                    si le poate aproba sau sterge sau adauga modificari daca el considera ca nu s-a introdus
+                    continutul corect.
+                </p>
+                <p>
+                    O alta actiune este alegerea de administratori, acesta poate promova un user
+                    la rangul de administrator prin simpla apasare de buton.
+                </p>
+                <p>
+                    Administratorul poate vedea statistici despre aplicatie, numar de utilizatori, procente ale 
+                    grupurilor, etc.
+                    Statisticile sunt disponibile in multiple formate si ii sunt downloadate pe pc la apasarea 
+                    butonului de download.
+                </p>
+                <p>
+                    Statisticile sunt impartite in 2 categorii: Cele mai rare/ populare pasiuni ale utilizatorilo
+                    si evolutia lor in timp, acestia pot selecta din diversitatea de rapoarte apasand pe butonul dorit
+                </p>
+                <figure typeof="sa:Image">
+                    <img src="admin1.png" width="900" height="700">
+                    <figcaption>
+                        In stanga sunt butoanele pentru cele mai populare si rare pasiuni
+                        iar in mijloc apar hobby-urile, se vede 
+                        clar ca se pot edita campurile, dupa ce se da aprove sau delete se afiseaza un mesaj
+                        de succes ( sau de eroare in caz ca s-a intamplat ceva )
+                    </figcaption>
+                </figure>
+                <figure typeof="sa:Image">
+                    <img src="admin2.png" width="900" height="700">
+                    <figcaption>
+                       Exact ca si in cazul hobby-urilor administratorul poate sa selecteze userul si
+                       apasand butonul admin ii da drepturi acestuia si in drepta apar cel da-al doilea
+                       tip de rapoarte, pentru evolutia in timp a pasiunilor.
+                    </figcaption>
+                </figure>
+            </section>
+        </section>
+
+
+
+      <section typeof="sa:Conclusion" id="conclusion">
+        <h2>Conclusion</h2>
+        <p>
+          Online hobby este o alternativa noua a aplicatiilor sociale.
+        </p>
+        <p>
+         Ofera o noua viziune a prieteniilor si ofer userilor subiecte de discutie.
+        </p>
+         <p>
+              Este integrata cu Facebook pentru familiaritatea userilor
+         </p>
+          <p>
+             OHO este nouate.
+         </p>
+      </section>
+    </article>
+  </body>
+</html>
