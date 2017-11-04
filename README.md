@@ -25,6 +25,6 @@ Scholarly HTML : http://cipriancus.github.io/CryMa/
 <h3>Professors :</h3>
 
 <ul>
-  <li>Sabin Cornelui Buraga - busaco@info.uaic.or</li>
+  <li>Sabin Cornelui Buraga - busaco@info.uaic.ro</li>
   <li>Ciprian Amariei </li>
 </ul>
