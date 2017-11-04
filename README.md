@@ -10,7 +10,7 @@ Ideas : https://docs.google.com/document/d/1jzYahKruRE0Ev-p2luY6crWjkdJvi_qgCC9I
 
 Scholarly HTML : http://cipriancus.github.io/CryMa/
 
-*You can look at our Tasks Board by installing ZENHUB : https://chrome.google.com/webstore/detail/zenhub-for-github/ogcgkffhplmphkaahpmffcafajaocjbd *
+*You can look at our Tasks Board by installing ZENHUB : https://chrome.google.com/webstore/detail/zenhub-for-github/ogcgkffhplmphkaahpmffcafajaocjbd*
 
 *We also like to write on the Wiki page : https://github.com/cipriancus/CryMa/wiki*
 
