@@ -1,10 +1,4 @@
 
-/*
-  Mostly override colours, plus support the article styling.
-  The latter should be made into a separate CSS at some point, that can just be reused by whoever
-  likes it.
-*/
-
 @import url('./node_modules/normalize.css/normalize.css');
 @import url('./fonts/libre-baskerville-regular.css');
 @import url('./fonts/libre-baskerville-bold.css');
