@@ -8,9 +8,9 @@ UML diagrams : https://drive.google.com/drive/u/0/folders/0B_jRMRTB7_hgOG85SHhTV
 
 Ideas : https://docs.google.com/document/d/1jzYahKruRE0Ev-p2luY6crWjkdJvi_qgCC9IqXybJVA/edit
 
-*You can look at our Board by installing ZENHUB : https://chrome.google.com/webstore/detail/zenhub-for-github/ogcgkffhplmphkaahpmffcafajaocjbd*
-
 Scholarly HTML : http://cipriancus.github.io/CryMa/
+
+*You can look at our Board by installing ZENHUB : https://chrome.google.com/webstore/detail/zenhub-for-github/ogcgkffhplmphkaahpmffcafajaocjbd*
 
 <h3>Members :</h3>
 
