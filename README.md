@@ -21,3 +21,10 @@ Scholarly HTML : http://cipriancus.github.io/CryMa/
   <li>Georgiana Coca - lucia.coca@info.uaic.ro</li>
   <li>Asofiei Florina Cosmina - florina.asofiei@info.uaic.ro</li>
 </ul>
+
+<h3>Professors :</h3>
+
+<ul>
+  <li>Sabin Cornelui Buraga - busaco@info.uaic.or</li>
+  <li>Ciprian Amariei </li>
+</ul>
