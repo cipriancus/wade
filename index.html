@@ -203,7 +203,7 @@
 				Besides using the classic 
 				<a property="schema:citation" href="https://www.w3.org/Style/CSS/Overview.en.html">CSS</a> and 
 				<a property="schema:citation" href="https://www.w3.org/html/">HTML</a>
-				we decided to use 				
+				it was choosen
 				<a property="schema:citation" href="https://v2.angular.io/docs/ts/latest/">Angular 2</a>, in order to
 				ease the development process and to decouple the "smart" front-end from the cloud based, REST back-end.	
 			</p>
@@ -267,7 +267,7 @@
 			  </figcaption>
 			</figure>
 			<p>
-				We assumed the current day is the 12th of May and predicted the 13th of May,
+				It is assumed the current day is the 12th of May and predicted the 13th of May,
 				as it can pe seen, there is a dotted line from 12th till 13th predicting a growth.
 			</p>
 			<p>
@@ -308,6 +308,45 @@
 				<a property="schema:citation" href="http://fixer.io/">Fixer.io</a> and the coins
 				value are pulled from the server.
 			</p>
+			<p>
+				Having the most recent news is crucial in the financial system, thus
+				it is necessary that the user gets the latest news regarding the cryptocurrencies. 
+			</p>
+			<p>
+				A special page regarding news has been put in place, as it 
+				can be seen below.
+			</p>
+			<figure typeof="sa:Image">
+			  <img src="Front End/Photos/top_news.PNG" >	
+			  <figcaption>
+				Top news
+			  </figcaption>
+			</figure>
+			<figure typeof="sa:Image">
+			  <img src="Front End/Photos/other_news.PNG" >	
+			  <figcaption>
+				Other news
+			  </figcaption>
+			</figure>
+			<figure typeof="sa:Image">
+			  <img src="Front End/Photos/.PNG" >	
+			  <figcaption>
+				First page complete mock
+			  </figcaption>
+			</figure>
+			<p>
+				The first page embodies all the features described in the 
+				beginning of this section.
+			</p>
+			<figure typeof="sa:Image">
+			  <img src="Front End/Photos/.PNG" >	
+			  <figcaption>
+				Cryptocurrency page
+			  </figcaption>
+			</figure>
+			<p>
+				As it can be seen, the page has all the features explained above.
+			</p>
 		</section>
 			
 		<section typeof="sa:MaterialsAndMethods" id="back_end">
@@ -323,7 +362,7 @@
 				<a property="schema:citation" href="https://www.w3.org/standards/semanticweb/data">Linked Data</a> applications.
 			</p>
 			<p>
-				From Jena we chose to use the following functionalities :
+				From Jena it was chosen to use the following functionalities :
 				<ul>
 					<li><a property="schema:citation" href="https://jena.apache.org/documentation/rdf/index.html">RDF API</a></li>
 					<li><a property="schema:citation" href="https://jena.apache.org/documentation/query/index.html">ARQ - SPARQL</a></li>
@@ -347,7 +386,7 @@
 				responding to it's REST API.
 			</p>
 			<p>
-				In order to have consitency across the application data we are thinking about two mechanisms :
+				In order to have consitency across the application data there are two solutions :
 				<ol>
 					<li>Synchronization via event query using <a property="schema:citation" href="https://www.rabbitmq.com/">RabbitMQ</a>.</li>
 					<li>Each microservice will query data via GatewayAPI SPARQL endpoint.</li>
