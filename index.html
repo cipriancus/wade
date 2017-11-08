@@ -404,10 +404,35 @@
 		</section>
 		
 		<section typeof="sa:MaterialsAndMethods" id="modelling">
-		    <h1>Modelling</h1>
+			<h1>Modelling And Prediction
+			</h1>
 			<p>
-				
+				The predictions about the monetary value of the cryptocurrencies will be a feature of the application.
+				These predictions will be made by machine learning algorithms based on the historical data
+				available for these coins.
+		      </p>
+		      <p>
+			      	Our approach is based on artificial neural networks. 
 			</p>
+			<p>
+			        Since the historical data of a coin
+				is a sequence, we will use a recurrent neural network, which is specialised for sequences,
+				more specifically, a 
+				<a property="schema:citation" href="http://www.bioinf.jku.at/publications/older/2604.pdf">Long Short Term Memory architecture</a>.
+				Neural networks are a great candidate for this task because they have a great
+				degree of generality(they perform well on unseen data), they’re efficient to use and they
+				have architectures specialised for sequences. The more common approaches for this task
+				used vanilla neural networks, as seen in 
+				<a property="schema:citation" href="https://people.cs.pitt.edu/~hashemi/papers/CISIM2010_HBHashemi.pdf">Stock Market Value Prediction Using Neural Networks 
+				</a> and <a property="schema:citation" href="https://people.eecs.berkeley.edu/~akar/IITK_website/EE671/report_stock.pdf">
+				Stock Prediction using Artificial Neural Networks </a>  , but the more recent LSTMs
+				outperformed these models and, considering the form of the input, are more fitted for the
+				task </a> and <a property="schema:citation" href="https://www.ijsr.net/archive/v6i4/ART20172755.pdf">
+				Predicting Stock Prices Using LSTM </a>.
+		      </p>
+			
+			
+
 		</section>
     </article>
   </body>
