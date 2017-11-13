@@ -12,8 +12,8 @@ info:
 # host: https://github.com/cipriancus/CryMa
 # basePath: /v2
 tags:
-- name: cryma
-  description: CryMa
+- name: CryMa
+  description: Cryptocurrency Manager
   externalDocs:
     description: Find out more
     url: https://github.com/cipriancus/CryMa
@@ -25,15 +25,43 @@ tags:
 # schemes:
 # - http
 paths:
-  /cointology/:
+  /cointology:
+    get:
+      tags:
+      - Cointology
+      summary: Returns current value of all coins
+      operationId: getCoin
+      produces:
+      - application/json
+      parameters:
+      - name: firstNo
+        in : query
+        type: string
+        description: Get only the top X ( where X is firstNo ) of coins.
+      - name: page
+        in: query
+        description: The page number
+        type: string
+      - name: pageNo
+        in: query
+        description: Items per page
+        type: string
+      responses:
+        200:
+          description: successful operation
+          schema:
+            type: array
+            items:
+                $ref: '#/definitions/Coin'
+        400 :
+          description: invalid parameters provided
     post:
       tags:
       - Cointology
       summary: Create new coin
       operationId: createCoin
       produces:
-      - application/json-ls
-      - application/html
+      - application/json
       parameters:
       - in: body
         name: body
@@ -51,8 +79,7 @@ paths:
       summary: Creates list of coins with given input array
       operationId: createCoinWithArrayInput
       produces:
-      - application/json-ld
-      - application/html
+      - application/json
       parameters:
       - in: body
         name: body
@@ -65,6 +92,8 @@ paths:
       responses:
         default:
           description: successful operation
+        400 :
+          description: Invalid input provided
   /cointology/{coin-id}:
     get:
       tags:
@@ -77,8 +106,7 @@ paths:
         required: true
         type : string
       produces:
-      - application/json-ld
-      - application/html
+      - application/json
       responses:
         200:
           description: successful operation
@@ -95,7 +123,6 @@ paths:
       operationId: updateCoinById
       produces:
       - application/json-id
-      - application/html
       parameters:
       - name: coin-id
         in: path
@@ -122,28 +149,23 @@ paths:
       summary: Provides data for the price evolution chart
       operationId: priceChart
       produces:
-      - application/json-ld
-      - application/html
+      - application/json
       parameters:
       - name: page
         in: query
         description: The page number
-        required: true
         type: string
       - name: pageNo
         in: query
         description: Items per page
-        required: true
         type: string
       - name: startDate
         in: query
         description: The start date for the data.
-        required: true
         type: string
       - name: endDate
         in: query
         description: The end date for the data.
-        required: true
         type: string
       responses:
         200:
@@ -161,8 +183,7 @@ paths:
       summary: Provides data for the price evolution chart
       operationId: getCoinValueById
       produces:
-      - application/json-ld
-      - application/html
+      - application/json
       parameters:
       - name: coin-id
         in: path
@@ -195,8 +216,7 @@ paths:
       summary: Provides data for the distribution of main cryptocurrencies chart
       operationId: pieChart
       produces:
-      - application/json-ld
-      - application/html
+      - application/json
       responses:
         200:
           description: successful operation
@@ -211,8 +231,7 @@ paths:
       summary: Get latest news
       operationId: getLatest
       produces:
-      - application/json-ld
-      - application/html
+      - application/json
       parameters: []
       responses:
         200:
@@ -228,8 +247,7 @@ paths:
       summary: Get coin by coin id
       operationId: getNewsByCoin
       produces:
-      - application/json-ld
-      - application/html
+      - application/json
       parameters:
       - name: coinId
         in: path
@@ -251,8 +269,7 @@ paths:
       - News
       summary: Get a specific news page.
       produces:
-      - application/json-ld
-      - application/html
+      - application/json
       operationId: getCoinPage
       parameters:
       - name: page
@@ -281,8 +298,7 @@ paths:
       summary: Get coin by name
       operationId: getCoinByName
       produces:
-      - application/json-ld
-      - application/html
+      - application/json
       parameters:
       - name: name
         in: path
@@ -305,8 +321,7 @@ paths:
       summary: Get coin by URI
       operationId: getCoinByUri
       produces:
-      - application/json-ld
-      - application/html
+      - application/json
       parameters:
       - name: uri
         in: path
@@ -325,52 +340,81 @@ paths:
 definitions:
   Coin:
     type: object
+    required:
+    - id
+    - name
     properties:
       id:
         type: integer
         format: int64
+        example : 1234
       name : 
         type : string
+        example : BTC
       logo :
         type : string
       website :
         type : string
+        example : https://bitcoin.org
       typeOf : 
         type : string
-      price:
-        type : integer
-        format : float
       priceHistory :
-        $ref : '#/definitions/CoinValue'
+        type: array
+        items:
+            $ref : '#/definitions/CoinValue'
     xml:
       name: Coin
   PlotData:
     type: object
+    required:
+    - id
+    - unixTime
+    - value
+    - name
+    - uri
     properties:
       id:
         type: integer
         format: int64
+        example: 1234
       unixTime:
         type : integer
         format : int64
+        example : 1510562162 
+      name:
+        type: string
+        example : BTC
       value:
         type : integer
         format : float
+        example : 14.5
+      uri:
+        type : string
+        example : http://dbpedia.org/page/Bitcoin
     xml:
       name: PlotData
   CoinValue:
     type: object
+    required:
+    - id
+    - name
+    - value
+    - uri
     properties:
       id:
         type: integer
         format: float
+        example : 1234
       name:
         type: string
+        example : BTC
       value:
         type : integer
         format : float
+        example : 6800
       uri:
         type : string
+        example : http://dbpedia.org/page/Bitcoin
     xml:
       name: CoinValue
   News:
@@ -385,17 +429,22 @@ definitions:
       id:
         type: integer
         format: int64
+        example : 1234
       title:
         type: string
-        example: Bitcoin price surge
+        example: Bitcoin Cash Skyrockets
       urlSource:
         type : string
+        example : https://www.forbes.com/sites/laurashin/2017/11/12/bitcoin-cash-skyrockets-bitcoin-price-drops-as-civil-war-continues/#1f26873e35b5
       shortText :
         type : string
+        example: The surge by Bitcoin Cash led it to overtake Ethereum in market capitalization to $40 billion and become the second-largest crypto
       longText :
         type : string
+        example : The surge by Bitcoin Cash led it to overtake Ethereum in market capitalization to $40 billion and become the second-largest crypto [...]
       photoUrls:
         type: string
+        example : https://specials-images.forbesimg.com/imageserve/748531060/960x0.jpg?fit=scale
     xml:
       name: News
 externalDocs:
