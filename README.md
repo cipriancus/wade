@@ -6,9 +6,13 @@ Requirement analysis : https://docs.google.com/document/d/1QW3QuUxLqJVW6J4aylSOU
 
 UML diagrams : https://drive.google.com/drive/u/0/folders/0B_jRMRTB7_hgOG85SHhTVlRxLU0
 
-Ideas : https://docs.google.com/document/d/1jzYahKruRE0Ev-p2luY6crWjkdJvi_qgCC9IqXybJVA/edit
+Ideas with relevant API links : https://docs.google.com/document/d/1jzYahKruRE0Ev-p2luY6crWjkdJvi_qgCC9IqXybJVA/edit
 
-Scholarly HTML : http://cipriancus.github.io/CryMa/
+Front-end : http://cipriancus.github.io/CryMa/
+
+Scholarly HTML : https://cipriancus.github.io/CryMa/Front-End/pages/scholarly.html
+
+I/O document : https://drive.google.com/file/d/1TNTKmi2tPxKi9dPsxUknj8eiqdOJ5d1S/view?usp=drivesdk 
 
 *You can look at our Tasks Board by installing ZENHUB : https://chrome.google.com/webstore/detail/zenhub-for-github/ogcgkffhplmphkaahpmffcafajaocjbd*
 
