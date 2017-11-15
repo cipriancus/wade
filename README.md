@@ -14,6 +14,8 @@ Scholarly HTML : https://cipriancus.github.io/CryMa/Front-End/pages/scholarly.ht
 
 I/O document : https://drive.google.com/file/d/1TNTKmi2tPxKi9dPsxUknj8eiqdOJ5d1S/view?usp=drivesdk 
 
+OpenAPI : https://app.swaggerhub.com/apis/cipriancus1/CryMa/1.0.0#/ or https://github.com/cipriancus/CryMa/blob/master/openAPI.yaml
+
 *You can look at our Tasks Board by installing ZENHUB : https://chrome.google.com/webstore/detail/zenhub-for-github/ogcgkffhplmphkaahpmffcafajaocjbd*
 
 *We also like to write on the Wiki page : https://github.com/cipriancus/CryMa/wiki*
