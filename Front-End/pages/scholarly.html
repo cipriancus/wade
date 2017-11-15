@@ -387,7 +387,8 @@
 			</p>
 			<p>
 				Each microservice described in the architecture part will serve it's sole purpose in the Spring environment,
-				responding to it's REST API.
+				responding to it's REST API, tha API will be helped by a <a property="schema:citation" href="https://sourcemaking.com/design_patterns/proxy">proxy</a> 
+				called <a property="schema:citation" href="https://spring.io/guides/gs/routing-and-filtering/">Netflix Zuul</a>.
 			</p>
 			<p>
 				In order to have consitency across the application data there are two solutions :
