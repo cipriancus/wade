@@ -1,0 +1,458 @@
+swagger: '2.0'
+info:
+  description: |
+    Cryptocurrency Manager, you can find 
+    out more about CryMa at 
+    [https://github.com/cipriancus/CryMa](https://github.com/cipriancus/CryMa )
+  version: 1.0.0
+  title: CryMa
+  license:
+    name: MIT
+    url: https://github.com/cipriancus/CryMa/blob/master/LICENSE
+# host: https://github.com/cipriancus/CryMa
+# basePath: /v2
+tags:
+- name: CryMa
+  description: Cryptocurrency Manager
+  externalDocs:
+    description: Find out more
+    url: https://github.com/cipriancus/CryMa
+- name: busaco
+  description: Buraga Sabin's website
+  externalDocs :
+    description : Buraga Sabin's website
+    url : https://profs.info.uaic.ro/~busaco/
+# schemes:
+# - http
+paths:
+  /cointology:
+    get:
+      tags:
+      - Cointology
+      summary: Returns current value of all coins
+      operationId: getCoin
+      produces:
+      - application/json
+      parameters:
+      - name: firstNo
+        in : query
+        type: string
+        description: Get only the top X ( where X is firstNo ) of coins.
+      - name: page
+        in: query
+        description: The page number
+        type: string
+      - name: pageNo
+        in: query
+        description: Items per page
+        type: string
+      responses:
+        200:
+          description: successful operation
+          schema:
+            type: array
+            items:
+                $ref: '#/definitions/Coin'
+        400 :
+          description: invalid parameters provided
+    post:
+      tags:
+      - Cointology
+      summary: Create new coin
+      operationId: createCoin
+      produces:
+      - application/json
+      parameters:
+      - in: body
+        name: body
+        description: Created coin object
+        required: true
+        schema:
+          $ref: '#/definitions/Coin'
+      responses:
+        default:
+          description: successful operation
+  /cointology/createWithArray:
+    post:
+      tags:
+      - Cointology
+      summary: Creates list of coins with given input array
+      operationId: createCoinWithArrayInput
+      produces:
+      - application/json
+      parameters:
+      - in: body
+        name: body
+        description: List of coin object
+        required: true
+        schema:
+          type: array
+          items:
+            $ref: '#/definitions/Coin'
+      responses:
+        default:
+          description: successful operation
+        400 :
+          description: Invalid input provided
+  /cointology/{coin-id}:
+    get:
+      tags:
+      - Cointology
+      summary: Get coin from the system using id
+      parameters:
+      - name: coin-id
+        in: path
+        description: Coin Id
+        required: true
+        type : string
+      produces:
+      - application/json
+      responses:
+        200:
+          description: successful operation
+          schema:
+            type: array
+            items:
+                $ref: '#/definitions/Coin'
+        400:
+          description: Invalid coin id supplied
+    put:
+      tags:
+      - Cointology
+      summary: Updated coin
+      operationId: updateCoinById
+      produces:
+      - application/json-id
+      parameters:
+      - name: coin-id
+        in: path
+        description: Coin Id
+        required: true
+        type: string
+      - in: body
+        name: body
+        description: List of coin object
+        required: true
+        schema:
+          type: array
+          items:
+            $ref: '#/definitions/Coin'
+      responses:
+        200:
+          description: successful operation
+        400:
+          description: Invalid coin id supplied
+  /plot:
+    get:
+      tags:
+      - Plot
+      summary: Provides data for the price evolution chart
+      operationId: priceChart
+      produces:
+      - application/json
+      parameters:
+      - name: page
+        in: query
+        description: The page number
+        type: string
+      - name: pageNo
+        in: query
+        description: Items per page
+        type: string
+      - name: startDate
+        in: query
+        description: The start date for the data.
+        type: string
+      - name: endDate
+        in: query
+        description: The end date for the data.
+        type: string
+      responses:
+        200:
+          description: successful operation
+          schema:
+            type: array
+            items :  
+              $ref: '#/definitions/PlotData'
+        400:
+          description: Invalid input provided
+  /plot/{coin-id}:
+    get:
+      tags:
+      - Plot
+      summary: Provides data for the price evolution chart
+      operationId: getCoinValueById
+      produces:
+      - application/json
+      parameters:
+      - name: coin-id
+        in: path
+        description : The coin id that is searched.
+        required : true
+        type: string
+      - name: startDate
+        in: query
+        description: The start date for the data.
+        required: true
+        type: string
+      - name: endDate
+        in: query
+        description: The end date for the data.
+        required: true
+        type: string
+      responses:
+        200:
+          description: successful operation
+          schema:
+            type: array
+            items :  
+              $ref: '#/definitions/PlotData'
+        400:
+          description : Invalid data provided
+  /plot/pieChartDistrib:
+    get:
+      tags:
+      - Plot
+      summary: Provides data for the distribution of main cryptocurrencies chart
+      operationId: pieChart
+      produces:
+      - application/json
+      responses:
+        200:
+          description: successful operation
+          schema:
+            type: array
+            items :  
+              $ref: '#/definitions/PlotData'
+  /news/getLatest:
+    get:
+      tags:
+      - News
+      summary: Get latest news
+      operationId: getLatest
+      produces:
+      - application/json
+      parameters: []
+      responses:
+        200:
+          description: successful operation
+          schema:
+            type: array
+            items :  
+              $ref: '#/definitions/News'
+  /news/coin/{coinId}:
+    get:
+      tags:
+      - News
+      summary: Get coin by coin id
+      operationId: getNewsByCoin
+      produces:
+      - application/json
+      parameters:
+      - name: coinId
+        in: path
+        description: The news that needs to be fetched by id.
+        required: true
+        type: string
+      responses:
+        200:
+          description: successful operation
+          schema:
+            $ref: '#/definitions/News'
+        400:
+          description: Invalid coin id supplied
+        404:
+          description: Coin id not found
+  /news/page:
+    get:
+      tags:
+      - News
+      summary: Get a specific news page.
+      produces:
+      - application/json
+      operationId: getCoinPage
+      parameters:
+      - name: page
+        in: query
+        description: The page number.
+        required: true
+        type: string
+      - name: itemNo
+        in: query
+        description: How many news per page.
+        required: true
+        type: string
+      responses:
+        200:
+          description: successful operation
+          schema:
+            type: array
+            items :  
+              $ref: '#/definitions/News'
+        400:
+          description: Invalid input provided
+  /coinconversion/{name}:
+    get:
+      tags:
+      - Coin Conversion
+      summary: Get coin by name
+      operationId: getCoinByName
+      produces:
+      - application/json
+      parameters:
+      - name: name
+        in: path
+        description: The name that needs to be fetched.
+        required: true
+        type: string
+      responses:
+        200:
+          description: successful operation
+          schema:
+            $ref: '#/definitions/CoinValue'
+        400:
+          description: Invalid name supplied
+        404:
+          description: Coin not found
+  /coinconversion/uri/{uri}:
+    get:
+      tags:
+      - Coin Conversion
+      summary: Get coin by URI
+      operationId: getCoinByUri
+      produces:
+      - application/json
+      parameters:
+      - name: uri
+        in: path
+        description: The URI that needs to be fetched. 
+        required: true
+        type: string
+      responses:
+        200:
+          description: successful operation
+          schema:
+            $ref: '#/definitions/CoinValue'
+        400:
+          description: Invalid URI supplied
+        404:
+          description: URI not found
+definitions:
+  Coin:
+    type: object
+    required:
+    - id
+    - name
+    properties:
+      id:
+        type: integer
+        format: int64
+        example : 1234
+      name : 
+        type : string
+        example : BTC
+      logo :
+        type : string
+      website :
+        type : string
+        example : https://bitcoin.org
+      typeOf : 
+        type : string
+      priceHistory :
+        type: array
+        items:
+            $ref : '#/definitions/CoinValue'
+    xml:
+      name: Coin
+  PlotData:
+    type: object
+    required:
+    - id
+    - unixTime
+    - value
+    - name
+    - uri
+    properties:
+      id:
+        type: integer
+        format: int64
+        example: 1234
+      unixTime:
+        type : integer
+        format : int64
+        example : 1510562162 
+      name:
+        type: string
+        example : BTC
+      value:
+        type : integer
+        format : float
+        example : 14.5
+      uri:
+        type : string
+        example : http://dbpedia.org/page/Bitcoin
+    xml:
+      name: PlotData
+  CoinValue:
+    type: object
+    required:
+    - id
+    - name
+    - value
+    - uri
+    properties:
+      id:
+        type: integer
+        format: float
+        example : 1234
+      name:
+        type: string
+        example : BTC
+      value:
+        type : integer
+        format : float
+        example : 6800
+      uri:
+        type : string
+        example : http://dbpedia.org/page/Bitcoin
+    xml:
+      name: CoinValue
+  News:
+    type: object
+    required:
+    - id
+    - title
+    - urlSource
+    - shortText
+    - longText
+    properties:
+      id:
+        type: integer
+        format: int64
+        example : 1234
+      title:
+        type: string
+        example: Bitcoin Cash Skyrockets
+      urlSource:
+        type : string
+        example : https://www.forbes.com/sites/laurashin/2017/11/12/bitcoin-cash-skyrockets-bitcoin-price-drops-as-civil-war-continues/#1f26873e35b5
+      shortText :
+        type : string
+        example: The surge by Bitcoin Cash led it to overtake Ethereum in market capitalization to $40 billion and become the second-largest crypto
+      longText :
+        type : string
+        example : The surge by Bitcoin Cash led it to overtake Ethereum in market capitalization to $40 billion and become the second-largest crypto [...]
+      photoUrls:
+        type: string
+        example : https://specials-images.forbesimg.com/imageserve/748531060/960x0.jpg?fit=scale
+    xml:
+      name: News
+externalDocs:
+  description: Find out more about Swagger
+  url: http://swagger.io
+# Added by API Auto Mocking Plugin
+host: virtserver.swaggerhub.com
+basePath: /cipriancus1/CryMa/1.0.0
+schemes:
+ - https
+ - http

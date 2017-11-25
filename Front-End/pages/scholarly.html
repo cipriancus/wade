@@ -1,0 +1,492 @@
+﻿<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>CryMa</title>
+    <link rel="stylesheet" href="../scholarly/scholarly.css">
+    <link rel="stylesheet" href="../scholarly/node_modules/prismjs/themes/prism-coy.css">
+    <script src="../scholarly/node_modules/prismjs/prism.js" defer></script>
+  </head>
+  <body prefix="schema: http://schema.org/ xsd: http://www.w3.org/2001/XMLSchema# sa: https://ns.science.ai/">
+    <header>
+      <p class="title">CryMa</p>
+      <p class="subtitle">Coins made smart</p>
+    </header>
+    <article id="what" typeof="schema:ScholarlyArticle" resource="#">
+      <h1>CryMa</h1>
+      <section>
+        <ol>
+          <li property="schema:author" typeof="sa:ContributorRole">
+              <a property="schema:author" href="https://www.facebook.com/ciprian.gabriel1/" typeof="schema:Person">
+                  <span property="schema:givenName">Cusmuliuc</span>
+                  <span property="schema:familyName">Ciprian-Gabriel</span>
+              </a>
+              <a property="sa:roleAffiliation" resource="https://github.com/cipriancus/OHO">a</a>
+            <sup property="sa:roleContactPoint" typeof="schema:ContactPoint">
+              <a property="schema:email" href="mailto:cipriancus@gmail.com" title="corresponding author">&#9993;</a>
+            </sup>
+          </li>
+
+          <li property="schema:author" typeof="sa:ContributorRole">
+              <a property="schema:author" href="https://www.facebook.com/coca.georgiana" typeof="schema:Person">
+                  <span property="schema:givenName">Coca</span>
+                  <span property="schema:familyName">Lucia Georgiana</span>
+              </a>
+              <sup property="sa:roleContactPoint" typeof="schema:ContactPoint">
+              <a property="schema:email" href="mailto:cocageorgiana@gmail.com" title="corresponding author">&#9993;</a>
+            </sup>
+          </li>
+
+          <li property="schema:author" typeof="sa:ContributorRole">
+              <a property="schema:author" href="" typeof="schema:Person">
+                  <span property="schema:givenName">Asofiei</span>
+                  <span property="schema:familyName">Cosmina Florina</span>
+              </a>
+			  <sup property="sa:roleContactPoint" typeof="schema:ContactPoint">
+              <a property="schema:email" href="mailto:florina.asofiei@info.uaic.ro" title="corresponding author">&#9993;</a>
+            </sup>
+          </li>
+		  
+        </ol>
+      </section>
+
+      <section typeof="sa:Abstract" id="abstract">
+        <h2>1 Abstract</h2>
+        <p>
+          CryMa, short for Cryptocurrency Manager, is an online application
+		  with the purpose of managing cryptocurrency  information. The website
+		  uses the power of semantic web and information found on diverse ontologies
+		  to keep the information presented on the site as accurate as possible, with
+		  as little as possible human interaction, so that users are updated in real time
+		  with the information they need for a better understanding of the world-wide crypto market.
+        </p>
+      </section>
+	  
+      <section typeof="sa:MaterialsAndMethods" id="motivation">
+        <h2>2 Motivation</h2>
+        <p>
+          The world of today grows one's need to adapt to a faster tomorrow, thus it is critical
+		  that everybody gets information with as little delay as possible. 
+        </p>
+		<p>
+		  Systems capable of displaying diverse information in real time are very sought after.
+		</p>
+		<p>
+		  Smart information visualisation, current and future growth prediction but also
+		  sorting and converting capabilities are needed tools for the next financial shift,
+		  empowering the people and giving them the oportunity to make the best decisions with
+		  the right perspective of the market.
+		</p>
+      </section>
+	  
+        <section typeof="sa:MaterialsAndMethods" id="features">
+            <h1>3 Features</h1>
+			<p>
+				The website wishes to provide the following big features :
+			</p>
+            <ul>
+				<li>Rich front end client.</li>
+				<li>Top cryptocurrency value : value ( in $ ), change in 24h ( with percentage ), market share and an evolution graphic.</li>
+				<li>The top chart can be ordered ascending or descending for each information in the table header.</li>
+				<li>Machine Learning prediction of future coin values</li>
+				<li>News about cryptocurrencies</li>
+				<li>Extended details about a specific cryptocurrency with information such as : website, logo, trade value, market cap, volume, price evolution chart, markets and news.</li>
+				<li>Mining pool information.</li>
+				<li>Cryptocurrency training for beginners.</li>
+				<li>OpenAPI specification for developers.</li>
+			</ul>
+				
+            <p>
+				Application requirements :
+            </p>
+            <ul>
+                <li>
+					Ease of use through intuitive and attractive design of the application.	                
+				</li>
+                <li>
+					Robustness and functionality.
+                </li>
+                <li>
+					Performance and scalability.
+                </li>
+                <li>
+					Modern approach of the problem.
+                </li>
+            </ul>
+        </section>
+		
+		<section typeof="sa:MaterialsAndMethods" id="architecture">
+		    <h1>4 Architecture</h1>
+			<p>
+				In this section the application architecture will be presented, as it is a key application feature.
+			</p>
+			<h3>
+				4.1 Microservices architecture
+			</h3>
+			<figure typeof="sa:Image">
+			  <img src="../scholarly/UML/micro-services.png" >	
+			  <figcaption>
+				Microservices architecture ( figure 1 )
+			  </figcaption>
+			</figure>
+			<p>
+				Each microservice will have a specific function, they will all be called via
+				the GatewayAPI, having the following functions:
+			</p>
+			<ul>
+				<li><code>CoinConversion</code> : Will have data about real currency and cryptocurrency and convert from one another.</li>
+				<li><code>News</code> : will pull data from the web that are news, related to the cryptocurrencies</li>
+				<li><code>Plot</code> : using the Prediction microservice, that will predict future coin data based on past information, it's
+					purpose is providing plot data for the front end, based on the filters and preferences set by the latter</li>
+				<li><code>CoinTology</code> : will store the data about the cryptocurrencies, pull it from the web and manage it 
+					so that every service is up to date and has a source of information</li>
+			</ul>
+			<h3>
+				4.2 Class Diagram
+			</h3>
+			<p>
+				For each microservice a class diagram has been made, in order to fully detail the system.
+			</p>
+			<figure typeof="sa:Image">
+			  <img src="../scholarly/UML/coinconvertion class diagram.png" >	
+			  <figcaption>
+				Coin Conversion Class Diagram ( figure 2 )
+			  </figcaption>
+			</figure>
+			<figure typeof="sa:Image">
+			  <img src="..//scholarly/UML//news class diagram.png" >	
+			  <figcaption>
+				News Class Diagram ( figure 3 )
+			  </figcaption>
+			</figure>
+			<figure typeof="sa:Image">
+			  <img src="..//scholarly/UML//classPlot.PNG" >	
+			  <figcaption>
+				Plot Class Diagram ( figure 4 )
+			  </figcaption>
+			</figure>
+			<figure typeof="sa:Image">
+			  <img src="..//scholarly/UML//cointology class diagram.png" >	
+			  <figcaption>
+				Cointology Class Diagram ( figure 5 )
+			  </figcaption>
+			</figure>
+		</section>
+		
+		<section typeof="sa:MaterialsAndMethods" id="use_case">
+		    <h1>5 Use-Case</h1>
+			<p>
+				Describing the use-case, a diagram is best suited, thus possible interactions
+				with the system are described as seen below.
+			</p>
+			<figure typeof="sa:Image">
+			  <img src="..//scholarly/UML//usecase.PNG" >	
+			  <figcaption>
+				Use-Case Diagram ( figure 6 )
+			  </figcaption>
+			</figure>
+		</section>
+		
+		<section typeof="sa:MaterialsAndMethods" id="activity">
+		    <h1>6 Activity Diagram</h1>
+			<p>
+				To further clarify, the activity diaram
+				describes the dynamic aspects of the system,
+				representing the flow from one activity to another.
+			</p>
+			<figure typeof="sa:Image">
+			  <img src="..//scholarly/UML//activity diagram.png" >	
+			  <figcaption>
+				Activity Diagram ( figure 7 )
+			  </figcaption>
+			</figure>
+		</section>
+		
+		<section typeof="sa:MaterialsAndMethods" id="modelling">
+		    <h1>7 Front-End</h1>
+			<p>
+				Besides using the classic 
+				<a property="schema:citation" href="https://www.w3.org/Style/CSS/Overview.en.html">CSS</a> and 
+				<a property="schema:citation" href="https://www.w3.org/html/">HTML</a>
+				it was choosen
+				<a property="schema:citation" href="https://v2.angular.io/docs/ts/latest/">Angular 2</a>, in order to
+				ease the development process and to decouple the "smart" front-end from the cloud based, REST back-end.	
+			</p>
+			<h3>
+				7.1 Mocks
+			</h3>
+			<p>
+				As with every application, the first thing the user sees is the main page, so with use
+				the first page presents the user with the top currency tabel, giving him, from the start,
+				a large number of information.
+			</p>
+			<figure typeof="sa:Image">
+			  <img src="../scholarly/Photos/first_page_top_chart.png" >	
+			  <figcaption>
+				Top currency table ( figure 8 )
+			  </figcaption>
+			</figure>
+			<p>
+				The users can filter the information; they can choose to order every information in the
+				header ascending or descending; they can see the price, market cap, change and a small plot.
+				A nice feature is the fact that they can search for a specific currency.
+			</p>
+			<p>
+				Also visible on the main page is an overall pie chart of the market, that
+				gives the user possible investment perspective on the market.
+			</p>
+			<figure typeof="sa:Image">
+			  <img src="../scholarly/Photos/first_page_distribution.PNG" >	
+			  <figcaption>
+				Distribution in percentage of the top cryptocurrencies ( figure 9 )
+			  </figcaption>
+			</figure>
+			<p>
+				The distribution of the top currencyes is easy to read and takes up
+				little space, bringing insight of the market.
+			</p>
+			<p>
+				By clicking on a specific cryptocurrency ( e.g Bitcoin ) the user will be presented
+				detailed information about it. A wide range of graphs are available for the user
+				to choose.
+			</p>
+			<figure typeof="sa:Image">
+			  <img src="../scholarly/Photos/bitcoin_distribution.PNG" >	
+			  <figcaption>
+				Evolution price graph ( figure 10 )
+			  </figcaption>
+			</figure>
+			<p>
+				The user can select the period of which the graph will show data,
+				in our case it was selected from the first of May until the 12th of May
+				and it was rendered the above graph.
+			</p>
+			<p>
+				If the graph is based on present day, the prediction algorithm will	
+				predict the next days possible values and show them with interrupted lines.
+			</p>
+			<figure typeof="sa:Image">
+			  <img src="../scholarly/Photos/bitcoin_distribution_prediction.PNG" >	
+			  <figcaption>
+				Evolution price graph with prediction ( figure 11 )
+			  </figcaption>
+			</figure>
+			<p>
+				It is assumed the current day is the 12th of May and predicted the 13th of May,
+				as it can pe seen, there is a dotted line from 12th till 13th predicting a growth.
+			</p>
+			<p>
+				Another visualisation tool is the monthly prive average, as seen below.
+			</p>
+			<figure typeof="sa:Image">
+			  <img src="../scholarly/Photos/bitcoin_distribution_mothly.png" >	
+			  <figcaption>
+				Mothly prive average ( figure 12 )
+			  </figcaption>
+			</figure>
+			<p>
+				Just like the graphs presented in the past, the output periods can be changed
+				and the user can choose what to see. The users can also see a price prediction for 
+				the following month if the timeframe consists of the current months.
+			</p>
+			<figure typeof="sa:Image">
+			  <img src="../scholarly/Photos/bitcoin_distribution_mothly_prediction.png" >	
+			  <figcaption>
+				Mothly prive average with prediction ( figure 13 )
+			  </figcaption>
+			</figure>
+			<p>
+				The algorithm estimates an increase, an informs the user with a red
+				rectangle about the prediction.
+			</p>
+			<p>
+				A feature felt is needed is of that of a "Currency Calculator",	
+			</p>
+			<figure typeof="sa:Image">
+			  <img src="../scholarly/Photos/first_page_currency.PNG" >	
+			  <figcaption>
+				Currency Calculator ( figure 14 )
+			  </figcaption>
+			</figure>
+			<p>
+				The value of the fiat currency is pulled by the microservice from
+				<a property="schema:citation" href="http://fixer.io/">Fixer.io</a> and the coin
+				value is pulled from the cointology microservice.
+			</p>
+			<p>
+				Having the most recent news is crucial in the financial system, thus
+				it is necessary that the user gets the latest news regarding the cryptocurrencies. 
+			</p>
+			<p>
+				A special page regarding news has been put in place, as it 
+				can be seen below.
+			</p>
+			<figure typeof="sa:Image">
+			  <img src="../scholarly/Photos/top_news.PNG" >	
+			  <figcaption>
+				Top news ( figure 15 )
+			  </figcaption>
+			</figure>
+			<figure typeof="sa:Image">
+			  <img src="../scholarly/Photos/first_page.PNG" >	
+			  <figcaption>
+				First page complete mock ( figure 16 )
+			  </figcaption> 
+			</figure>
+			<p>
+				The first page embodies all the features described in the 
+				beginning of this section and many more. 
+				As it can be seen it has a feature of "Top currency growth"
+				that shows the top three biggest cryptocurrencies.
+			</p>
+			<figure typeof="sa:Image">
+			  <img src="../scholarly/Photos/coin_p1.PNG" >	
+			  <figcaption>
+				Cryptocurrency page ( figure 17 )
+			  </figcaption>
+			</figure>
+			<p>
+				As it can be seen, the page has all the features explained above.
+				The page shows important information such as the coin website,
+				price evolution, prediction and many more.
+			</p>
+		</section>
+			
+		<section typeof="sa:MaterialsAndMethods" id="back_end">
+		    <h1>8 Back-End</h1>
+			<p>
+				The back-end application will be written in <a property="schema:citation" href="https://www.java.com/en/">Java</a>  
+				using the <a property="schema:citation" href="https://projects.spring.io/spring-boot/">Spring Boot Framework</a>.
+				Also, as a dependency management tool it was chosen <a property="schema:citation" href="https://maven.apache.org/">Maven</a>.
+			</p>    
+			<p>
+				A very important part in the back-end is the <a property="schema:citation" href="https://jena.apache.org/">Apache Jena Framework</a>
+				that has the capabilities for building <a property="schema:citation" href="https://www.w3.org/standards/semanticweb/">Semantic Web</a> and
+				<a property="schema:citation" href="https://www.w3.org/standards/semanticweb/data">Linked Data</a> applications.
+			</p>
+			<p>
+				From Jena it was chosen to use the following functionalities :
+				<ul>
+					<li><a property="schema:citation" href="https://jena.apache.org/documentation/rdf/index.html">RDF API</a></li>
+					<li><a property="schema:citation" href="https://jena.apache.org/documentation/query/index.html">ARQ - SPARQL</a></li>
+					<li><a property="schema:citation" href="https://jena.apache.org/documentation/tdb/index.html">TDB</a></li>
+					<li><a property="schema:citation" href="https://jena.apache.org/documentation/fuseki2/index.html">Fuseki</a></li>
+					<li><a property="schema:citation" href="https://jena.apache.org/documentation/ontology/">Onthology API</a></li>
+					<li><a property="schema:citation" href="https://jena.apache.org/documentation/inference/index.html">Inference API</a></li>	
+				</ul>
+			</p>
+			<p>
+				In order to build a modern application, in the development phase it was chosen a new approach, that of
+				<a property="schema:citation" href="http://microservices.io/">Microservices</a>
+			</p>
+			<p>
+				Each microservice created will register to a service using the 
+				<a property="schema:citation" href="https://spring.io/blog/2015/01/20/microservice-registration-and-discovery-with-spring-cloud-and-netflix-s-eureka">Eureka</a> Service
+				and <a property="schema:citation" href="http://projects.spring.io/spring-cloud/">Spring Cloud</a>.				
+			</p>
+			<p>
+				Each microservice described in the architecture part will serve its sole purpose in the Spring environment,
+				responding to it's REST API, tha API will be helped by a <a property="schema:citation" href="https://sourcemaking.com/design_patterns/proxy">proxy</a> 
+				called <a property="schema:citation" href="https://spring.io/guides/gs/routing-and-filtering/">Netflix Zuul</a>.
+			</p>
+			<p>
+				In order to have consitency across the application data there are two solutions :
+				<ol>
+					<li>Synchronization via event query using <a property="schema:citation" href="https://www.rabbitmq.com/">RabbitMQ</a>.</li>
+					<li>Each microservice will query data via GatewayAPI SPARQL endpoint.</li>
+				</ol>
+			</p>
+			<p>
+				Communication between the GatewayAPI and the microservices will be done via 
+				<a property="schema:citation" href="http://microservices.io/patterns/communication-style/rpi.html">Remote Procedure Invocation ( RPI )</a>.
+				In the back, Spring will convert the url to the url of the microservice and parse the response in order to form the required objects.
+			</p>
+			<p>
+				Cloud deployment will be done in the <a property="schema:citation" href="https://www.cloudfoundry.org">CloudFoundry</a>
+				ecosystem, allowing the application to be used across the globe.
+			</p>
+		</section>
+		
+		<section typeof="sa:MaterialsAndMethods" id="modelling">
+			<h1>9 Modelling And Prediction
+			</h1>
+			<h3>9.1 Prediction</h3>
+			<p>
+				The predictions about the monetary value of the cryptocurrencies will be a feature of the application.
+				These predictions will be made by machine learning algorithms based on the historical data
+				available for these coins.
+		      </p>
+		      <p>
+			      	Our approach is based on artificial neural networks. 
+			</p>
+			<p>
+			    Since the historical data of a coin
+				is a sequence, the algorithm will use a recurrent neural network, which is specialised for sequences,
+				more specifically, a 
+				<a property="schema:citation" href="http://www.bioinf.jku.at/publications/older/2604.pdf">Long Short Term Memory architecture</a>.
+				Neural networks are a great candidate for this task because they have a great
+				degree of generality(they perform well on unseen data), they’re efficient to use and they
+				have architectures specialised for sequences. The more common approaches for this task
+				used vanilla neural networks, as seen in 
+				<a property="schema:citation" href="https://people.cs.pitt.edu/~hashemi/papers/CISIM2010_HBHashemi.pdf">Stock Market Value Prediction Using Neural Networks 
+				</a> and <a property="schema:citation" href="https://people.eecs.berkeley.edu/~akar/IITK_website/EE671/report_stock.pdf">
+				Stock Prediction using Artificial Neural Networks </a>  , but the more recent LSTMs
+				outperformed these models and, considering the form of the input, are more fitted for the
+				task </a> and <a property="schema:citation" href="https://www.ijsr.net/archive/v6i4/ART20172755.pdf">
+				Predicting Stock Prices Using LSTM </a>.
+		    </p>
+			<h3>9.2 Modelling</h3>
+			<p>
+				Studying the <a property="schema:citation" href="https://doacc.github.io/concepts/doacc-owl.html">DOACC</a>
+				and  <a property="schema:citation" href="https://doacc.github.io/concepts/ccy-owl.html">CCY</a>
+				<a property="schema:citation" href="https://www.w3.org/TR/owl-features/">OWL</a>
+				will reveal lots of cryptocurrency related properties, it was chosen to select only the
+				most important ones and they were modelled them in the following scheme.
+			</p>
+			<figure typeof="sa:Image">
+			  <img src="../scholarly/UML/coin_model.PNG" >	
+			  <figcaption>
+				First page complete mock ( figure 18 )
+			  </figcaption>
+			</figure>
+			<p>
+				This eases the class modelling that was done for the 
+				<a property="schema:citation" href="https://app.swaggerhub.com/apis/cipriancus1/CryMa/1.0.0#/">OpenAPI</a>.
+			</p>
+		</section>
+		<section typeof="sa:MaterialsAndMethods" id="conclusion">
+		<h1>10 Conclusion
+		</h1>
+		<p>
+			To conclude the technical paper, CryMa takes advantage of many modern technologies mentioned above
+			( i.e : <a property="schema:citation" href="http://microservices.io/">Microservices</a>,
+			<a property="schema:citation" href="https://www.w3.org/TR/owl-features/">OWL</a> and so on )
+			in order to create a smart application with input from many sources so that users receive
+			realtime information to make the best business decisions.
+		</p>
+		</section>
+
+		<section typeof="sa:MaterialsAndMethods" id="conclusion">
+		<h1>11 Bibliography
+		</h1>
+		<p>	1.<a property="schema:citation" href="http://www.bioinf.jku.at/publications/older/2604.pdf">Hochreiter S. et al, Long Short Term Memory architecture (1997)</a></p>
+		<p>	2.<a property="schema:citation" href="https://people.cs.pitt.edu/~hashemi/papers/CISIM2010_HBHashemi.pdf">Naeini M. P. et al, Stock Market Value Prediction Using Neural Networks (2010)</a></p>
+		<p>	3.<a property="schema:citation" href="https://people.eecs.berkeley.edu/~akar/IITK_website/EE671/report_stock.pdf">Kar A., Stock Prediction using Artificial Neural Networks (2010)</a></p>
+		<p>	4.<a property="schema:citation" href="https://www.ijsr.net/archive/v6i4/ART20172755.pdf">Roondiwala M. et al, Predicting Stock Prices Using LSTM (2017)</a></p>
+		<p>	5.<a property="schema:citation" href="https://jena.apache.org/documentation/rdf/index.html">RDF API</a>				</p>	
+		<p>	6.<a property="schema:citation" href="https://doacc.github.io/concepts/ccy-owl.html">CCY</a></p>
+		<p>	7.<a property="schema:citation" href="https://doacc.github.io/concepts/doacc-owl.html">DOACC</a></p>
+		<p>	8.<a property="schema:citation" href="http://fixer.io/">Fixer.IO</a></p>
+		<p>	9.<a property="schema:citation" href="http://microservices.io/">Microservices</a></p>
+		<p>	10.<a property="schema:citation" href="https://www.bitcoincash.org"/>Bitcoin cash</a></p>
+		<p>	11.<a property="schema:citation" href="https://www.coinbase.com/">CoinBase</a></p>
+		<p>	12.<a property="schema:citation" href="https://www.tradingheroes.com/best-cryptocurrency-to-invest-in/">Strategy Guide: How to Pick the Best Cryptocurrency to Invest In</a></p>
+		<p>	13.<a property="schema:citation" href="http://ericsammons.com/choose-favorite-cryptocurrency/">How to Choose Your Favorite Cryptocurrency</a></p>
+		<p>	14.<a property="schema:citation" href="https://www.buybitcoinworldwide.com/mining/pools/">Bitcoin Mining Pools</a></p>
+		<p>	15.<a property="schema:citation" href="https://bitcoin.org/bitcoin.pdf">Nakamoto S., Bitcoin: A Peer-to-Peer Electronic Cash System (2009)</a></p>
+		</p>
+		</section>
+    </article>
+  </body>
+</html>
