@@ -45,6 +45,11 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		
+		<dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
 	</dependencies>
 	
 	<dependencyManagement>
