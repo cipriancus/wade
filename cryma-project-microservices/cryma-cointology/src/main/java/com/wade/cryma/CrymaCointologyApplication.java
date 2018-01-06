@@ -10,6 +10,9 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 public class CrymaCointologyApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(CrymaCointologyApplication.class, args);
+//		SpringApplication.run(CrymaCointologyApplication.class, args);
+//		System.out.println("Hello!");
+		APICalls apiCalls = new APICalls();
+		apiCalls.getCoins();
 	}
 }
