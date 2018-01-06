@@ -17,10 +17,7 @@
         <module>cryma-prediction</module>
         <module>cryma-zuul-apigateway</module>
         <module>cryma-python-prediction</module>
+        <module>cryma-parent</module>
     </modules>
-
-    <dependencies>
-        
-    </dependencies>
 
 </project>

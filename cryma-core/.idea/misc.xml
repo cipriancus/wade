@@ -15,6 +15,7 @@
         <option value="$PROJECT_DIR$/cryma-prediction/pom.xml" />
         <option value="$PROJECT_DIR$/cryma-python-prediction/pom.xml" />
         <option value="$PROJECT_DIR$/cryma-zuul-apigateway/pom.xml" />
+        <option value="$PROJECT_DIR$/cryma-parent/pom.xml" />
       </list>
     </option>
   </component>

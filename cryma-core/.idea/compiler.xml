@@ -12,6 +12,7 @@
         <module name="cryma-frontend" />
         <module name="cryma-model" />
         <module name="cryma-news" />
+        <module name="cryma-parent" />
         <module name="cryma-prediction" />
         <module name="cryma-python-prediction" />
         <module name="cryma-zuul-apigateway" />
@@ -26,6 +27,7 @@
       <module name="cryma-frontend" target="1.5" />
       <module name="cryma-model" target="1.8" />
       <module name="cryma-news" target="1.8" />
+      <module name="cryma-parent" target="1.8" />
       <module name="cryma-prediction" target="1.8" />
       <module name="cryma-python-prediction" target="1.8" />
       <module name="cryma-zuul-apigateway" target="1.8" />
