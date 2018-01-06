@@ -29,7 +29,6 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-zuul</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>com.wade.cryma</groupId>
 			<artifactId>cryma-parent</artifactId>

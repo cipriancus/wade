@@ -1,5 +1,7 @@
 package com.wade.cryma.news.manager.impl;
 
-public class NewsManager {
+import com.wade.cryma.news.manager.INewsManager;
+
+public class NewsManager implements INewsManager{
 
 }
