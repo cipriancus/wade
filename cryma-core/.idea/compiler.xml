@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="cryma-coin-conversion" />
+        <module name="cryma-cointology" />
+        <module name="cryma-eureka-service" />
+        <module name="cryma-frontend" />
+        <module name="cryma-model" />
+        <module name="cryma-news" />
+        <module name="cryma-prediction" />
+        <module name="cryma-python-prediction" />
+        <module name="cryma-zuul-apigateway" />
+        <module name="frontend" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="cryma-coin-conversion" target="1.8" />
+      <module name="cryma-cointology" target="1.8" />
+      <module name="cryma-core" target="1.5" />
+      <module name="cryma-eureka-service" target="1.8" />
+      <module name="cryma-frontend" target="1.5" />
+      <module name="cryma-model" target="1.8" />
+      <module name="cryma-news" target="1.8" />
+      <module name="cryma-prediction" target="1.8" />
+      <module name="cryma-python-prediction" target="1.8" />
+      <module name="cryma-zuul-apigateway" target="1.8" />
+      <module name="frontend" target="1.6" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
