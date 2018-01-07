@@ -1,29 +1,35 @@
+spring:
+   application:
+      name: cryma-zuul-apigateway
+
 server:
-  port: 9090
+  port: 8081
 
 eureka:
   client:
-    serviceUrl:
-      defaultZone: http://127.0.0.1:8761/eureka/
+      serviceUrl:
+        defaultZone: http://localhost:8080/eureka/
 
 zuul:
-  #Service will be mapped under the /api URI
   prefix: /api
-#  Uncomment to disable auto-registering all services read from Eureka
-#  ignoredServices: '*'
   routes:
-    test:
-      path: /redirect/**
-      url: http://google.com
-    customer-by-address:
-      path: /customer-by-address/**
-      url: http://localhost:9098
     customer-by-service:
-      path: /customer-by-service/**
-      serviceId: CUSTOMER-SERVICE
-    static:
-      path: /static/**
+      path: /cryma-python-prediction/**
+      serviceId: cryma-python-prediction
 
-spring:
-  application:
-    name: cryma-zuul-apigateway
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 100000
+        timeout:
+          enabled: false
+
+ribbon:
+  ReadTimeout: 10000
+  ConnectTimeout: 10000
+  maxAutoRetries: 1
+  MaxAutoRetriesNextServer: 2
+  OkToRetryOnAllOperations: true
