@@ -13,9 +13,12 @@ eureka:
 zuul:
   prefix: /api
   routes:
-    customer-by-service:
+    cryma-python-prediction:
       path: /cryma-python-prediction/**
       serviceId: cryma-python-prediction
+    cryma-prediction:
+      path: /cryma-prediction/**
+      serviceId: cryma-prediction
 
 hystrix:
   command:
