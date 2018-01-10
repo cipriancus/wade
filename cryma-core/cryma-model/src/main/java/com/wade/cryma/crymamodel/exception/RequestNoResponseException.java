@@ -1,4 +1,4 @@
-package com.wade.cryma.crymapythonprediction.exception;
+package com.wade.cryma.crymamodel.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;

@@ -3,7 +3,7 @@ spring:
       name: cryma-zuul-apigateway
 
 server:
-  port: 8081
+  port: 8082
 
 eureka:
   client:
@@ -19,6 +19,9 @@ zuul:
     cryma-prediction:
       path: /cryma-prediction/**
       serviceId: cryma-prediction
+    cryma-plot:
+      path: /cryma-plot/**
+      serviceId: cryma-plot
 
 hystrix:
   command:

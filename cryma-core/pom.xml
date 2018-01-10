@@ -18,6 +18,7 @@
         <module>cryma-zuul-apigateway</module>
         <module>cryma-python-prediction</module>
         <module>cryma-parent</module>
+        <module>cryma-plot</module>
     </modules>
 
 </project>

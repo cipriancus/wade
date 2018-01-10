@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/cryma-model/cryma-model.iml" filepath="$PROJECT_DIR$/cryma-model/cryma-model.iml" />
       <module fileurl="file://$PROJECT_DIR$/cryma-news/cryma-news.iml" filepath="$PROJECT_DIR$/cryma-news/cryma-news.iml" />
       <module fileurl="file://$PROJECT_DIR$/cryma-parent/cryma-parent.iml" filepath="$PROJECT_DIR$/cryma-parent/cryma-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cryma-plot/cryma-plot.iml" filepath="$PROJECT_DIR$/cryma-plot/cryma-plot.iml" />
       <module fileurl="file://$PROJECT_DIR$/cryma-prediction/cryma-prediction.iml" filepath="$PROJECT_DIR$/cryma-prediction/cryma-prediction.iml" />
       <module fileurl="file://$PROJECT_DIR$/cryma-python-prediction/cryma-python-prediction.iml" filepath="$PROJECT_DIR$/cryma-python-prediction/cryma-python-prediction.iml" />
       <module fileurl="file://$PROJECT_DIR$/cryma-zuul-apigateway/cryma-zuul-apigateway.iml" filepath="$PROJECT_DIR$/cryma-zuul-apigateway/cryma-zuul-apigateway.iml" />

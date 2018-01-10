@@ -1,6 +1,6 @@
 package com.wade.cryma.crymapythonprediction.endpoint;
 
-import com.wade.cryma.crymapythonprediction.exception.RequestNoResponseException;
+import com.wade.cryma.crymamodel.exception.RequestNoResponseException;
 import com.wade.cryma.crymapythonprediction.library.LibraryRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
