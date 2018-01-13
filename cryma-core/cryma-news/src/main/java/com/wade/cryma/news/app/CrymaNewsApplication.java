@@ -2,7 +2,9 @@ package com.wade.cryma.news.app;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.context.annotation.ComponentScan;
 
 @EnableDiscoveryClient
@@ -10,7 +12,7 @@ import org.springframework.context.annotation.ComponentScan;
 @ComponentScan("com.wade.cryma.news.*")
 public class CrymaNewsApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(CrymaNewsApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(CrymaNewsApplication.class, args);
+    }
 }

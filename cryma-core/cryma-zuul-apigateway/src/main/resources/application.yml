@@ -22,6 +22,15 @@ zuul:
     cryma-plot:
       path: /cryma-plot/**
       serviceId: cryma-plot
+    cryma-news:
+      path: /cryma-news/**
+      serviceId: cryma-news
+    cryma-cointology:
+      path: /cryma-cointology/**
+      serviceId: cryma-cointology
+    cryma-conversion:
+      path: /cryma-conversion/**
+      serviceId: cryma-conversion
 
 hystrix:
   command:

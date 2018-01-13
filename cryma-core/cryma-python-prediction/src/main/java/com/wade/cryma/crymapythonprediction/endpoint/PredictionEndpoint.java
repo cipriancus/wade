@@ -19,8 +19,8 @@ public class PredictionEndpoint {
     private LibraryRequest libraryRequest;
 
     @RequestMapping(method = RequestMethod.GET, path = "predict/{coinId}",produces = "application/json")
-    public Map<String,List<String>> predict(@PathVariable(value = "coinId", required = true) String coinId) {
-        Map<String,List<String>> predictionResult = libraryRequest.sendLibraryRequest(coinId);
+    public Map<String,List<String>> predict(@PathVariable(value = "coinId") String coinId, @RequestParam(value = "startDate") String startDate, @RequestParam(value = "endDate") String endDate) {
+        Map<String,List<String>> predictionResult = libraryRequest.sendLibraryRequest(coinId,startDate,endDate);
 
         if (predictionResult != null && predictionResult.size() > 0) {
             return predictionResult;

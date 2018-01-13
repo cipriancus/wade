@@ -13,27 +13,20 @@ public class TopCoin {
     public String name;
 
     @Column(name = "MARKET_CAP")
-    public long marketCap;
+    public float marketCap;
 
     @Column(name = "PRICE")
-    public long price;
+    public float price;
 
     @Column(name = "SUPPLY")
-    public long supply;
+    public float supply;
 
     @Column(name = "VOLUME")
-    public long volume;
-    
-    @Column(name = "CHANGE")
-    public long change;
+    public float volume;
 
-    public long getId() {
-        return id;
-    }
+    @Column(name = "CHANGEVALUE")
+    public float change;
 
-    public void setId(long id) {
-        this.id = id;
-    }
 
     public String getName() {
         return name;
@@ -43,44 +36,51 @@ public class TopCoin {
         this.name = name;
     }
 
-    public long getMarketCap() {
+    public float getMarketCap() {
         return marketCap;
     }
 
-    public void setMarketCap(long marketCap) {
+    public void setMarketCap(float marketCap) {
         this.marketCap = marketCap;
     }
 
-    public long getPrice() {
+    public float getPrice() {
         return price;
     }
 
-    public void setPrice(long price) {
+    public void setPrice(float price) {
         this.price = price;
     }
 
-    public long getSupply() {
+    public float getSupply() {
         return supply;
     }
 
-    public void setSupply(long supply) {
+    public void setSupply(float supply) {
         this.supply = supply;
     }
 
-    public long getVolume() {
+    public float getVolume() {
         return volume;
     }
 
-    public void setVolume(long volume) {
+    public void setVolume(float volume) {
         this.volume = volume;
     }
 
-    public long getChange() {
+    public float getChange() {
         return change;
     }
 
-    public void setChange(long change) {
+    public void setChange(float change) {
         this.change = change;
     }
 
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
 }

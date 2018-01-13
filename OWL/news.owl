@@ -1,0 +1,780 @@
+@prefix : <http://iptc.org/std/rnews/2011-10-07#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://iptc.org/std/rNews/2011-10-07#> .
+
+<http://iptc.org/std/rNews/2011-10-07#> rdf:type owl:Ontology ;
+                                         rdfs:comment "The IPTC rNews Ontology"@en ;
+                                         owl:versionInfo "1.0" .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://iptc.org/std/rnews/2011-10-07#about
+:about rdf:type owl:ObjectProperty ;
+       rdfs:domain :NewsItem ;
+       rdfs:range :Concept ;
+       rdfs:comment "Indicates that the NewsItem is specifically about a concept."@en ;
+       owl:versionInfo "1.0" .
+
+
+###  http://iptc.org/std/rnews/2011-10-07#accountablePerson
+:accountablePerson rdf:type owl:ObjectProperty ;
+                   rdfs:domain :NewsItem ;
+                   rdfs:range :Person ;
+                   rdfs:comment "Specifies the person that is legally accountable for the NewsItem."@en ;
+                   owl:versionInfo "1.0" .
+
+
+###  http://iptc.org/std/rnews/2011-10-07#address
+:address rdf:type owl:ObjectProperty ;
+         rdfs:domain :Organization ,
+                     :Person ,
+                     :Place ;
+         rdfs:range :PostalAddress ;
+         rdfs:comment "A real-world postal address associated with this entity."@en ;
+         owl:versionInfo "1.0"@en .
+
+
+###  http://iptc.org/std/rnews/2011-10-07#associatedArticle
+:associatedArticle rdf:type owl:ObjectProperty ;
+                   owl:inverseOf :associatedMedia ;
+                   rdfs:domain :AudioObject ,
+                               :ImageObject ,
+                               :VideoObject ;
+                   rdfs:range :Article ;
+                   rdfs:comment "An Article associated with the Media Object."@en ;
+                   owl:versionInfo "1.0" .
+
+
+###  http://iptc.org/std/rnews/2011-10-07#associatedMedia
+:associatedMedia rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Article ;
+                 rdfs:range :AudioObject ,
+                            :ImageObject ,
+                            :VideoObject ;
+                 rdfs:comment "An  image or audio or video object associated with a NewsItem."@en ;
+                 owl:versionInfo "1.0" .
+
+
+###  http://iptc.org/std/rnews/2011-10-07#comment
+:comment rdf:type owl:ObjectProperty ;
+         owl:inverseOf :discusses ;
+         rdfs:domain :NewsItem ;
+         rdfs:range :UserComment ;
+         rdfs:comment "Comments on this NewsItem, typically from readers/users."@en ;
+         owl:versionInfo "1.0" .
+
+
+###  http://iptc.org/std/rnews/2011-10-07#contributor
+:contributor rdf:type owl:ObjectProperty ;
+             rdfs:domain :NewsItem ;
+             rdfs:range :Organization ,
+                        :Person ;
+             rdfs:comment "A secondary contributor to the NewsItem."@en ;
+             owl:versionInfo "1.0" .
+
+
+###  http://iptc.org/std/rnews/2011-10-07#copyrightHolder
+:copyrightHolder rdf:type owl:ObjectProperty ;
+                 rdfs:domain :NewsItem ;
+                 rdfs:range :Organization ,
+                            :Person ;
+                 rdfs:comment "The entity holding the legal copyright to the NewsItem."@en ;
+                 owl:versionInfo "1.0" .
+
+
+###  http://iptc.org/std/rnews/2011-10-07#creator
+:creator rdf:type owl:ObjectProperty ;
+         rdfs:domain :NewsItem ,
+                     :UserComment ;
+         rdfs:comment "The author (creator) of the NewsItem or Comment."@en ;
+         owl:versionInfo "1.0" .
+
+
+###  http://iptc.org/std/rnews/2011-10-07#discusses
+:discusses rdf:type owl:ObjectProperty ;
+           rdfs:domain :UserComment ;
+           rdfs:range :NewsItem ;
+           rdfs:comment "Specifies the NewsItem associated with this Comment."@en ;
+           owl:versionInfo "1.0" .
+
+
+###  http://iptc.org/std/rnews/2011-10-07#editor
+:editor rdf:type owl:ObjectProperty ;
+        rdfs:domain :NewsItem ;
+        rdfs:range :Organization ,
+                   :Person ;
+        rdfs:comment "Specifies the person or organization who edited the NewsItem."@en ;
+        owl:versionInfo "1.0" .
+
+
+###  http://iptc.org/std/rnews/2011-10-07#geoCoordinates
+:geoCoordinates rdf:type owl:ObjectProperty ;
+                rdfs:domain :Place ;
+                rdfs:range :GeoCoordinates ;
+                rdfs:comment "The geo coordinates of the location."@en ;
+                owl:versionInfo "1.0" .
+
+
+###  http://iptc.org/std/rnews/2011-10-07#mentions
+:mentions rdf:type owl:ObjectProperty ;
+          rdfs:domain :NewsItem ;
+          rdfs:range :Concept ;
+          rdfs:comment "Indicates that the NewsItem contains a reference to, but is not necessarily about a concept."@en ;
+          owl:versionInfo "1.0" .
+
+
+###  http://iptc.org/std/rnews/2011-10-07#provider
+:provider rdf:type owl:ObjectProperty ;
+          rdfs:domain :NewsItem ;
+          rdfs:range :Organization ,
+                     :Person ;
+          rdfs:comment "Specifies the person or organization that distributed the NewsItem.  "@en ;
+          owl:versionInfo "1.0" .
+
+
+###  http://iptc.org/std/rnews/2011-10-07#sourceOrganization
+:sourceOrganization rdf:type owl:ObjectProperty ;
+                    rdfs:domain :NewsItem ;
+                    rdfs:range :Organization ;
+                    rdfs:comment "The organization on whose behalf the creator was working."@en ;
+                    owl:versionInfo "1.0" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://iptc.org/std/rNews/2011-10-07#postOfficeBoxNumber
+<http://iptc.org/std/rNews/2011-10-07#postOfficeBoxNumber> rdf:type owl:DatatypeProperty ;
+                                                           rdfs:domain :PostalAddress ;
+                                                           rdfs:range xsd:string ;
+                                                           rdfs:comment "A post office box associated with this postal address [optional]."@en ;
+                                                           owl:versionInfo "1.0" .
+
+
+###  http://iptc.org/std/rnews/2011-10-07#additionalName
+:additionalName rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Person ;
+                rdfs:range xsd:string ;
+                rdfs:comment "The middle name portion of a full name for a person."@en ;
+                owl:versionInfo "1.0" .
+
+
+###  http://iptc.org/std/rnews/2011-10-07#addressCountry
+:addressCountry rdf:type owl:DatatypeProperty ;
+                rdfs:domain :PostalAddress ;
+                rdfs:range xsd:string ;
+                rdfs:comment "A country, part of the address. Implementors are encouraged (but not required) to use ISO 3166-1 alpha-2 country codes."@en ;
+                owl:versionInfo "1.0" .
+
+
+###  http://iptc.org/std/rnews/2011-10-07#addressLocality
+:addressLocality rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :PostalAddress ;
+                 rdfs:range xsd:string ;
+                 rdfs:comment "A city/town/village etc. part of the address."@en ;
+                 owl:versionInfo "1.0" .
+
+
+###  http://iptc.org/std/rnews/2011-10-07#addressRegion
+:addressRegion rdf:type owl:DatatypeProperty ;
+               rdfs:domain :PostalAddress ;
+               rdfs:range xsd:string ;
+               rdfs:comment "A subdivision of a country, part of the address."@en ;
+               owl:versionInfo "1.0" .
+
+
+###  http://iptc.org/std/rnews/2011-10-07#alternativeHeadline
+:alternativeHeadline rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :NewsItem ;
+                     rdfs:range xsd:string ;
+                     rdfs:comment "A secondary headline or title of a� NewsItem."@en ;
+                     owl:versionInfo "1.0" .
+
+
+###  http://iptc.org/std/rnews/2011-10-07#articleBody
+:articleBody rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Article ;
+             rdfs:range xsd:string ;
+             rdfs:comment "The main text of the article."@en ;
+             owl:versionInfo "1.0" .
+
+
+###  http://iptc.org/std/rnews/2011-10-07#articleSection
+:articleSection rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Article ;
+                rdfs:range xsd:anyURI ,
+                           xsd:string ;
+                rdfs:comment "The top-level classification of the content by the publishing organization."@en ;
+                owl:versionInfo "1.0" .
+
+
+###  http://iptc.org/std/rnews/2011-10-07#box
+:box rdf:type owl:DatatypeProperty ;
+     rdfs:domain :GeoCoordinates ;
+     rdfs:range xsd:string ;
+     rdfs:comment "A box is the area enclosed by the rectangle formed by two points. The first point is the lower corner, the second point is the upper corner. A box is expressed as two points separated by a space character."@en ;
+     owl:versionInfo "1.0" .
+
+
+###  http://iptc.org/std/rnews/2011-10-07#circle
+:circle rdf:type owl:DatatypeProperty ;
+        rdfs:domain :GeoCoordinates ;
+        rdfs:range xsd:string ;
+        rdfs:comment "A circle is the circular region of a specified radius centered at a specified latitude and longitude. A circle is expressed as a pair followed by a radius in meters."@en ;
+        owl:versionInfo "1.0" .
+
+
+###  http://iptc.org/std/rnews/2011-10-07#commentText
+:commentText rdf:type owl:DatatypeProperty ;
+             rdfs:domain :UserComment ;
+             rdfs:range xsd:string ;
+             rdfs:comment "The text of the comment."@en ;
+             owl:versionInfo "1.0" .
+
+
+###  http://iptc.org/std/rnews/2011-10-07#commentTime
+:commentTime rdf:type owl:DatatypeProperty ;
+             rdfs:domain :UserComment ;
+             rdfs:range xsd:dateTime ;
+             rdfs:comment "The date and time at which the comment was left."@en ;
+             owl:versionInfo "1.0" .
+
+
+###  http://iptc.org/std/rnews/2011-10-07#copyrightNotice
+:copyrightNotice rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :NewsItem ;
+                 rdfs:range xsd:anyURI ,
+                            xsd:string ;
+                 rdfs:comment "Any necessary copyright notice for claiming the intellectual property for the NewsItem."@en ;
+                 owl:versionInfo "1.0" .
+
+
+###  http://iptc.org/std/rnews/2011-10-07#copyrightYear
+:copyrightYear rdf:type owl:DatatypeProperty ;
+               rdfs:domain :NewsItem ;
+               rdfs:range xsd:string ;
+               rdfs:comment "The year during which the claimed copyright was first asserted."@en ;
+               owl:versionInfo "1.0" .
+
+
+###  http://iptc.org/std/rnews/2011-10-07#dateCreated
+:dateCreated rdf:type owl:DatatypeProperty ;
+             rdfs:domain :NewsItem ;
+             rdfs:range xsd:dateTime ;
+             rdfs:comment "The date (and optionally time) on which the NewsItem was created."@en ;
+             owl:versionInfo "1.0" .
+
+
+###  http://iptc.org/std/rnews/2011-10-07#dateModified
+:dateModified rdf:type owl:DatatypeProperty ;
+              rdfs:domain :NewsItem ;
+              rdfs:range xsd:dateTime ;
+              rdfs:comment "The date (and optionally time) on which the NewsItem was most recently modified."@en ;
+              owl:versionInfo "1.0" .
+
+
+###  http://iptc.org/std/rnews/2011-10-07#datePublished
+:datePublished rdf:type owl:DatatypeProperty ;
+               rdfs:domain :NewsItem ;
+               rdfs:range xsd:dateTime ;
+               rdfs:comment "The date (and optionally time) on which the NewsItem was first made available online."@en ;
+               owl:versionInfo "1.0" .
+
+
+###  http://iptc.org/std/rnews/2011-10-07#dateline
+:dateline rdf:type owl:DatatypeProperty ;
+          rdfs:domain :NewsItem ;
+          rdfs:range xsd:string ;
+          rdfs:comment "The location where the NewsItem was produced."@en ;
+          owl:versionInfo "1.0" .
+
+
+###  http://iptc.org/std/rnews/2011-10-07#description
+:description rdf:type owl:DatatypeProperty ;
+             rdfs:domain :NewsItem ;
+             rdfs:range xsd:string ;
+             rdfs:comment "A free-form textual description of the NewsItem. Publishers may find it helpful to view this as the \"caption\" for a Media object."@en ;
+             owl:versionInfo "1.0" .
+
+
+###  http://iptc.org/std/rnews/2011-10-07#discussionUrl
+:discussionUrl rdf:type owl:DatatypeProperty ;
+               rdfs:domain :NewsItem ;
+               rdfs:range xsd:anyURI ,
+                          xsd:string ;
+               rdfs:comment "A link to the page containing the comments relating to this NewsItem."@en ;
+               owl:versionInfo "1.0" .
+
+
+###  http://iptc.org/std/rnews/2011-10-07#duration
+:duration rdf:type owl:DatatypeProperty ;
+          rdfs:domain :AudioObject ,
+                      :VideoObject ;
+          rdfs:range xsd:string ;
+          rdfs:comment "The duration of the audio or video object in ISO 8601 date format. (see also http://en.wikipedia.org/wiki/ISO_8601)"@en .
+
+
+###  http://iptc.org/std/rnews/2011-10-07#elevation
+:elevation rdf:type owl:DatatypeProperty ;
+           rdfs:domain :GeoCoordinates ;
+           rdfs:range xsd:string ;
+           rdfs:comment "The elevation is the height above sea level in meters of a specified point. An Elevation attribute must be specified in conjunction with a Point attribute."@en ;
+           owl:versionInfo "1.0" .
+
+
+###  http://iptc.org/std/rnews/2011-10-07#email
+:email rdf:type owl:DatatypeProperty ;
+       rdfs:domain :PostalAddress ;
+       rdfs:range xsd:string ;
+       rdfs:comment "An email address."@en ;
+       owl:versionInfo "1.0" .
+
+
+###  http://iptc.org/std/rnews/2011-10-07#encodingFormat
+:encodingFormat rdf:type owl:DatatypeProperty ;
+                rdfs:domain :AudioObject ,
+                            :ImageObject ,
+                            :VideoObject ;
+                rdfs:range xsd:anyURI ,
+                           xsd:string ;
+                rdfs:comment "The encoding of a media asset. The encoding must be drawn from the IPTC NewsCodes for Images, Audio codecs or Video codecs available at http://cv.iptc.org/newscodes/format/, http://cv.iptc.org/newscodes/audiocodec/, and http://cv.iptc.org/newscodes/videocodec/ respectively."@en ;
+                owl:versionInfo "1.0" .
+
+
+###  http://iptc.org/std/rnews/2011-10-07#familyName
+:familyName rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Person ;
+            rdfs:range xsd:string ;
+            rdfs:comment "Family name. In the U.S., this is the last name of an individual."@en ;
+            owl:versionInfo "1.0" .
+
+
+###  http://iptc.org/std/rnews/2011-10-07#faxNumber
+:faxNumber rdf:type owl:DatatypeProperty ;
+           rdfs:domain :PostalAddress ;
+           rdfs:range xsd:string ;
+           rdfs:comment "An international fax number."@en ;
+           owl:versionInfo "1.0" .
+
+
+###  http://iptc.org/std/rnews/2011-10-07#featureCode
+:featureCode rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Place ;
+             rdfs:range xsd:string ;
+             rdfs:comment "A code indicating the type of the geographic entity specified by a location object. The IPTC suggests (but does not require) that implementors of rNews populate this field with values drawn from the controlled vocabulary of feature codes provided by geonames.org."@en ;
+             owl:versionInfo "1.0" .
+
+
+###  http://iptc.org/std/rnews/2011-10-07#genre
+:genre rdf:type owl:DatatypeProperty ;
+       rdfs:domain :NewsItem ;
+       rdfs:range xsd:anyURI ,
+                  xsd:string ;
+       rdfs:comment "A term describing the general editorial category of the article. Implementors are encouraged (but not required) to draw values for type of material from the IPTC Genre subject headings at http://cv.iptc.org/newscodes/genre/."@en ;
+       owl:versionInfo "1.0" .
+
+
+###  http://iptc.org/std/rnews/2011-10-07#givenName
+:givenName rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Person ;
+           rdfs:range xsd:string ;
+           rdfs:comment "Given name. In the U.S., this is the first name of an individual. Also used if the individual has only one name."@en ;
+           owl:versionInfo "1.0" .
+
+
+###  http://iptc.org/std/rnews/2011-10-07#headline
+:headline rdf:type owl:DatatypeProperty ;
+          rdfs:domain :NewsItem ;
+          rdfs:range xsd:string ;
+          rdfs:comment "The main (or only) headline or title for a NewsItem"@en ;
+          owl:versionInfo "1.0" .
+
+
+###  http://iptc.org/std/rnews/2011-10-07#height
+:height rdf:type owl:DatatypeProperty ;
+        rdfs:domain :ImageObject ,
+                    :VideoObject ;
+        rdfs:range xsd:string ;
+        rdfs:comment "Height of the media object."@en ;
+        owl:versionInfo "1.0" .
+
+
+###  http://iptc.org/std/rnews/2011-10-07#honorificPrefix
+:honorificPrefix rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Person ;
+                 rdfs:range xsd:string ;
+                 rdfs:comment "An honorific prefix preceding a person's name such as Dr/Mrs/Mr."@en ;
+                 owl:versionInfo "1.0" .
+
+
+###  http://iptc.org/std/rnews/2011-10-07#honorificSuffix
+:honorificSuffix rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Person ;
+                 rdfs:range xsd:string ;
+                 rdfs:comment "An honorific suffix following a person's name such as M.D./PhD/MSCSW."@en ;
+                 owl:versionInfo "1.0" .
+
+
+###  http://iptc.org/std/rnews/2011-10-07#identifier
+:identifier rdf:type owl:DatatypeProperty ;
+            rdfs:domain :NewsItem ;
+            rdfs:range xsd:string ;
+            rdfs:comment "An identifier for a NewsItem. This ID can be generated by the underlying publishing system. No two distinct NewsItems from the same site should be assigned the same id, but a single NewsItem may have multiple ids."@en ;
+            owl:versionInfo "1.0" .
+
+
+###  http://iptc.org/std/rnews/2011-10-07#inLanguage
+:inLanguage rdf:type owl:DatatypeProperty ;
+            rdfs:domain :NewsItem ;
+            rdfs:range xsd:string ;
+            rdfs:comment "A language used by the news content specified according to IETF BCP 47 at http://tools.ietf.org/html/bcp47."@en ;
+            owl:versionInfo "1.0" .
+
+
+###  http://iptc.org/std/rnews/2011-10-07#interactionCount
+:interactionCount rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :NewsItem ;
+                  rdfs:range xsd:anyURI ,
+                             xsd:string ;
+                  rdfs:comment "A count of a specific user interactions with this item—for example,� 20 UserLikes,� 5 UserComments, or� 300 UserDownloads.�  It is suggested (but not required) that users draw the interaction type from the controlled vocabulary provided by schema.org at: http://schema.org/UserInteraction"@en ;
+                  owl:versionInfo "1.0" .
+
+
+###  http://iptc.org/std/rnews/2011-10-07#line
+:line rdf:type owl:DatatypeProperty ;
+      rdfs:domain :GeoCoordinates ;
+      rdfs:range xsd:string ;
+      rdfs:comment "A line is a point-to-point path consisting of two or more points. A line is expressed as a series of two or more point objects separated by space."@en ;
+      owl:versionInfo "1.0" .
+
+
+###  http://iptc.org/std/rnews/2011-10-07#name
+:name rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Concept ;
+      rdfs:range xsd:string ;
+      rdfs:comment "The natural language name for a concept."@en ;
+      owl:versionInfo "1.0" .
+
+
+###  http://iptc.org/std/rnews/2011-10-07#point
+:point rdf:type owl:DatatypeProperty ;
+       rdfs:domain :GeoCoordinates ;
+       rdfs:range xsd:string ;
+       rdfs:comment "A point is a physical location on Earth. A point is expressed as a latitude and longitude separated by a space character.  Points should be expressed in decimal as laid out in the WGS84 specification ()."@en ;
+       owl:versionInfo "1.0" .
+
+
+###  http://iptc.org/std/rnews/2011-10-07#polygon
+:polygon rdf:type owl:DatatypeProperty ;
+         rdfs:domain :GeoCoordinates ;
+         rdfs:range xsd:string ;
+         rdfs:comment "A polygon is the area enclosed by a point-to-point path for which the starting and ending points are the same. A polygon is expressed as a series of four or more space-delimited points where the first and final points are identical."@en ;
+         owl:versionInfo "1.0" .
+
+
+###  http://iptc.org/std/rnews/2011-10-07#postalCode
+:postalCode rdf:type owl:DatatypeProperty ;
+            rdfs:domain :PostalAddress ;
+            rdfs:range xsd:string ;
+            rdfs:comment "A postal code, part of the address."@en ;
+            owl:versionInfo "1.0" .
+
+
+###  http://iptc.org/std/rnews/2011-10-07#printColumn
+:printColumn rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Article ;
+             rdfs:range xsd:integer ;
+             rdfs:comment "The number of the column in which the article appears in the print edition."@en ;
+             owl:versionInfo "1.0" .
+
+
+###  http://iptc.org/std/rnews/2011-10-07#printEdition
+:printEdition rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Article ;
+              rdfs:range xsd:anyURI ,
+                         xsd:string ;
+              rdfs:comment "The edition of the print product in which the article appears. Implementors wishing to link to their own controlled vocabularies for this property may wish to specify this property as a URI."@en ;
+              owl:versionInfo "1.0" .
+
+
+###  http://iptc.org/std/rnews/2011-10-07#printPage
+:printPage rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Article ;
+           rdfs:range xsd:string ;
+           rdfs:comment "If this article appears in print, this property indicates the name of the page on which the article is found. Please note that this field is intended for the exact page name (e.g. \"A5\", \"B18\")."@en ;
+           owl:versionInfo "1.0" .
+
+
+###  http://iptc.org/std/rnews/2011-10-07#printSection
+:printSection rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Article ;
+              rdfs:range xsd:anyURI ,
+                         xsd:string ;
+              rdfs:comment "If this article appears in print, this property indicates the print section in which the article appeared. Implementors wishing to link to their own controlled vocabularies for this property may wish to specify this property as a URI."@en ;
+              owl:versionInfo "1.0" .
+
+
+###  http://iptc.org/std/rnews/2011-10-07#publishingPrinciples
+:publishingPrinciples rdf:type owl:DatatypeProperty ;
+                      rdfs:domain :NewsItem ;
+                      rdfs:range xsd:anyURI ,
+                                 xsd:string ;
+                      rdfs:comment "Link to page describing the editorial principles of the organization primarily responsible for the creation or publication of the NewsItem."@en ;
+                      owl:versionInfo "1.0" .
+
+
+###  http://iptc.org/std/rnews/2011-10-07#replyToUrl
+:replyToUrl rdf:type owl:DatatypeProperty ;
+            rdfs:domain :UserComment ;
+            rdfs:range xsd:anyURI ;
+            rdfs:comment "The URL at which a reply may be posted to the specified comment."@en ;
+            owl:versionInfo "1.0" .
+
+
+###  http://iptc.org/std/rnews/2011-10-07#streetAddress
+:streetAddress rdf:type owl:DatatypeProperty ;
+               rdfs:domain :PostalAddress ;
+               rdfs:range xsd:string ;
+               rdfs:comment "A line of address information, in the format expected by a recipient postal service. City, country area, country and postal code are expressed separately."@en ;
+               owl:versionInfo "1.0" .
+
+
+###  http://iptc.org/std/rnews/2011-10-07#telephone
+:telephone rdf:type owl:DatatypeProperty ;
+           rdfs:domain :PostalAddress ;
+           rdfs:range xsd:string ;
+           rdfs:comment "An international phone number."@en ;
+           owl:versionInfo "1.0" .
+
+
+###  http://iptc.org/std/rnews/2011-10-07#thumbnailUrl
+:thumbnailUrl rdf:type owl:DatatypeProperty ;
+              rdfs:domain :NewsItem ;
+              rdfs:range xsd:anyURI ;
+              rdfs:comment "A thumbnail image relevant to the content."@en ;
+              owl:versionInfo "1.0" .
+
+
+###  http://iptc.org/std/rnews/2011-10-07#tickerSymbol
+:tickerSymbol rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Organization ;
+              rdfs:range xsd:string ;
+              rdfs:comment "The exchange traded instrument associated with an Organization object. The tickerSymbol is expressed as an exchange and an instrument name separated by a space character. The IPTC suggests (but does not require) that implementors of rNews select the value for the exchange component of the tickerSymbol attribute from the controlled vocabulary of Market Identifier Codes (MIC) specified in ISO 15022."@en ;
+              owl:versionInfo "1.0" .
+
+
+###  http://iptc.org/std/rnews/2011-10-07#transcript
+:transcript rdf:type owl:DatatypeProperty ;
+            rdfs:domain :AudioObject ,
+                        :VideoObject ;
+            rdfs:range xsd:anyURI ,
+                       xsd:string ;
+            rdfs:comment "The transcript of this Video or Audio object"@en ;
+            owl:versionInfo "1.0" .
+
+
+###  http://iptc.org/std/rnews/2011-10-07#url
+:url rdf:type owl:DatatypeProperty ;
+     rdfs:domain :PostalAddress ;
+     rdfs:range xsd:anyURI ;
+     rdfs:comment "A reference to a web resource."@en ;
+     owl:versionInfo "1.0" .
+
+
+###  http://iptc.org/std/rnews/2011-10-07#usageTerms
+:usageTerms rdf:type owl:DatatypeProperty ;
+            rdfs:domain :NewsItem ;
+            rdfs:range xsd:anyURI ,
+                       xsd:string ;
+            rdfs:comment "A human- or machine-readable statement about the usage terms pertaining to the NewsItem."@en ;
+            owl:versionInfo "1.0" .
+
+
+###  http://iptc.org/std/rnews/2011-10-07#version
+:version rdf:type owl:DatatypeProperty ;
+         rdfs:domain :NewsItem ;
+         rdfs:range xsd:integer ;
+         rdfs:comment "The version of the NewsItem."@en ;
+         owl:versionInfo "1.0" .
+
+
+###  http://iptc.org/std/rnews/2011-10-07#width
+:width rdf:type owl:DatatypeProperty ;
+       rdfs:domain :ImageObject ,
+                   :VideoObject ;
+       rdfs:range xsd:string ;
+       rdfs:comment "Width of the media object."@en ;
+       owl:versionInfo "1.0" .
+
+
+###  http://iptc.org/std/rnews/2011-10-07#wordCount
+:wordCount rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Article ;
+           rdfs:range xsd:integer ;
+           rdfs:comment "The number of words in the article."@en ;
+           owl:versionInfo "1.0" .
+
+
+###  http://www.w3.org/2002/07/owl#sameAs
+owl:sameAs rdf:type owl:DatatypeProperty ;
+           rdfs:domain owl:Thing ;
+           rdfs:range xsd:anyURI .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://iptc.org/std/rnews/2011-10-07#Article
+:Article rdf:type owl:Class ;
+         rdfs:subClassOf :NewsItem .
+
+
+###  http://iptc.org/std/rnews/2011-10-07#AudioObject
+:AudioObject rdf:type owl:Class ;
+             rdfs:subClassOf :NewsItem .
+
+
+###  http://iptc.org/std/rnews/2011-10-07#Concept
+:Concept rdf:type owl:Class ;
+         rdfs:subClassOf owl:Thing .
+
+
+###  http://iptc.org/std/rnews/2011-10-07#GeoCoordinates
+:GeoCoordinates rdf:type owl:Class ;
+                rdfs:subClassOf owl:Thing .
+
+
+###  http://iptc.org/std/rnews/2011-10-07#ImageObject
+:ImageObject rdf:type owl:Class ;
+             rdfs:subClassOf :NewsItem .
+
+
+###  http://iptc.org/std/rnews/2011-10-07#NewsItem
+:NewsItem rdf:type owl:Class .
+
+
+###  http://iptc.org/std/rnews/2011-10-07#Organization
+:Organization rdf:type owl:Class ;
+              rdfs:subClassOf :Concept .
+
+
+###  http://iptc.org/std/rnews/2011-10-07#Person
+:Person rdf:type owl:Class ;
+        rdfs:subClassOf :Concept .
+
+
+###  http://iptc.org/std/rnews/2011-10-07#Place
+:Place rdf:type owl:Class ;
+       rdfs:subClassOf :GeoCoordinates .
+
+
+###  http://iptc.org/std/rnews/2011-10-07#PostalAddress
+:PostalAddress rdf:type owl:Class ;
+               rdfs:subClassOf owl:Thing .
+
+
+###  http://iptc.org/std/rnews/2011-10-07#UserComment
+:UserComment rdf:type owl:Class ;
+             rdfs:subClassOf owl:Thing .
+
+
+###  http://iptc.org/std/rnews/2011-10-07#VideoObject
+:VideoObject rdf:type owl:Class ;
+             rdfs:subClassOf :NewsItem .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://iptc.org/std/rNews/2011-10-07#Coindesk
+<http://iptc.org/std/rNews/2011-10-07#Coindesk> rdf:type owl:NamedIndividual ,
+                                                         :Organization ;
+                                                :url "https://www.coindesk.com"^^xsd:anyURI ;
+                                                owl:sameAs "http://dbpedia.org/page/CoinDesk"^^xsd:anyURI .
+
+
+###  http://iptc.org/std/rNews/2011-10-07#news01
+<http://iptc.org/std/rNews/2011-10-07#news01> rdf:type owl:NamedIndividual ,
+                                                       :NewsItem ;
+                                              :copyrightHolder <http://iptc.org/std/rNews/2011-10-07#Coindesk> ;
+                                              :datePublished "2018-01-12T21:32:52+02:00"^^xsd:dateTime ;
+                                              :description """Fried chicken chain KFC Canada is accepting bitcoin – for a limited time and for a cryptocurrency-themed bucket of chicken, that is.
+
+The limited-time marketing move sees the Canada-based chain advertising \"The Bitcoin Bucket\" complete with a Facebook-based live-tracker of the standing price for the product, which works out to roughly 20 Canadian dollars depending on the exchange rate with bitcoin.
+
+That said, you can't exactly walk into a KFC location in Canada and pay with crypto at the cash register.
+
+Instead, the company is accepting Bitcoin via BitPay as one of the options through an online check-out page. The Bitcoin Bucket will be delivered directly to the customer's address (the product also carries a $5 fee), according to the check-out process on its website.
+
+Indeed, the company appears to be jumping on the publicity bandwagon surrounding cryptocurrencies. However, unlike some public-traded firms that have seen their stock prices soar after announcing some kind of tie-in with the tech, the move doesn't seem to have had much of an effect on the price for Yum! Brands, KFC's parent company.
+
+In one post on Twitter, the rep managing the KFC Canada account suggested that the company may accept other cryptocurrencies as we"""^^xsd:string ;
+                                              :polygon "KFC Canada Is Accepting Bitcoin for Fried Chicken"^^xsd:string ;
+                                              :url "https://www.coindesk.com/kfc-canada-is-accepting-bitcoin-for-fried-chicken/"^^xsd:anyURI .
+
+
+###  http://iptc.org/std/rNews/2011-10-07#news01Image1
+<http://iptc.org/std/rNews/2011-10-07#news01Image1> rdf:type owl:NamedIndividual ,
+                                                             :ImageObject ;
+                                                    :associatedArticle <http://iptc.org/std/rNews/2011-10-07#news01> ;
+                                                    :url "http://media.coindesk.com/uploads/2018/01/KFC-728x371.jpg"^^xsd:anyURI .
+
+
+###  http://iptc.org/std/rNews/2011-10-07#news02
+<http://iptc.org/std/rNews/2011-10-07#news02> rdf:type owl:NamedIndividual ,
+                                                       :Article ;
+                                              :copyrightHolder <http://iptc.org/std/rNews/2011-10-07#Coindesk> ;
+                                              :description """Bitcoin's price is back around $14,000 and is eyeing a short phase of rangebound trading.
+
+Despite yesterday's bearish price action, the sell-off in the world's largest cryptocurrency by market capitalization seems to have come to a halt today.
+
+As per Coindesk's Bitcoin Price Index (BPI), bitcoin (BTC) found takers at $12,878.60 (price at 00:44 GMT) and moved to an intraday high of $13,773.34. Soon before press time, prices were at $14,090 levels – that's up around 9.4 percent from the 12-day low of $12,878.
+
+The sharp recovery indicates the markets may have digested reports of a trading ban under consideration in South Korea. Further, investors may have realized that South Korea is unlikely to announce the move anytime soon, if at all.
+
+So bitcoin may have found a short-term bottom, but that doesn't necessarily mean the cryptocurrency is heading back to record highs, as fears of a Korean clampdown could remain in the air for some time yet.
+
+While, BTC could have a hard time seeing big gains in the short-term, the technical charts do point to consolidation ahead.
+
+The above chart (prices as per Coinbase) shows:
+
+Despite the bearish price action, BTC defended the ascending trend line (drawn from Nov. 12 low and Dec. 22 low).
+BTC caught a bid wave today after the bears failed to cut through the trendline support.
+The 50-day moving average (MA) continues to rise in favor of the bulls.
+A bearish crossover between the 5-day and 10-day MA, and the 5-day and 50-day MA (short term average cuts long term average from above).
+
+View
+The bullish (upward sloping) 10-week MA, 50-day MA and the repeated bearish exhaustion near the 38.2 percent Fibonacci level of $12.573 indicates any dips below $12,000 are likely to be short-lived.
+
+That said, the bearish continuation pattern (rising wedge breakdown confirmed earlier this week) and the bearish MA crossovers listed above are likely to keep BTC bears in the game. Thus, in the short-run, cryptocurrency could have a hard time holding onto gains above $16,000.
+
+The odds of a fresh sell-off towards $8,000 would improve if bitcoin spends next few days consolidating in the range of $16,000–$12,000. Such a move would allow the 50-day MA to top out (shed bullish bias). So, bulls need to capitalize on the successful defense of the ascending trendline seen in the last 24 hours.
+
+Bullish Scenario: A close (as per UTC) above the upward sloping 50-day MA, followed by a move above $17,174 (Jan. 6 high) before Monday could open doors for a rally to record highs over $20,000."""^^xsd:string ;
+                                              :url "https://www.coindesk.com/bitcoin-eyes-consolidation-as-price-flirts-with-14k/"^^xsd:anyURI .
+
+
+###  http://iptc.org/std/rNews/2011-10-07#news02Image1
+<http://iptc.org/std/rNews/2011-10-07#news02Image1> rdf:type owl:NamedIndividual ,
+                                                             :ImageObject ;
+                                                    :associatedArticle <http://iptc.org/std/rNews/2011-10-07#news02> ;
+                                                    :url "https://media.coindesk.com/uploads/2018/01/btc-daily.png"^^xsd:anyURI .
+
+
+###  http://iptc.org/std/rNews/2011-10-07#news02Image2
+<http://iptc.org/std/rNews/2011-10-07#news02Image2> rdf:type owl:NamedIndividual ,
+                                                             :ImageObject ;
+                                                    :associatedMedia <http://iptc.org/std/rNews/2011-10-07#news02> ;
+                                                    :url "https://media.coindesk.com/uploads/2018/01/btc-weekly.png"^^xsd:anyURI .
+
+
+###  Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi

@@ -18,12 +18,12 @@ public class LibraryRequest {
     @Value("${library.url}")
     private String url;
 
-    public Map<String,List<String>> sendLibraryRequest(String coinId) {
+    public Map<String, List<String>> sendLibraryRequest(String coinId, String startDate, String endDate) {
         try {
-            //url = url + coinId;
-            Map<String,List<String>> predictionList = restTemplate.getForObject(url, Map.class);
+            url = url + coinId + "?startDate=" + startDate + "&endDate=" + endDate;
+            Map<String, List<String>> predictionList = restTemplate.getForObject(url, Map.class);
             return predictionList;
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
             return new HashMap<>();
         }
