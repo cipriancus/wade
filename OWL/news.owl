@@ -993,7 +993,7 @@ Since broadcasting every single signature as a transaction of its own is highly 
 
 Fraga, one of the two leading advisers of the project, stated that the integration of Ethereum into the Brazilian’s inefficient and impractical electoral system would be a celebration of democracy if it passes Congress and becomes implemented. He said:
 
-“It would be a celebration of democracy. With this project, we are doing what the constitution says, but in practice, it hasn’t [yet] happened.”"""^^xsd:anyURI ;
+“It would be a celebration of democracy. With this project, we are doing what the constitution says, but in practice, it hasn’t [yet] happened.”"""^^xsd:string ;
                                               :url "https://cointelegraph.com/news/brazilian-government-plans-to-process-petitions-and-write-laws-on-ethereum"^^xsd:anyURI .
 
 
