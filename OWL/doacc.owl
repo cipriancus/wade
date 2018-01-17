@@ -1,0 +1,2696 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://purl.org/net/bel-epa/doacc"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://purl.org/net/bel-epa/doacc">
+    <Prefix name="" IRI="http://purl.org/net/bel-epa/doacc#"/>
+    <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
+    <Prefix name="ns" IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#"/>
+    <Prefix name="ccy" IRI="http://purl.org/net/bel-epa/ccy"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="foaf" IRI="http://xmlns.com/foaf/0.1/"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="skos" IRI="http://www.w3.org/2004/02/skos/core#"/>
+    <Prefix name="vann" IRI="http://purl.org/vocab/vann/"/>
+    <Import>http://www.w3.org/TR/skos-reference/skos-owl1-dl.rdf</Import>
+    <Import>http://purl.org/net/bel-epa/ccy#</Import>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">The Description of a Cryptocurrency (DOACC) vocabulary, described using W3C RDF Schema and the Web Ontology Language.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <Literal xml:lang="ja" datatypeIRI="&rdf;PlainLiteral">暗号通貨 の説明の語彙 (DOACC)。W3C RDF SchemaとWeb Ontology Languageで作られた。</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Graham Higgins</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <Literal xml:lang="de" datatypeIRI="&rdf;PlainLiteral">Das Vokabular &quot;Description of a Cryptocurrency (DOACC, beschreibung einer Crypto-Währung)&quot;, beschrieben durch W3C RDF Schema and the Web Ontology Language.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">An adaptation of of Edd Dumbill’s DOAP (Description of a Project) RDF schema and XML vocabulary for FOSS projects, fused with Melvin Carvalho’s Ontology for Crypto Currencies, an OWL ontology “for Certificates and crypto stuff”.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Description of a Cryptocurrency (DOACC) vocabulary</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:rights"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Copyright © 2014 Graham Higgins</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://purl.org/net/bel-epa/doacc#</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">doacc</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <Literal xml:lang="fr" datatypeIRI="&rdf;PlainLiteral">Le vocabulaire Description Of A Crypto-monnaie (DOACC, Description D&apos;Une Crypto-monnaie), décrit en utilisant RDF Schema du W3C et OWL.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:format"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">application/rdf+xml</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <Literal xml:lang="cs" datatypeIRI="&rdf;PlainLiteral">Slovník Description of a Cryptocurrency (DOACC, Popis kryptomena), popsaný použitím W3C RDF Schema a Web Ontology Language.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <Literal xml:lang="es" datatypeIRI="&rdf;PlainLiteral">El vocabulario Description of a Cryptocurrency (DOACC, Descripción de una Cryptodivisa), descrito usando RDF Schema de W3C y Web Ontology Language.</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/resource/Algorithm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/resource/Cryptographic_hash_function"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Algorithm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Cryptocurrency"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Distribution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="DistributionScheme"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="HashFunction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="PoSscheme"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="PoWscheme"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Protection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ProtectionScheme"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Repository"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Version"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="ccy:#ElectronicCoin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PNG_Image"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="owl:Property"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="foaf:Organization"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="foaf:Person"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="coin"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="developer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="distribution-scheme"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hashfn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="helper"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="maintainer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="pos"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="pow"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="protection-scheme"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="release"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="repository"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="slug"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="tester"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="translator"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="vendor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#logo"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="anon-root"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="audience"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="block-reward"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="block-target-time"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="category"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="confirmations"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="download-mirror"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="download-page"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="file-release"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="forum"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hashfn"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="license"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="maturation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="retarget-time"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="revision"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="service-endpoint"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="slug"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="symbol"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="total-coins"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#abbreviation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#circulating_supply"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#market_capital"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#maximum_supply"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#price_USD"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#source"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#total_supply"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#volume"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#website"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="slug"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ADA_Logo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BCH_Logo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BTC_Logo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bitcoin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bitcoin_Cash"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cardano"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ETH_Logo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ethereum"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ripple"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#XRP_Logo"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="owl:equivalentClass"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="ns:term_status"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="http://dbpedia.org/resource/Algorithm"/>
+        <Class IRI="Algorithm"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://dbpedia.org/resource/Cryptographic_hash_function"/>
+        <Class IRI="HashFunction"/>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="PoSscheme"/>
+        <Class IRI="ProtectionScheme"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="PoWscheme"/>
+        <Class IRI="ProtectionScheme"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Property"/>
+        <NamedIndividual IRI="slug"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PNG_Image"/>
+        <NamedIndividual IRI="#ADA_Logo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PNG_Image"/>
+        <NamedIndividual IRI="#BCH_Logo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PNG_Image"/>
+        <NamedIndividual IRI="#BTC_Logo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Cryptocurrency"/>
+        <NamedIndividual IRI="#Bitcoin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Cryptocurrency"/>
+        <NamedIndividual IRI="#Bitcoin_Cash"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Cryptocurrency"/>
+        <NamedIndividual IRI="#Cardano"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PNG_Image"/>
+        <NamedIndividual IRI="#ETH_Logo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Cryptocurrency"/>
+        <NamedIndividual IRI="#Ethereum"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Cryptocurrency"/>
+        <NamedIndividual IRI="#Ripple"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PNG_Image"/>
+        <NamedIndividual IRI="#XRP_Logo"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#logo"/>
+        <NamedIndividual IRI="#Bitcoin"/>
+        <NamedIndividual IRI="#BTC_Logo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#logo"/>
+        <NamedIndividual IRI="#Bitcoin_Cash"/>
+        <NamedIndividual IRI="#BCH_Logo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#logo"/>
+        <NamedIndividual IRI="#Cardano"/>
+        <NamedIndividual IRI="#ADA_Logo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#logo"/>
+        <NamedIndividual IRI="#Ethereum"/>
+        <NamedIndividual IRI="#ETH_Logo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#logo"/>
+        <NamedIndividual IRI="#Ripple"/>
+        <NamedIndividual IRI="#XRP_Logo"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#source"/>
+        <NamedIndividual IRI="#ADA_Logo"/>
+        <Literal datatypeIRI="&xsd;anyURI">https://files.coinmarketcap.com/static/img/coins/32x32/cardano.png</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#source"/>
+        <NamedIndividual IRI="#BCH_Logo"/>
+        <Literal datatypeIRI="&xsd;anyURI">https://files.coinmarketcap.com/static/img/coins/32x32/bitcoin-cash.png</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#source"/>
+        <NamedIndividual IRI="#BTC_Logo"/>
+        <Literal datatypeIRI="&xsd;anyURI">https://files.coinmarketcap.com/static/img/coins/32x32/bitcoin.png</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#abbreviation"/>
+        <NamedIndividual IRI="#Bitcoin"/>
+        <Literal datatypeIRI="&xsd;string">BTC</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#circulating_supply"/>
+        <NamedIndividual IRI="#Bitcoin"/>
+        <Literal datatypeIRI="&xsd;double">16,802,262</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#market_capital"/>
+        <NamedIndividual IRI="#Bitcoin"/>
+        <Literal datatypeIRI="&xsd;double">227.578.237.659</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#maximum_supply"/>
+        <NamedIndividual IRI="#Bitcoin"/>
+        <Literal datatypeIRI="&xsd;double">21,000,000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#price_USD"/>
+        <NamedIndividual IRI="#Bitcoin"/>
+        <Literal datatypeIRI="&xsd;double">13.544,50</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#volume"/>
+        <NamedIndividual IRI="#Bitcoin"/>
+        <Literal datatypeIRI="&xsd;double">11.534.500.000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#website"/>
+        <NamedIndividual IRI="#Bitcoin"/>
+        <Literal datatypeIRI="&xsd;anyURI">https://bitcoin.org/ro/</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#abbreviation"/>
+        <NamedIndividual IRI="#Bitcoin_Cash"/>
+        <Literal datatypeIRI="&xsd;string">BCH</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#circulating_supply"/>
+        <NamedIndividual IRI="#Bitcoin_Cash"/>
+        <Literal datatypeIRI="&xsd;double">16,911,175</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#market_capital"/>
+        <NamedIndividual IRI="#Bitcoin_Cash"/>
+        <Literal datatypeIRI="&xsd;double">42.755.339.970</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#maximum_supply"/>
+        <NamedIndividual IRI="#Bitcoin_Cash"/>
+        <Literal datatypeIRI="&xsd;double">21,000,000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#price_USD"/>
+        <NamedIndividual IRI="#Bitcoin_Cash"/>
+        <Literal datatypeIRI="&xsd;double">2.528,23</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#volume"/>
+        <NamedIndividual IRI="#Bitcoin_Cash"/>
+        <Literal datatypeIRI="&xsd;double">1.204.560.000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#website"/>
+        <NamedIndividual IRI="#Bitcoin_Cash"/>
+        <Literal datatypeIRI="&xsd;anyURI">https://www.bitcoincash.org/</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#abbreviation"/>
+        <NamedIndividual IRI="#Cardano"/>
+        <Literal datatypeIRI="&xsd;string">ADA</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#circulating_supply"/>
+        <NamedIndividual IRI="#Cardano"/>
+        <Literal datatypeIRI="&xsd;double">25,927,070,538</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#market_capital"/>
+        <NamedIndividual IRI="#Cardano"/>
+        <Literal datatypeIRI="&xsd;double">19.594.798.392</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#maximum_supply"/>
+        <NamedIndividual IRI="#Cardano"/>
+        <Literal datatypeIRI="&xsd;double">45,000,000,000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#price_USD"/>
+        <NamedIndividual IRI="#Cardano"/>
+        <Literal datatypeIRI="&xsd;double">0,755766</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#total_supply"/>
+        <NamedIndividual IRI="#Cardano"/>
+        <Literal datatypeIRI="&xsd;double">31,112,483,745</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#volume"/>
+        <NamedIndividual IRI="#Cardano"/>
+        <Literal datatypeIRI="&xsd;double">182.989.000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#website"/>
+        <NamedIndividual IRI="#Cardano"/>
+        <Literal datatypeIRI="&xsd;anyURI">https://www.cardanohub.org/en/home/</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#source"/>
+        <NamedIndividual IRI="#ETH_Logo"/>
+        <Literal datatypeIRI="&xsd;anyURI">https://files.coinmarketcap.com/static/img/coins/32x32/ethereum.png</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#abbreviation"/>
+        <NamedIndividual IRI="#Ethereum"/>
+        <Literal datatypeIRI="&xsd;string">ETH</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#circulating_supply"/>
+        <NamedIndividual IRI="#Ethereum"/>
+        <Literal datatypeIRI="&xsd;double">96,974,177</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#market_capital"/>
+        <NamedIndividual IRI="#Ethereum"/>
+        <Literal datatypeIRI="&xsd;double">126.746.218.467</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#price_USD"/>
+        <NamedIndividual IRI="#Ethereum"/>
+        <Literal datatypeIRI="&xsd;double">1.307,01</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#volume"/>
+        <NamedIndividual IRI="#Ethereum"/>
+        <Literal datatypeIRI="&xsd;double">5.235.530.000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#website"/>
+        <NamedIndividual IRI="#Ethereum"/>
+        <Literal datatypeIRI="&xsd;anyURI">https://www.ethereum.org/</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#abbreviation"/>
+        <NamedIndividual IRI="#Ripple"/>
+        <Literal datatypeIRI="&xsd;string">XRP</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#circulating_supply"/>
+        <NamedIndividual IRI="#Ripple"/>
+        <Literal datatypeIRI="&xsd;double">38,739,142,811</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#market_capital"/>
+        <NamedIndividual IRI="#Ripple"/>
+        <Literal datatypeIRI="&xsd;double">70.537.006.013</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#maximum_supply"/>
+        <NamedIndividual IRI="#Ripple"/>
+        <Literal datatypeIRI="&xsd;double">100,000,000,000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#price_USD"/>
+        <NamedIndividual IRI="#Ripple"/>
+        <Literal datatypeIRI="&xsd;double">1,82</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#total_supply"/>
+        <NamedIndividual IRI="#Ripple"/>
+        <Literal datatypeIRI="&xsd;double">99,993,093,880</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#volume"/>
+        <NamedIndividual IRI="#Ripple"/>
+        <Literal datatypeIRI="&xsd;double">1.880.340.000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#website"/>
+        <NamedIndividual IRI="#Ripple"/>
+        <Literal datatypeIRI="&xsd;anyURI">https://ripple.com/</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#source"/>
+        <NamedIndividual IRI="#XRP_Logo"/>
+        <Literal datatypeIRI="&xsd;anyURI">https://files.coinmarketcap.com/static/img/coins/32x32/ripple.png</Literal>
+    </DataPropertyAssertion>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="coin"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="distribution-scheme"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="pos"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="pow"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="protection-scheme"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="slug"/>
+    </FunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="slug"/>
+    </InverseFunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="coin"/>
+        <Class IRI="Cryptocurrency"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="developer"/>
+        <Class IRI="Cryptocurrency"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="distribution-scheme"/>
+        <Class IRI="Cryptocurrency"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hashfn"/>
+        <Class IRI="PoWscheme"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="helper"/>
+        <Class IRI="Cryptocurrency"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="maintainer"/>
+        <Class IRI="Cryptocurrency"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="pos"/>
+        <Class IRI="ProtectionScheme"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="pow"/>
+        <Class IRI="ProtectionScheme"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="protection-scheme"/>
+        <Class IRI="Cryptocurrency"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="release"/>
+        <Class IRI="Cryptocurrency"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="repository"/>
+        <Class IRI="Cryptocurrency"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="slug"/>
+        <Class IRI="Cryptocurrency"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="tester"/>
+        <Class IRI="Cryptocurrency"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="translator"/>
+        <Class IRI="Cryptocurrency"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="vendor"/>
+        <Class IRI="Cryptocurrency"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#logo"/>
+        <Class IRI="Cryptocurrency"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="coin"/>
+        <Class abbreviatedIRI="ccy:#ElectronicCoin"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="developer"/>
+        <Class abbreviatedIRI="foaf:Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="distribution-scheme"/>
+        <Class IRI="DistributionScheme"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hashfn"/>
+        <Class IRI="HashFunction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="helper"/>
+        <Class abbreviatedIRI="foaf:Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="maintainer"/>
+        <Class abbreviatedIRI="foaf:Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="pos"/>
+        <Class IRI="PoSscheme"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="pow"/>
+        <Class IRI="PoWscheme"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="protection-scheme"/>
+        <Class IRI="ProtectionScheme"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="release"/>
+        <Class IRI="Version"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="repository"/>
+        <Class IRI="Repository"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="tester"/>
+        <Class abbreviatedIRI="foaf:Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="translator"/>
+        <Class abbreviatedIRI="foaf:Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="vendor"/>
+        <Class abbreviatedIRI="foaf:Organization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#logo"/>
+        <Class IRI="#PNG_Image"/>
+    </ObjectPropertyRange>
+    <FunctionalDataProperty>
+        <DataProperty IRI="category"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="confirmations"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="maturation"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="retarget-time"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="slug"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="symbol"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="total-coins"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="anon-root"/>
+        <Class IRI="Repository"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="audience"/>
+        <Class IRI="Cryptocurrency"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="block-reward"/>
+        <Class IRI="Cryptocurrency"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="block-target-time"/>
+        <Class IRI="Cryptocurrency"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="category"/>
+        <Class IRI="Cryptocurrency"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="confirmations"/>
+        <Class IRI="Cryptocurrency"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="download-mirror"/>
+        <Class IRI="Cryptocurrency"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="download-page"/>
+        <Class IRI="Cryptocurrency"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="file-release"/>
+        <Class IRI="Cryptocurrency"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="forum"/>
+        <Class IRI="Cryptocurrency"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="license"/>
+        <Class IRI="Cryptocurrency"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="maturation"/>
+        <Class IRI="Cryptocurrency"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="retarget-time"/>
+        <Class IRI="Cryptocurrency"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="revision"/>
+        <Class IRI="Cryptocurrency"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="service-endpoint"/>
+        <Class IRI="Cryptocurrency"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="symbol"/>
+        <Class IRI="Cryptocurrency"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="total-coins"/>
+        <Class IRI="Cryptocurrency"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#abbreviation"/>
+        <Class IRI="Cryptocurrency"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#circulating_supply"/>
+        <Class IRI="Cryptocurrency"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#market_capital"/>
+        <Class IRI="Cryptocurrency"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#maximum_supply"/>
+        <Class IRI="Cryptocurrency"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#price_USD"/>
+        <Class IRI="Cryptocurrency"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#source"/>
+        <Class IRI="#PNG_Image"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#total_supply"/>
+        <Class IRI="Cryptocurrency"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#volume"/>
+        <Class IRI="Cryptocurrency"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#website"/>
+        <Class IRI="Cryptocurrency"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="anon-root"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="audience"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="block-reward"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="block-target-time"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="category"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="confirmations"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="download-mirror"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="download-page"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="file-release"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="forum"/>
+        <Datatype abbreviatedIRI="xsd:anyURI"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="license"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="maturation"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="retarget-time"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="revision"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="service-endpoint"/>
+        <Datatype abbreviatedIRI="xsd:anyURI"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="slug"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="slug"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="symbol"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="total-coins"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#abbreviation"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#circulating_supply"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#market_capital"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#maximum_supply"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#price_USD"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#source"/>
+        <Datatype abbreviatedIRI="xsd:anyURI"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#total_supply"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#volume"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#website"/>
+        <Datatype abbreviatedIRI="xsd:anyURI"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Algorithm</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Use of one or more cryptographic hash functions to secure a cryptocurrency p2p network.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>Algorithm</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Algorithm</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Hashing Algorithm</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>Algorithm</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Hashing Algorithm</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Cryptocurrency</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A cryptocurrency.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Cryptocurrency</IRI>
+        <Literal xml:lang="de" datatypeIRI="&rdf;PlainLiteral">Ein Crypto-Währung.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Cryptocurrency</IRI>
+        <Literal xml:lang="cs" datatypeIRI="&rdf;PlainLiteral">Kryptomena.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Cryptocurrency</IRI>
+        <Literal xml:lang="es" datatypeIRI="&rdf;PlainLiteral">Una cryptodivisa.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Cryptocurrency</IRI>
+        <Literal xml:lang="fr" datatypeIRI="&rdf;PlainLiteral">Une crypto-monnaie.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Cryptocurrency</IRI>
+        <Literal xml:lang="ja" datatypeIRI="&rdf;PlainLiteral">暗号の通貨</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>Cryptocurrency</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Cryptocurrency</IRI>
+        <Literal xml:lang="de" datatypeIRI="&rdf;PlainLiteral">Crypto-Währung</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Cryptocurrency</IRI>
+        <Literal xml:lang="fr" datatypeIRI="&rdf;PlainLiteral">Crypto-monnaie</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Cryptocurrency</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Cryptocurrency</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Cryptocurrency</IRI>
+        <Literal xml:lang="es" datatypeIRI="&rdf;PlainLiteral">Cryptodivisa</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Cryptocurrency</IRI>
+        <Literal xml:lang="cs" datatypeIRI="&rdf;PlainLiteral">Kryptomena</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Cryptocurrency</IRI>
+        <Literal xml:lang="ja" datatypeIRI="&rdf;PlainLiteral">暗号通貨</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>Cryptocurrency</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Cryptocurrency</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Distribution</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Method of distributing coins of a cryptocurrency.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>Distribution</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Distribution</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Coin distribution scheme</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>Distribution</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Coin distribution scheme</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>HashFunction</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Cryptographic function for producing hashes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>HashFunction</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>HashFunction</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Cryptographic hash function</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>HashFunction</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Cryptographic hash function</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>PoSscheme</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A method of securing a cryptocurrency p2p network through requesting users to show ownership of a certain amount of currency</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>PoSscheme</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>PoSscheme</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Proof of Stake</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>PoSscheme</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Proof of Stake</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>PoWscheme</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A method of securing a cryptocurrency p2p network through requesting proof from users that (computational) work has been done.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>PoWscheme</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>PoWscheme</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Proof of Work</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:equivalentClass"/>
+        <IRI>PoWscheme</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>PoWscheme</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Proof of Work</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Protection</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Means of protecting cryptocurrency transaction records from tampering.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>Protection</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Protection</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Transaction record protection scheme</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>Protection</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Transaction record protection scheme</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Repository</IRI>
+        <Literal xml:lang="fr" datatypeIRI="&rdf;PlainLiteral">Dépôt du code source.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Repository</IRI>
+        <Literal xml:lang="de" datatypeIRI="&rdf;PlainLiteral">Quellcode-Versionierungssystem.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Repository</IRI>
+        <Literal xml:lang="es" datatypeIRI="&rdf;PlainLiteral">Repositorio del código fuente.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Repository</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Source code repository.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Repository</IRI>
+        <Literal xml:lang="cs" datatypeIRI="&rdf;PlainLiteral">Úložiště zdrojových kódů.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Repository</IRI>
+        <Literal xml:lang="ja" datatypeIRI="&rdf;PlainLiteral">ソースコードのリポジトリ</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>Repository</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Repository</IRI>
+        <Literal xml:lang="fr" datatypeIRI="&rdf;PlainLiteral">Dépôt</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Repository</IRI>
+        <Literal xml:lang="es" datatypeIRI="&rdf;PlainLiteral">Repositorio</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Repository</IRI>
+        <Literal xml:lang="de" datatypeIRI="&rdf;PlainLiteral">Repository</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Repository</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Repository</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Repository</IRI>
+        <Literal xml:lang="cs" datatypeIRI="&rdf;PlainLiteral">Úložiště</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Repository</IRI>
+        <Literal xml:lang="ja" datatypeIRI="&rdf;PlainLiteral">リポジトリ</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>Repository</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Repository</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Version</IRI>
+        <Literal xml:lang="fr" datatypeIRI="&rdf;PlainLiteral">Détails sur une version d&apos;une realease.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Version</IRI>
+        <Literal xml:lang="cs" datatypeIRI="&rdf;PlainLiteral">Informace o uvolněné verzi.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Version</IRI>
+        <Literal xml:lang="es" datatypeIRI="&rdf;PlainLiteral">Información sobre la versión de un release.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Version</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Version information of a release.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Version</IRI>
+        <Literal xml:lang="de" datatypeIRI="&rdf;PlainLiteral">Versionsinformation eines Releases.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Version</IRI>
+        <Literal xml:lang="ja" datatypeIRI="&rdf;PlainLiteral">リリースのバーション情報</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>Version</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Version</IRI>
+        <Literal xml:lang="de" datatypeIRI="&rdf;PlainLiteral">Version</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Version</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Version</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Version</IRI>
+        <Literal xml:lang="fr" datatypeIRI="&rdf;PlainLiteral">Version</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Version</IRI>
+        <Literal xml:lang="es" datatypeIRI="&rdf;PlainLiteral">Versión</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Version</IRI>
+        <Literal xml:lang="cs" datatypeIRI="&rdf;PlainLiteral">Verze</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Version</IRI>
+        <Literal xml:lang="ja" datatypeIRI="&rdf;PlainLiteral">バーション</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>Version</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Version</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>anon-root</IRI>
+        <Literal xml:lang="fr" datatypeIRI="&rdf;PlainLiteral">Dépôt pour accès anonyme.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>anon-root</IRI>
+        <Literal xml:lang="es" datatypeIRI="&rdf;PlainLiteral">Repositorio para acceso anónimo.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>anon-root</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Repository for anonymous access.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>anon-root</IRI>
+        <Literal xml:lang="de" datatypeIRI="&rdf;PlainLiteral">Repository für anonymen Zugriff</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>anon-root</IRI>
+        <Literal xml:lang="cs" datatypeIRI="&rdf;PlainLiteral">Úložiště pro anonymní přístup.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>anon-root</IRI>
+        <Literal xml:lang="ja" datatypeIRI="&rdf;PlainLiteral">匿名でアクセスできるパス</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>anon-root</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>anon-root</IRI>
+        <Literal xml:lang="de" datatypeIRI="&rdf;PlainLiteral">Anonymes Root</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>anon-root</IRI>
+        <Literal xml:lang="cs" datatypeIRI="&rdf;PlainLiteral">anonymní kořen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>anon-root</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">anonymous root</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>anon-root</IRI>
+        <Literal xml:lang="fr" datatypeIRI="&rdf;PlainLiteral">racine anonyme</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>anon-root</IRI>
+        <Literal xml:lang="es" datatypeIRI="&rdf;PlainLiteral">raíz anónima</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>anon-root</IRI>
+        <Literal xml:lang="ja" datatypeIRI="&rdf;PlainLiteral">匿名ルート</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>anon-root</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">anonymous root</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>audience</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Description of target user base</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>audience</IRI>
+        <Literal xml:lang="ja" datatypeIRI="&rdf;PlainLiteral">目指したユーザたちの説明</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>audience</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>audience</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">audience</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>audience</IRI>
+        <Literal xml:lang="ja" datatypeIRI="&rdf;PlainLiteral">目指したユーザ</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns:term_status"/>
+        <IRI>audience</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">unstable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>audience</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">audience</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>block-reward</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>block-reward</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">block reward scheme</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns:term_status"/>
+        <IRI>block-reward</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">unstable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>block-reward</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">block reward scheme</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>block-target-time</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>block-target-time</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">block target time</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns:term_status"/>
+        <IRI>block-target-time</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">unstable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>block-target-time</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">block target time</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>category</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A category of cryptocurrency.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>category</IRI>
+        <Literal xml:lang="de" datatypeIRI="&rdf;PlainLiteral">Eine Kategorie eines Crypto-Währungen.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>category</IRI>
+        <Literal xml:lang="cs" datatypeIRI="&rdf;PlainLiteral">Kategorie kryptomena.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>category</IRI>
+        <Literal xml:lang="es" datatypeIRI="&rdf;PlainLiteral">Una categoría de cryptodivisa.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>category</IRI>
+        <Literal xml:lang="fr" datatypeIRI="&rdf;PlainLiteral">Une catégorie de crypto-monnaie.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>category</IRI>
+        <Literal xml:lang="ja" datatypeIRI="&rdf;PlainLiteral">このプロジェクトの分類。</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>category</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>category</IRI>
+        <Literal xml:lang="de" datatypeIRI="&rdf;PlainLiteral">Kategorie</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>category</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">category</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>category</IRI>
+        <Literal xml:lang="es" datatypeIRI="&rdf;PlainLiteral">categoría</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>category</IRI>
+        <Literal xml:lang="fr" datatypeIRI="&rdf;PlainLiteral">catégorie</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>category</IRI>
+        <Literal xml:lang="cs" datatypeIRI="&rdf;PlainLiteral">kategorie</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>category</IRI>
+        <Literal xml:lang="ja" datatypeIRI="&rdf;PlainLiteral">分類</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns:term_status"/>
+        <IRI>category</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">unstable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>category</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">category</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>coin</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Electronic coin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>coin</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>coin</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">coin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns:term_status"/>
+        <IRI>coin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">unstable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>coin</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">coin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>confirmations</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>confirmations</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Number of blocks required to confirm a transaction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns:term_status"/>
+        <IRI>confirmations</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">unstable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>confirmations</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Number of blocks required to confirm a transaction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>developer</IRI>
+        <Literal xml:lang="es" datatypeIRI="&rdf;PlainLiteral">Desarrollador de software para la cryptodivisa.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>developer</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Developer of software for the cryptocurrency.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>developer</IRI>
+        <Literal xml:lang="fr" datatypeIRI="&rdf;PlainLiteral">Développeur pour la crypto-monnaie.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>developer</IRI>
+        <Literal xml:lang="de" datatypeIRI="&rdf;PlainLiteral">Software-Entwickler für eine Crypto-Währung.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>developer</IRI>
+        <Literal xml:lang="cs" datatypeIRI="&rdf;PlainLiteral">Vývojář softwaru kryptomena.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>developer</IRI>
+        <Literal xml:lang="ja" datatypeIRI="&rdf;PlainLiteral">プロジェクトのソフトウェアの開発者</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>developer</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>developer</IRI>
+        <Literal xml:lang="de" datatypeIRI="&rdf;PlainLiteral">Entwickler</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>developer</IRI>
+        <Literal xml:lang="es" datatypeIRI="&rdf;PlainLiteral">desarrollador</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>developer</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">developer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>developer</IRI>
+        <Literal xml:lang="fr" datatypeIRI="&rdf;PlainLiteral">développeur</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>developer</IRI>
+        <Literal xml:lang="cs" datatypeIRI="&rdf;PlainLiteral">vývojář</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>developer</IRI>
+        <Literal xml:lang="ja" datatypeIRI="&rdf;PlainLiteral">開発者</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>developer</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">developer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>distribution-scheme</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Coin distribution scheme</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>distribution-scheme</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>distribution-scheme</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">distribution scheme</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns:term_status"/>
+        <IRI>distribution-scheme</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">unstable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>distribution-scheme</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">distribution scheme</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>download-mirror</IRI>
+        <Literal xml:lang="fr" datatypeIRI="&rdf;PlainLiteral">Miroir de la page de téléchargement du programme.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>download-mirror</IRI>
+        <Literal xml:lang="es" datatypeIRI="&rdf;PlainLiteral">Mirror de la página web de descarga.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>download-mirror</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Mirror of software download web page.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>download-mirror</IRI>
+        <Literal xml:lang="de" datatypeIRI="&rdf;PlainLiteral">Spiegel der Seite von die Software heruntergeladen werden kann.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>download-mirror</IRI>
+        <Literal xml:lang="cs" datatypeIRI="&rdf;PlainLiteral">Zrcadlo stránky pro stažení softwaru.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>download-mirror</IRI>
+        <Literal xml:lang="ja" datatypeIRI="&rdf;PlainLiteral">このプロジェクトのダウンロードミラー</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>download-mirror</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>download-mirror</IRI>
+        <Literal xml:lang="de" datatypeIRI="&rdf;PlainLiteral">Spiegel der Seite zum Herunterladen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>download-mirror</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">download mirror</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>download-mirror</IRI>
+        <Literal xml:lang="fr" datatypeIRI="&rdf;PlainLiteral">miroir pour le téléchargement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>download-mirror</IRI>
+        <Literal xml:lang="es" datatypeIRI="&rdf;PlainLiteral">mirror de descarga</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>download-mirror</IRI>
+        <Literal xml:lang="cs" datatypeIRI="&rdf;PlainLiteral">zrcadlo stránky pro stažení</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>download-mirror</IRI>
+        <Literal xml:lang="ja" datatypeIRI="&rdf;PlainLiteral">ダウンロードミラー</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns:term_status"/>
+        <IRI>download-mirror</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">unstable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>download-mirror</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">download mirror</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>download-page</IRI>
+        <Literal xml:lang="fr" datatypeIRI="&rdf;PlainLiteral">Page web à partir de laquelle on peut télécharger le programme.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>download-page</IRI>
+        <Literal xml:lang="es" datatypeIRI="&rdf;PlainLiteral">Página web de la cuál se puede bajar el software.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>download-page</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Web page from which the software can be downloaded.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>download-page</IRI>
+        <Literal xml:lang="de" datatypeIRI="&rdf;PlainLiteral">Web-Seite von der die Software heruntergeladen werden kann.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>download-page</IRI>
+        <Literal xml:lang="cs" datatypeIRI="&rdf;PlainLiteral">Webová stránka, na které lze stáhnout software.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>download-page</IRI>
+        <Literal xml:lang="ja" datatypeIRI="&rdf;PlainLiteral">このプロジェクトのダウンロードできるウェブページ</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>download-page</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>download-page</IRI>
+        <Literal xml:lang="de" datatypeIRI="&rdf;PlainLiteral">Seite zum Herunterladen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>download-page</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">download page</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>download-page</IRI>
+        <Literal xml:lang="fr" datatypeIRI="&rdf;PlainLiteral">page de téléchargement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>download-page</IRI>
+        <Literal xml:lang="es" datatypeIRI="&rdf;PlainLiteral">página de descarga</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>download-page</IRI>
+        <Literal xml:lang="cs" datatypeIRI="&rdf;PlainLiteral">stránka pro stažení</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>download-page</IRI>
+        <Literal xml:lang="ja" datatypeIRI="&rdf;PlainLiteral">ダウンロードページ</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns:term_status"/>
+        <IRI>download-page</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">unstable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>download-page</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">download page</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>file-release</IRI>
+        <Literal xml:lang="cs" datatypeIRI="&rdf;PlainLiteral">URI adresa stažení asociované s revizí.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>file-release</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">URI of download associated with this release.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>file-release</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>file-release</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">file-release</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>file-release</IRI>
+        <Literal xml:lang="cs" datatypeIRI="&rdf;PlainLiteral">soubor revize</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>file-release</IRI>
+        <Literal xml:lang="ja" datatypeIRI="&rdf;PlainLiteral">このリリースのダウンロードできるファイルのURI</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>file-release</IRI>
+        <Literal xml:lang="ja" datatypeIRI="&rdf;PlainLiteral">ファイル</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns:term_status"/>
+        <IRI>file-release</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">unstable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>file-release</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">file-release</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>forum</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Forum web page.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>forum</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">forum</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns:term_status"/>
+        <IRI>forum</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">unstable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>forum</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">forum</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>hashfn</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hashfn</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">algorithm implementing the scheme</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>hashfn</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">algorithm implementing the scheme</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>helper</IRI>
+        <Literal xml:lang="es" datatypeIRI="&rdf;PlainLiteral">Colaborador del la cryptodivisa.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>helper</IRI>
+        <Literal xml:lang="fr" datatypeIRI="&rdf;PlainLiteral">Collaborateur au projet.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>helper</IRI>
+        <Literal xml:lang="de" datatypeIRI="&rdf;PlainLiteral">Crypto-Währung-Mitarbeiter.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>helper</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Project contributor.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>helper</IRI>
+        <Literal xml:lang="cs" datatypeIRI="&rdf;PlainLiteral">Spoluautor kryptomena.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>helper</IRI>
+        <Literal xml:lang="ja" datatypeIRI="&rdf;PlainLiteral">このプロジェクトの貢献者</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>helper</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>helper</IRI>
+        <Literal xml:lang="de" datatypeIRI="&rdf;PlainLiteral">Helfer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>helper</IRI>
+        <Literal xml:lang="es" datatypeIRI="&rdf;PlainLiteral">colaborador</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>helper</IRI>
+        <Literal xml:lang="fr" datatypeIRI="&rdf;PlainLiteral">collaborateur</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>helper</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">helper</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>helper</IRI>
+        <Literal xml:lang="cs" datatypeIRI="&rdf;PlainLiteral">spoluautor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>helper</IRI>
+        <Literal xml:lang="ja" datatypeIRI="&rdf;PlainLiteral">貢献者</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns:term_status"/>
+        <IRI>helper</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">unstable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>helper</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">helper</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>license</IRI>
+        <Literal xml:lang="de" datatypeIRI="&rdf;PlainLiteral">Die URI einer RDF-Beschreibung einer Lizenz unter der die Software herausgegeben wird.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>license</IRI>
+        <Literal xml:lang="es" datatypeIRI="&rdf;PlainLiteral">El URI de una descripción RDF de la licencia bajo la cuál se distribuye el software.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>license</IRI>
+        <Literal xml:lang="fr" datatypeIRI="&rdf;PlainLiteral">L&apos;URI d&apos;une description RDF de la licence sous laquelle le programme est distribué.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>license</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">The URI of an RDF description of the license the software is distributed under.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>license</IRI>
+        <Literal xml:lang="cs" datatypeIRI="&rdf;PlainLiteral">URI adresa RDF popisu licence, pod kterou je software distribuován.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>license</IRI>
+        <Literal xml:lang="ja" datatypeIRI="&rdf;PlainLiteral">このプロジェクトの散布ライセンスのRDF説明のURI</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>license</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>license</IRI>
+        <Literal xml:lang="de" datatypeIRI="&rdf;PlainLiteral">Lizenz</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>license</IRI>
+        <Literal xml:lang="cs" datatypeIRI="&rdf;PlainLiteral">licence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>license</IRI>
+        <Literal xml:lang="fr" datatypeIRI="&rdf;PlainLiteral">licence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>license</IRI>
+        <Literal xml:lang="es" datatypeIRI="&rdf;PlainLiteral">licencia</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>license</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">license</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>license</IRI>
+        <Literal xml:lang="ja" datatypeIRI="&rdf;PlainLiteral">ライセンス</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns:term_status"/>
+        <IRI>license</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">unstable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>license</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">license</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>maintainer</IRI>
+        <Literal xml:lang="es" datatypeIRI="&rdf;PlainLiteral">Desarrollador principal de una cryptodivisa, un líder de la cryptodivisa.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>maintainer</IRI>
+        <Literal xml:lang="fr" datatypeIRI="&rdf;PlainLiteral">Développeur principal d&apos;une crypto-monnaie, un meneur de la crypto-monnaie.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>maintainer</IRI>
+        <Literal xml:lang="de" datatypeIRI="&rdf;PlainLiteral">Hauptentwickler eines Crypto-Währungen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>maintainer</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Maintainer of a cryptocurrency, a project leader.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>maintainer</IRI>
+        <Literal xml:lang="cs" datatypeIRI="&rdf;PlainLiteral">Správce kryptomena, vedoucí kryptomena.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>maintainer</IRI>
+        <Literal xml:lang="ja" datatypeIRI="&rdf;PlainLiteral">このプロジェクトのメンテなー及びリーダ。</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>maintainer</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>maintainer</IRI>
+        <Literal xml:lang="de" datatypeIRI="&rdf;PlainLiteral">Crypto-Währungverantwortlicher</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>maintainer</IRI>
+        <Literal xml:lang="es" datatypeIRI="&rdf;PlainLiteral">desarrollador principal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>maintainer</IRI>
+        <Literal xml:lang="fr" datatypeIRI="&rdf;PlainLiteral">développeur principal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>maintainer</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">maintainer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>maintainer</IRI>
+        <Literal xml:lang="cs" datatypeIRI="&rdf;PlainLiteral">správce</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>maintainer</IRI>
+        <Literal xml:lang="ja" datatypeIRI="&rdf;PlainLiteral">メンテナー</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns:term_status"/>
+        <IRI>maintainer</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">unstable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>maintainer</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">maintainer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>maturation</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Additional depth of chain required for mined blocks to mature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>maturation</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>maturation</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">maturation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>maturation</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">maturation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>pos</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>pos</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">proof of stake scheme</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>pos</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">proof of stake scheme</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>pow</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>pow</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">proof of work scheme</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>pow</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">proof of work scheme</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>protection-scheme</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Transaction record protection scheme</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>protection-scheme</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>protection-scheme</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">protection scheme</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns:term_status"/>
+        <IRI>protection-scheme</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">unstable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>protection-scheme</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">protection scheme</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>release</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A project release.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>release</IRI>
+        <Literal xml:lang="de" datatypeIRI="&rdf;PlainLiteral">Ein Release (Version) eines Crypto-Währung.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>release</IRI>
+        <Literal xml:lang="cs" datatypeIRI="&rdf;PlainLiteral">Relase (verze) kryptomena.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>release</IRI>
+        <Literal xml:lang="es" datatypeIRI="&rdf;PlainLiteral">Un release (versión) de una cryptodivisa.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>release</IRI>
+        <Literal xml:lang="fr" datatypeIRI="&rdf;PlainLiteral">Une release (révision) d&apos;une crypto-monnaie.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>release</IRI>
+        <Literal xml:lang="ja" datatypeIRI="&rdf;PlainLiteral">このプロジェクトのリリース</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>release</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>release</IRI>
+        <Literal xml:lang="de" datatypeIRI="&rdf;PlainLiteral">Release</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>release</IRI>
+        <Literal xml:lang="cs" datatypeIRI="&rdf;PlainLiteral">release</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>release</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">release</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>release</IRI>
+        <Literal xml:lang="es" datatypeIRI="&rdf;PlainLiteral">release</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>release</IRI>
+        <Literal xml:lang="fr" datatypeIRI="&rdf;PlainLiteral">release</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>release</IRI>
+        <Literal xml:lang="ja" datatypeIRI="&rdf;PlainLiteral">リリース</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>release</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">release</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>repository</IRI>
+        <Literal xml:lang="fr" datatypeIRI="&rdf;PlainLiteral">Dépôt du code source.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>repository</IRI>
+        <Literal xml:lang="de" datatypeIRI="&rdf;PlainLiteral">Quellcode-Versionierungssystem.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>repository</IRI>
+        <Literal xml:lang="es" datatypeIRI="&rdf;PlainLiteral">Repositorio del código fuente.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>repository</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Source code repository.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>repository</IRI>
+        <Literal xml:lang="cs" datatypeIRI="&rdf;PlainLiteral">Úložiště zdrojových kódů.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>repository</IRI>
+        <Literal xml:lang="ja" datatypeIRI="&rdf;PlainLiteral">このプロジェクトのソースコードのリポジトリ</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>repository</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>repository</IRI>
+        <Literal xml:lang="de" datatypeIRI="&rdf;PlainLiteral">Repository</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>repository</IRI>
+        <Literal xml:lang="fr" datatypeIRI="&rdf;PlainLiteral">dépôt</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>repository</IRI>
+        <Literal xml:lang="es" datatypeIRI="&rdf;PlainLiteral">repositorio</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>repository</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">repository</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>repository</IRI>
+        <Literal xml:lang="cs" datatypeIRI="&rdf;PlainLiteral">úložiště</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>repository</IRI>
+        <Literal xml:lang="ja" datatypeIRI="&rdf;PlainLiteral">リポジトリ</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>repository</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">repository</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>retarget-time</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Difficulty retargeting period.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>retarget-time</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">retarget-time</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>retarget-time</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">retarget-time</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>revision</IRI>
+        <Literal xml:lang="fr" datatypeIRI="&rdf;PlainLiteral">Identifiant de révision d&apos;une release du programme.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>revision</IRI>
+        <Literal xml:lang="cs" datatypeIRI="&rdf;PlainLiteral">Identifikátor zpřístupněné revize softwaru.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>revision</IRI>
+        <Literal xml:lang="es" datatypeIRI="&rdf;PlainLiteral">Indentificador de la versión de un release de software.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>revision</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Revision identifier of a software release.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>revision</IRI>
+        <Literal xml:lang="de" datatypeIRI="&rdf;PlainLiteral">Versionsidentifikator eines Software-Releases.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>revision</IRI>
+        <Literal xml:lang="ja" datatypeIRI="&rdf;PlainLiteral">このリリースのリビジョン識別子</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>revision</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>revision</IRI>
+        <Literal xml:lang="de" datatypeIRI="&rdf;PlainLiteral">Version</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>revision</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">revision</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>revision</IRI>
+        <Literal xml:lang="fr" datatypeIRI="&rdf;PlainLiteral">révision</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>revision</IRI>
+        <Literal xml:lang="es" datatypeIRI="&rdf;PlainLiteral">versión</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>revision</IRI>
+        <Literal xml:lang="cs" datatypeIRI="&rdf;PlainLiteral">verze</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>revision</IRI>
+        <Literal xml:lang="ja" datatypeIRI="&rdf;PlainLiteral">リビジョンコート</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>revision</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">revision</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>service-endpoint</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">The URI of a web service endpoint where software as a service may be accessed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>service-endpoint</IRI>
+        <Literal xml:lang="ja" datatypeIRI="&rdf;PlainLiteral">ことプロジェクトが提供したサーブスを載せるサイト。</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>service-endpoint</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>service-endpoint</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">service endpoint</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>service-endpoint</IRI>
+        <Literal xml:lang="ja" datatypeIRI="&rdf;PlainLiteral">サービスサイト</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>service-endpoint</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">service endpoint</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>slug</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>slug</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">slug</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>slug</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">slug</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>symbol</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>symbol</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">exchange trading symbol</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>symbol</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">exchange trading symbol</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>tester</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A tester or other quality control contributor.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>tester</IRI>
+        <Literal xml:lang="de" datatypeIRI="&rdf;PlainLiteral">Ein Tester oder anderer Mitarbeiter der Qualitätskontrolle.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>tester</IRI>
+        <Literal xml:lang="cs" datatypeIRI="&rdf;PlainLiteral">Tester nebo jiný spoluautor kontrolující kvalitu.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>tester</IRI>
+        <Literal xml:lang="es" datatypeIRI="&rdf;PlainLiteral">Un tester u otro proveedor de control de calidad.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>tester</IRI>
+        <Literal xml:lang="fr" datatypeIRI="&rdf;PlainLiteral">Un testeur ou un collaborateur au contrôle qualité.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>tester</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">このプロジェクトのため、試験をする人や品質メンテナー。</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>tester</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>tester</IRI>
+        <Literal xml:lang="de" datatypeIRI="&rdf;PlainLiteral">Tester</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>tester</IRI>
+        <Literal xml:lang="cs" datatypeIRI="&rdf;PlainLiteral">tester</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>tester</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">tester</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>tester</IRI>
+        <Literal xml:lang="es" datatypeIRI="&rdf;PlainLiteral">tester</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>tester</IRI>
+        <Literal xml:lang="fr" datatypeIRI="&rdf;PlainLiteral">testeur</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>tester</IRI>
+        <Literal xml:lang="ja" datatypeIRI="&rdf;PlainLiteral">試験者</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns:term_status"/>
+        <IRI>tester</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">unstable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>tester</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">tester</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>total-coins</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>total-coins</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">total coins produced</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>total-coins</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">total coins produced</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>translator</IRI>
+        <Literal xml:lang="fr" datatypeIRI="&rdf;PlainLiteral">Collaborateur à la traduction de la crypto-monnaie.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>translator</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Contributor of translations to the cryptocurrency.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>translator</IRI>
+        <Literal xml:lang="de" datatypeIRI="&rdf;PlainLiteral">Mitarbeiter an den Übersetzungen eines Crypto-Währungen.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>translator</IRI>
+        <Literal xml:lang="es" datatypeIRI="&rdf;PlainLiteral">Proveedor de traducciones al cryptodivisa.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>translator</IRI>
+        <Literal xml:lang="cs" datatypeIRI="&rdf;PlainLiteral">Spoluautor překladu kryptomena.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>translator</IRI>
+        <Literal xml:lang="ja" datatypeIRI="&rdf;PlainLiteral">このプロジェクトを翻訳する貢献者</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>translator</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>translator</IRI>
+        <Literal xml:lang="cs" datatypeIRI="&rdf;PlainLiteral">překladatel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>translator</IRI>
+        <Literal xml:lang="fr" datatypeIRI="&rdf;PlainLiteral">traducteur</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>translator</IRI>
+        <Literal xml:lang="es" datatypeIRI="&rdf;PlainLiteral">traductor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>translator</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">translator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>translator</IRI>
+        <Literal xml:lang="de" datatypeIRI="&rdf;PlainLiteral">Übersetzer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>translator</IRI>
+        <Literal xml:lang="ja" datatypeIRI="&rdf;PlainLiteral">翻訳者</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns:term_status"/>
+        <IRI>translator</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">unstable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>translator</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">translator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>vendor</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Vendor organization: commercial, free or otherwise</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>vendor</IRI>
+        <Literal xml:lang="ja" datatypeIRI="&rdf;PlainLiteral">提供組織、商業の組織や自由の組織。</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>vendor</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>vendor</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">vendor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>vendor</IRI>
+        <Literal xml:lang="ja" datatypeIRI="&rdf;PlainLiteral">提供組織</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns:term_status"/>
+        <IRI>vendor</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">unstable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>vendor</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">vendor</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
