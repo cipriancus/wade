@@ -772,9 +772,229 @@ Bullish Scenario: A close (as per UTC) above the upward sloping 50-day MA, follo
 
 ###  http://iptc.org/std/rNews/2011-10-07#news02Image2
 <http://iptc.org/std/rNews/2011-10-07#news02Image2> rdf:type owl:NamedIndividual ,
-                                                             :ImageObject ;
+                                                             :Article ;
                                                     :associatedMedia <http://iptc.org/std/rNews/2011-10-07#news02> ;
                                                     :url "https://media.coindesk.com/uploads/2018/01/btc-weekly.png"^^xsd:anyURI .
+
+
+###  http://iptc.org/std/rNews/2011-10-07#news03
+<http://iptc.org/std/rNews/2011-10-07#news03> rdf:type owl:NamedIndividual ,
+                                                       :Article ;
+                                              :description """Ethereum (Ether) has solidified its position as the second most valuable cryptocurrency in the market as it overtook Ripple (XRP) by a staggering $60 billion within a five-day period.
+
+Ether Benefits From Ripple’s Downfall
+Since January 4, the market valuation of Ripple decreased from $148 billion to $73 billion, falling by nearly 2-fold in a single week. On the contrary, the market valuation of Ethereum surged from $85 billion to $135 billion, recording yet another 15 percent increase in value today, on January 10.
+
+The recent surge in the price of Ethereum can be largely attributed to the sell-off of XRP, which was likely triggered by the market’s concerns over the sudden spike in the market valuation of Ripple. The harsh criticism of Ripple by analysts such as ConsenSys entrepreneur-in-residence Ryan Selkis could also have led to the decline in confidence towards Ripple.
+
+On December 29, Selkis noted that the majority of Ripple’s partner banks are not actually utilizing the Ripple network to process billions of dollars on a regular basis. Given that the transaction volume of Ripple and its network of banks can be only two factors that could possibly justify its market cap, the market’s interest in Ripple decreased in the short-term.
+
+Selkis wrote:
+
+“Per a source at one of the major banks re XRP: ‘I know of no banks that are a) using it, or b) would touch it in any way as it is controlled by a SV company and 20% of all XRP in existence were taken by the founders.
+
+The product that Ripple are offering to banks is simply a point-to-point messaging tool with some smart cryptography underneath to ensure that transactions are atomic. The liquidity model used is the same as correspondent banking.”
+
+In response to the criticism of Selkis and Nathaniel Poppers of The New York Times that banks are not utilizing the Ripple network to settle large volumes of transactions, Ripple CEO Brad Garlinghouse firmly stated that there are several banks regularly using the xRapid platform of Ripple to process payments at a large-scale.
+
+“Over the last few months I’ve spoken with actual banks and payment providers. They are indeed planning to use xRapid (our XRP liquidity product) in a serious way. This is a sampling of what I heard:
+
+We ran the costs on our end and see that this is 100 percent more efficient than what we’re doing now.
+The xRapid pilots all went perfectly.
+This is much more efficient than our process today. We’d like to move forward with xRapid today.
+This [XRP] is a much more efficient way to send money across borders than what we typically use today.
+There are plenty of small to medium sized banks out there that are hit hard by fees. They’d jump at the opportunity to send money directly and bypass those fees.”
+Still, regardless of the statement of Garlinghouse, the value of Ripple has fallen drastically over the past week and as a consequence, Ethereum has benefited from the shift in interest from XRP to the rest of the cryptocurrency market.
+
+Ethereum’s Market Cap Can be Justified
+Ethereum remains as one of the few blockchain networks that has a justifiable market valuation. Decentralized applications building on top of Ethereum such as CryptoKitties, 0x, EtherDelta, Status, and OmiseGo have obtained a large user base of actual users that process hundreds of thousands of transactions on a daily basis.
+
+In the short-term, it is likely that the upward price trend of Ether will continue, as decentralized applications on the network perform well.
+
+Featured image from Shutterstock.
+
+Follow us on Telegram."""^^xsd:string ;
+                                              :name "Ethereum Price Achieves New All-Time High at $1,410, Market Shifts From Ripple to Ether"^^xsd:string ;
+                                              :url "https://www.ccn.com/ethereum-price-new-all-time-high-at-1410-market-shifts-from-ripple-to-ether/"^^xsd:anyURI .
+
+
+###  http://iptc.org/std/rNews/2011-10-07#news03Image1
+<http://iptc.org/std/rNews/2011-10-07#news03Image1> rdf:type owl:NamedIndividual ,
+                                                             :ImageObject ;
+                                                    :associatedArticle <http://iptc.org/std/rNews/2011-10-07#news03> ;
+                                                    :url "https://248qms3nhmvl15d4ne1i4pxl-wpengine.netdna-ssl.com/wp-content/uploads/2018/01/x-15-1024x567.png"^^xsd:anyURI .
+
+
+###  http://iptc.org/std/rNews/2011-10-07#news04
+<http://iptc.org/std/rNews/2011-10-07#news04> rdf:type owl:NamedIndividual ,
+                                                       :Article ;
+                                              :description """The South Korean government has confirmed that it has no plans to ban cryptocurrency trading in the short-term. This is a major relief to the markets, which were reeling under selling pressure.
+
+Warren Buffet’s warning that the cryptocurrencies will have a “bad ending” also did not have any noticeable effect on the prices.
+
+During the recent decline, instead of being perturbed, many traders saw this as a buying opportunity and rushed to open new accounts. The cryptocurrency exchange Binance saw a whopping addition of 240,000 users in just an hour on Jan. 10.
+
+However, unlike the previous occasions, the pullback from the lows has been muted. Is this a sign of waning momentum? Let’s find out.
+
+BTC/USD
+Bitcoin broke below the 50-day SMA on Jan. 11 and since then, it has been struggling to climb above it. It has managed to hold on to the critical support level between the trendline of the symmetrical triangle and the neckline of the head and shoulders pattern.
+
+BTC
+
+If Bitcoin fails to rally within the next two days, chances are that it will turn down and break below $12,500, sinking it to $8,000 levels.
+
+On the other hand, if the cryptocurrency clings on to the support and moves above the 20-day EMA, it will indicate a short-term bottom.
+
+Very aggressive traders can buy on a breakout above $14,500 and keep a stop loss of $12,500. The target objective of this trade is $16,500. This is a very risky trade, hence, should be attempted with only 25 percent of the usual position size.
+
+Risk-averse traders should wait for a reliable setup to form as there is no clear trend on the BTC/USD pair as long as it trades inside the triangle. It’s better to wait for a breakout or breakdown from the triangle before initiating any positions.
+
+ETH/USD
+Ethereum has been comparatively strong during the South Korean ban episode. This shows that its owners are not in a hurry to sell their holdings.   
+
+ETH
+
+The buyers jumped in at the 38.2 percent Fibonacci retracement levels of the latest rally from $640.43 to $1,382. The uptrend remains intact and the bulls are likely to make another attempt to break out of the recent highs at $1,382.
+
+If the price breaks out of the overhead resistance zone of $1,382 to $1,434, it will signal the start of the next leg of the up move, which can carry the ETH/USD pair towards its target objective of $1,814.67.
+
+On the downside, support exists at the 20-day EMA and at $965.18, which is the intraday low on Jan. 8.
+
+However, as we expect a strong resistance between $1,382 and $1,434, we are not recommending any fresh long positions in it.
+
+BCH/USD
+Bitcoin Cash broke out of the range on Jan. 10, however, contrary to our expectation, it could not rally to $3,249. It faced strong resistance at $2,950 and turned down from there.
+
+BCH
+
+It continues to be range bound but in a larger range. On the upside, $2,950 is the critical resistance and on the downside, $2,291 continues to be a strong support. If this support breaks, it has another support at the $2,072 level.
+
+Traders should wait for a breakout above $2950 to initiate long positions. The breakout is likely to carry the BCH/USD pair towards the highs.
+
+On the other hand, a breakdown below $2,072 can result in a decline to $1,733 and thereafter to $1,200.    
+
+XRP/USD
+For the past three days, Ripple has been attempting to hold the uptrend line. The bulls continue to buy the dips close to the $1.5 levels.
+
+XRP
+
+The cryptocurrency is currently correcting inside a descending channel. If the bulls succeed in breaking out of the resistance line of the channel, a move to $2.85 is likely.
+
+Strong support exists between $1.76978 and $1.40463, which are 50 percent and 61.8 percent Fibonacci retracement levels of the recent rally from $0.22255 to $3.317.
+
+But we don’t find any reliable buy setups on the XRP/USD pair. Hence, we are not recommending any trade on it.     
+
+IOTA/USD
+IOTA has continued its range-bound trading between $3.032 and $4.34. Yesterday, Jan. 11, the bulls again defended the lower end of the range.
+
+IOTA
+
+We expect the range to hold.  Hence, traders can buy on weakness towards $3.1 and keep a stop loss of $2.7.
+
+The IOTA/USD pair should attempt to move towards $4.34 once it breaks out of the downtrend line. A move above $4.34 is likely to propel it towards the upper end of the range at $5.59.
+
+Our bullish view will be invalidated if price breaks down and sustains below $3.032.    
+
+LTC/USD
+Litecoin is still stuck inside the symmetrical triangle. Yesterday, Jan.11,  the bears failed to break down of the triangle.
+
+LTC
+
+The bulls will now try to push prices towards the resistance line of the triangle at $280. The move will gain momentum above $254. The support is way lower at $215.
+
+At the moment the risk to reward ratio is not attractive for trades.
+
+The LTC/USD pair will become bearish if price breaks down and sustains below the 50-day SMA.
+
+XEM/USD
+As forecast in our previous analysis, the decline to the trendline support prompted buying. NEM is currently in a pullback. Should we trade this?
+
+XEM
+
+The traders bought the dip below the trendline support yesterday, Jan. 11. We now expect the XEM/USD pair to rally to $1.56949 and $1.68590, which are 50 percent and 61.8 percent Fibonacci retracement levels of the recent fall from $2.06278 to $1.07619.
+
+The aggressive traders can buy at the current levels of $1.38 and keep a stop loss at $1.06, below yesterday’s lows. Though the initial risk to reward ratio is not attractive, we believe that buying near the strong support of the trendline is a good strategy.
+
+ADA/BTC
+Buyers bought the dip below the trendline on Jan. 11. We had forecast a pullback from the trendline in our previous analysis but advised waiting for a confirmation of a bottom before buying. So, can the traders buy now?
+
+ADA
+
+If the pullback sustains above the 0.000057 levels, we expect the move to extend to $0.00006616 and $0.00007221, which are 50 percent and 61.8 percent Fibonacci retracement levels of the recent fall.
+
+Traders can buy the ADA/BTC pair at the current levels and keep a stop loss at 0.00004. Here too, we are recommending a trade without an attractive risk to reward ratio because we are buying close to the strong support of the trendline from where the price can surprise on the upside."""^^xsd:string ;
+                                              :name "Bitcoin, Ethereum, Bitcoin Cash, Ripple, IOTA, Litecoin, NEM, Cardano: Price Analysis, Jan. 12"^^xsd:string ;
+                                              :url "https://cointelegraph.com/news/bitcoin-ethereum-bitcoin-cash-ripple-iota-litecoin-nem-cardano-price-analysis-jan-12"^^xsd:anyURI .
+
+
+###  http://iptc.org/std/rNews/2011-10-07#news04Image1
+<http://iptc.org/std/rNews/2011-10-07#news04Image1> rdf:type owl:NamedIndividual ,
+                                                             :ImageObject ;
+                                                    :associatedArticle <http://iptc.org/std/rNews/2011-10-07#news04> ;
+                                                    :url "https://cointelegraph.com/storage/uploads/view/941d764e85faf4ef6a0c00c0cc5b49fd.png"^^xsd:anyURI .
+
+
+###  http://iptc.org/std/rNews/2011-10-07#news04Image2
+<http://iptc.org/std/rNews/2011-10-07#news04Image2> rdf:type owl:NamedIndividual ,
+                                                             :ImageObject ;
+                                                    :associatedArticle <http://iptc.org/std/rNews/2011-10-07#news04> ;
+                                                    :url "https://cointelegraph.com/storage/uploads/view/a4a26086b794f5e27613ea007ff310b4.png"^^xsd:anyURI .
+
+
+###  http://iptc.org/std/rNews/2011-10-07#news04Image3
+<http://iptc.org/std/rNews/2011-10-07#news04Image3> rdf:type owl:NamedIndividual ,
+                                                             :ImageObject ;
+                                                    :associatedArticle <http://iptc.org/std/rNews/2011-10-07#news04> ;
+                                                    :url "https://cointelegraph.com/storage/uploads/view/b3b5adf0bb99683dd1183088399e879d.png"^^xsd:anyURI .
+
+
+###  http://iptc.org/std/rNews/2011-10-07#news04Image4
+<http://iptc.org/std/rNews/2011-10-07#news04Image4> rdf:type owl:NamedIndividual ,
+                                                             :ImageObject ;
+                                                    :associatedArticle <http://iptc.org/std/rNews/2011-10-07#news04> ;
+                                                    :url "https://cointelegraph.com/storage/uploads/view/9efe1fb57a92e36fc5c25840e3c290f9.png"^^xsd:anyURI .
+
+
+###  http://iptc.org/std/rNews/2011-10-07#news04Image5
+<http://iptc.org/std/rNews/2011-10-07#news04Image5> rdf:type owl:NamedIndividual ,
+                                                             :ImageObject ;
+                                                    :associatedArticle <http://iptc.org/std/rNews/2011-10-07#news04> ;
+                                                    :url "https://cointelegraph.com/storage/uploads/view/d4da92a06369e044818243554dea9906.png"^^xsd:anyURI .
+
+
+###  http://iptc.org/std/rNews/2011-10-07#news05
+<http://iptc.org/std/rNews/2011-10-07#news05> rdf:type owl:NamedIndividual ,
+                                                       :Article ;
+                                              :description """The Brazilian government is seeking to move popular petitions, an inefficient electoral system of the country, onto the Ethereum network, to process hundreds of millions of votes on the immutable Blockchain network.
+
+In Brazil, popular petitions enable over 145 mln voters across the country to come to a consensus on important political decisions. But, for many decades, political experts and analysts have questioned the logistical issue of popular petitions, and political commentators have described the structural problem of the electoral system of Brazil as the basis for most of the country’s political issues.
+
+Gabriel Barbosa, a research associate at the Council on Hemispheric Affairs, wrote, “when people are living paycheck to paycheck, or as the common saying in Brazil goes, ‘selling their lunch to buy their dinner,’ the cost of political participation becomes high enough so that people are excluded from the political process,” emphasizing the lack of proper institutions that handle the cost of political engagement.
+
+Move to Ethereum
+As Joon Ian Wong of Quartz reported, Brazilian legislators led by Congress legislative adviser Ricardo Fernandes Paixão and university professor Everton Fraga are planning on ways to utilize the Ethereum Blockchain network to store and process electoral votes, as a part of a larger initiative to improve Brazil’s political system, which The Economist described as “sleazy.”
+
+The key to employing a Blockchain system in processing petitions and electoral votes is to encrypt votes onto the immutable Blockchain network as transactions, to ensure that the specific piece of data remains unalterable and invulnerable to manipulation.
+
+Essentially, processing petition signatures on the Ethereum network would require smart contracts, and the system would operate similarly as other decentralized applications that exist on the network. The electoral system of Brazil would act as a decentralized application of its own with an independent digital token, that is used to process every vote on the Blockchain.
+
+Henrique Costa, a Universidade de Brasilia law professor, told QZ that the lack of an immutable platform to collect signatures of votes had been a real issue for the government in the past.
+
+“In part this is due to the absence of a platform that can securely collect the signatures of one percent of voters. We’ve been through a sort of crisis regarding the legitimacy…of our laws. Although the popular initiative does exist, there is no secure way to collect people’s signatures so people can propose bills themselves.”
+
+Within the Brazilian electoral system, any popular petition with the signatures of one percent of the country’s populations is required to be heard in Congress. But, because of the lack of an institution and a platform that handles petition votes, the group that rallies behind a particular petition also needs to find a legislator to adopt it.
+
+Consequently, the probability of popular petitions being heard in  Congress has significantly decreased, even though many petitions have gathered signatures from the one percent of voters.
+
+Mobile app
+Currently, the Brazilian government is exploring the possibility of using a mobile app based on the Ethereum Blockchain network with which residents and citizens can submit petition votes. Since decentralized applications can operate on mobile systems, the Brazilian petition and electoral system can operate in a similar way.
+
+Since broadcasting every single signature as a transaction of its own is highly efficient and costly, the Brazilian government will use a system called hashing to combine all of the daily votes into one transaction and broadcast it to the main Ethereum Blockchain network.
+
+Fraga, one of the two leading advisers of the project, stated that the integration of Ethereum into the Brazilian’s inefficient and impractical electoral system would be a celebration of democracy if it passes Congress and becomes implemented. He said:
+
+“It would be a celebration of democracy. With this project, we are doing what the constitution says, but in practice, it hasn’t [yet] happened.”"""^^xsd:string ;
+                                              :url "https://cointelegraph.com/news/brazilian-government-plans-to-process-petitions-and-write-laws-on-ethereum"^^xsd:anyURI .
 
 
 ###  Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi

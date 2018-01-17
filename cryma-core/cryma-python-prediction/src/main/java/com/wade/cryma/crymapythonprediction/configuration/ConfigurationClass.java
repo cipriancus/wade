@@ -16,7 +16,6 @@ public class ConfigurationClass {
     }
 
     @Bean
-    @LoadBalanced
     public static PropertySourcesPlaceholderConfigurer propertySourcesPlaceholderConfigurer() {
             return new PropertySourcesPlaceholderConfigurer();
     }

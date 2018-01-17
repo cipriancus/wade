@@ -1,5 +1,6 @@
 package com.wade.cryma.news.app;
 
+import com.wade.cryma.news.repository.impl.NewsRepository;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;

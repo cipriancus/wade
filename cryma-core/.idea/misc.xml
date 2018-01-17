@@ -7,7 +7,6 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/cryma-coin-conversion/pom.xml" />
         <option value="$PROJECT_DIR$/cryma-cointology/pom.xml" />
         <option value="$PROJECT_DIR$/cryma-eureka-service/pom.xml" />
         <option value="$PROJECT_DIR$/cryma-model/pom.xml" />

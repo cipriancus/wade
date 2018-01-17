@@ -1,14 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1515761265164" name="duplicate:http://jena.hpl.hp.com/testing/reasoners/owl" uri="WADE/JENA/jena-examples-master/target/classes/data/inference/abox.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1515761265164" name="duplicate:http://jena.hpl.hp.com/testing/reasoners/owl" uri="WADE/JENA/jena-examples-master/target/classes/data/inference/tbox.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1515761265164" name="http://purl.org/net/bel-epa/ccy" uri="WADE/ccy.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1515761265164" name="http://purl.org/net/bel-epa/doacc" uri="WADE/doacc.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1515761265164" name="http://www.co-ode.org/ontologies/pizza/pizza.owl" uri="WADE/JENA/jena-examples/src/main/resources/data/pizza.owl.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1515761265164" name="http://www.w3.org/2004/02/skos/core" uri="WADE/skos-owl1-dl.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1515761265164" name="shadowed:http://jena.hpl.hp.com/testing/reasoners/owl" uri="WADE/JENA/jena-examples-master/src/main/resources/data/inference/abox.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1515761265164" name="shadowed:http://jena.hpl.hp.com/testing/reasoners/owl" uri="WADE/JENA/jena-examples-master/src/main/resources/data/inference/tbox.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1515761265164" name="shadowed:http://www.co-ode.org/ontologies/pizza/pizza.owl" uri="WADE/JENA/jena-examples/target/classes/data/pizza.owl.rdf"/>
-    </group>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base=""/>
 </catalog>

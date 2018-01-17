@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/cryma-coin-conversion/cryma-coin-conversion.iml" filepath="$PROJECT_DIR$/cryma-coin-conversion/cryma-coin-conversion.iml" />
       <module fileurl="file://$PROJECT_DIR$/cryma-cointology/cryma-cointology.iml" filepath="$PROJECT_DIR$/cryma-cointology/cryma-cointology.iml" />
       <module fileurl="file://$PROJECT_DIR$/cryma-core.iml" filepath="$PROJECT_DIR$/cryma-core.iml" />
       <module fileurl="file://$PROJECT_DIR$/cryma-eureka-service/cryma-eureka-service.iml" filepath="$PROJECT_DIR$/cryma-eureka-service/cryma-eureka-service.iml" />

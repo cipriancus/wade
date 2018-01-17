@@ -28,9 +28,6 @@ zuul:
     cryma-cointology:
       path: /cryma-cointology/**
       serviceId: cryma-cointology
-    cryma-conversion:
-      path: /cryma-conversion/**
-      serviceId: cryma-conversion
 
 hystrix:
   command:
