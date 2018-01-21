@@ -1,0 +1,47 @@
+spring:
+   application:
+      name: cryma-zuul-apigateway
+
+server:
+  port: 443
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: https://cryma-eureka-service.cfapps.io/eureka/
+
+zuul:
+  prefix: /api
+  routes:
+    cryma-python-prediction:
+      path: /cryma-python-prediction/**
+      serviceId: cryma-python-prediction
+    cryma-prediction:
+      path: /cryma-prediction/**
+      serviceId: cryma-prediction
+    cryma-plot:
+      path: /cryma-plot/**
+      serviceId: cryma-plot
+    cryma-news:
+      path: /cryma-news/**
+      serviceId: cryma-news
+    cryma-cointology:
+      path: /cryma-cointology/**
+      serviceId: cryma-cointology
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 100000
+        timeout:
+          enabled: false
+
+ribbon:
+  ReadTimeout: 10000
+  ConnectTimeout: 10000
+  maxAutoRetries: 1
+  MaxAutoRetriesNextServer: 2
+  OkToRetryOnAllOperations: true

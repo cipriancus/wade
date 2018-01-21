@@ -1,0 +1,10 @@
+  spring:
+    application:
+      name: cryma-python-prediction
+  server:
+    port: 443
+
+   eureka:
+      client:
+        serviceUrl:
+          defaultZone: https://cryma-eureka-service.cfapps.io/eureka/

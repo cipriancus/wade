@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/cryma-coin-conversion" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cryma-cointology" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cryma-eureka-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cryma-model" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cryma-news" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cryma-parent" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cryma-plot" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cryma-prediction" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cryma-python-prediction" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cryma-zuul-apigateway" charset="UTF-8" />
+  </component>
+</project>

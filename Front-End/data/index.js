@@ -1,8 +1,10 @@
 //Flot Pie Chart
+var baseURL="localhost:8082/api/"
+
 $(function() {
 	 $.ajax({
             type: "GET",
-            url: "http://localhost:8082/api/cryma-plot/coin",
+            url: baseURL + "cryma-plot/coin",
             contentType: 'application/json;charset=UTF-8',
             success: function (values) {
 				values=values._embedded.coin;
@@ -27,7 +29,7 @@ $(function() {
 					},
 					tooltip: true,
 					tooltipOpts: {
-						content: "%p.0%, %s", // show percentages, rounding to 2 decimal places
+						content: "%p.0%, %s",
 						shifts: {
 							x: 20,
 							y: 0
@@ -42,7 +44,7 @@ $(function() {
 $(function() {
 	 $.ajax({
             type: "GET",
-            url: "http://localhost:8082/api/cryma-plot/coin",
+            url: baseURL + "/cryma-plot/coin",
             contentType: 'application/json;charset=UTF-8',
             success: function (values) {
 				values=values._embedded.coin;
