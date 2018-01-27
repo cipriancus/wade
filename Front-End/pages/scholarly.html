@@ -59,7 +59,7 @@
 		  uses the power of semantic web and information found on diverse ontologies
 		  to keep the information presented on the site as accurate as possible, with
 		  as little as possible human interaction, so that users are updated in real time
-		  with the information they need for a better understanding of the world-wide crypto market.
+		  with the information they need for a better understanding of the world-wide crypto currencies market.
         </p>
       </section>
 	  
@@ -70,11 +70,10 @@
 		  that everybody gets information with as little delay as possible. 
         </p>
 		<p>
-		  Systems capable of displaying diverse information in real time are very sought after.
+		  Systems capable of displaying diverse, up to date information are very sought after.
 		</p>
 		<p>
-		  Smart information visualisation, current and future growth prediction but also
-		  sorting and converting capabilities are needed tools for the next financial shift,
+		  Smart information visualisation, current and future growth prediction and sorting by different criteria are the capabilities and tools needed for the next financial shift,
 		  empowering the people and giving them the oportunity to make the best decisions with
 		  the right perspective of the market.
 		</p>
@@ -89,7 +88,7 @@
 				<li>Rich front end client.</li>
 				<li>Top cryptocurrency value : value ( in $ ), change in 24h ( with percentage ), market share and an evolution graphic.</li>
 				<li>The top chart can be ordered ascending or descending for each information in the table header.</li>
-				<li>Machine Learning prediction of future coin values</li>
+				<li>Machine Learning prediction of the coin values' tendencies</li>
 				<li>News about cryptocurrencies</li>
 				<li>Extended details about a specific cryptocurrency with information such as : website, logo, trade value, market cap, volume, price evolution chart, markets and news.</li>
 				<li>Mining pool information.</li>
@@ -135,7 +134,6 @@
 				the GatewayAPI, having the following functions:
 			</p>
 			<ul>
-				<li><code>CoinConversion</code> : Will have data about real currency and cryptocurrency and convert from one another.</li>
 				<li><code>News</code> : will pull data from the web that are news, related to the cryptocurrencies</li>
 				<li><code>Plot</code> : using the Prediction microservice, that will predict future coin data based on past information, it's
 					purpose is providing plot data for the front end, based on the filters and preferences set by the latter</li>
@@ -150,12 +148,6 @@
 			</p>
 			<figure typeof="sa:Image">
 			  <img src="../scholarly/UML/coinconvertion class diagram.png" >	
-			  <figcaption>
-				Coin Conversion Class Diagram ( figure 2 )
-			  </figcaption>
-			</figure>
-			<figure typeof="sa:Image">
-			  <img src="..//scholarly/UML//news class diagram.png" >	
 			  <figcaption>
 				News Class Diagram ( figure 3 )
 			  </figcaption>
@@ -277,12 +269,12 @@
 				as it can pe seen, there is a dotted line from 12th till 13th predicting a growth.
 			</p>
 			<p>
-				Another visualisation tool is the monthly prive average, as seen below.
+				Another visualisation tool is the monthly price average, as seen below.
 			</p>
 			<figure typeof="sa:Image">
 			  <img src="../scholarly/Photos/bitcoin_distribution_mothly.png" >	
 			  <figcaption>
-				Mothly prive average ( figure 12 )
+				Mothly price average ( figure 12 )
 			  </figcaption>
 			</figure>
 			<p>
@@ -293,26 +285,12 @@
 			<figure typeof="sa:Image">
 			  <img src="../scholarly/Photos/bitcoin_distribution_mothly_prediction.png" >	
 			  <figcaption>
-				Mothly prive average with prediction ( figure 13 )
+				Mothly price average with prediction ( figure 13 )
 			  </figcaption>
 			</figure>
 			<p>
 				The algorithm estimates an increase, an informs the user with a red
 				rectangle about the prediction.
-			</p>
-			<p>
-				A feature felt is needed is of that of a "Currency Calculator",	
-			</p>
-			<figure typeof="sa:Image">
-			  <img src="../scholarly/Photos/first_page_currency.PNG" >	
-			  <figcaption>
-				Currency Calculator ( figure 14 )
-			  </figcaption>
-			</figure>
-			<p>
-				The value of the fiat currency is pulled by the microservice from
-				<a property="schema:citation" href="http://fixer.io/">Fixer.io</a> and the coin
-				value is pulled from the cointology microservice.
 			</p>
 			<p>
 				Having the most recent news is crucial in the financial system, thus
