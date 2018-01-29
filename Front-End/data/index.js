@@ -1,5 +1,5 @@
 //Flot Pie Chart
-var baseURL="localhost:8082/api/"
+var baseURL="https://cryma.cfapps.io/api/"
 
 $(function() {
 	 $.ajax({
