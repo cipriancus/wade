@@ -73,14 +73,13 @@
                                         <th>Cryptocurency</th>
                                         <th>Price</th>
                                         <th>Market Cap</th>
-										<th>Volume</th>
-										<th>Supply</th>
+					<th>Volume</th>
+					<th>Supply</th>
                                         <th>24H Change</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-								</tbody>
-
+				</tbody>
                             </table>
                         </div>
                         <!-- /.panel-body -->
@@ -195,6 +194,31 @@
     	
     <script>
     $(document).ready(function() {
+	$(function() {
+	 $.ajax({
+            type: "GET",
+            url: "https://cryma-plot.cfapps.io/coin",
+            contentType: 'application/json;charset=UTF-8',
+            success: function (values) {
+				values=values._embedded.coin;
+			
+				var data=[];
+				
+				for(var iterator=0;iterator<values.length;iterator++){
+					$("#cryptocurencyTop-dataTable tbody").append(`
+										<tr class=\"odd gradeX\">
+										<td class=\"center\">`+iterator+`</td>
+                                        <td class=\"center\"><a href="bitcoin.html">`+values[iterator].name+`</a></td>
+                                        <td class=\"center\">`+values[iterator].price+`</td>
+                                        <td class=\"center\">`+values[iterator].marketCap+`</td>
+                                        <td class=\"center\">`+values[iterator].volume+`</td>
+										<td class=\"center\">`+values[iterator].supply+`</td>
+										<td class=\"center\">`+values[iterator].change+`</td>
+										</tr>`);
+				}
+			}
+        });
+});
         $('#cryptocurencyTop-dataTable').DataTable({
             responsive: true
         });
