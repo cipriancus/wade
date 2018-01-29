@@ -107,17 +107,17 @@ $(function() {
      Morris.Area({
         element: 'topCryptocurrenciesGrowth',
         data: [{
-            period: '2017 October',
+            period: '2017-10-24',
             Bitcoin: 5500,
             Etherium: 300,
             Btcash: 500
         }, {
-            period: '2017 November ',
+            period: '2017-11-24',
             Bitcoin: 9000,
             Etherium: 500,
             Btcash: 1500
         }, {
-            period: '2017 December',
+            period: '2017-12-24',
             Bitcoin: 19000,
             Etherium: 800,
             Btcash: 3500
