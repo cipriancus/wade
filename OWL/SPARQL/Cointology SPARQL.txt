@@ -1,0 +1,72 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX cryma: <http://purl.org/cryma#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> 
+
+SELECT ?coin_name ?price ?date
+WHERE {
+ 	 ?coin rdf:type cryma:Cryptocurrency.
+  	 ?coin cryma:abbreviation ?coin_name.
+  	 ?value rdf:type cryma:Value.
+  	 ?value cryma:coin ?coin.
+  	 ?value cryma:price_USD ?price.
+	 ?value cryma:dateTime ?date
+     FILTER regex(?coin_name,"BTC")
+  	 FILTER (?date > "2014-05-23T10:20:13+05:30"^^xsd:dateTime)
+  	 FILTER (?date < "2019-05-23T10:20:13+05:30"^^xsd:dateTime)
+}
+
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  cryma: <http://purl.org/cryma#>
+
+SELECT  *
+WHERE
+  { 
+  	?coin rdf:type cryma:Cryptocurrency .
+    ?coin cryma:abbreviation ?abbreviation.
+  	?coin cryma:market_capital ?capital.
+    ?coin cryma:maximum_supply ?supply.
+  	?coin cryma:percent_change_24h ?change.
+  	?coin cryma:volume ?volume
+  }LIMIT 25
+
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  cryma: <http://purl.org/cryma#>
+
+SELECT  *
+WHERE
+  { 
+  	?coin rdf:type cryma:Cryptocurrency .
+    ?coin cryma:abbreviation ?abbreviation.
+  	?coin cryma:market_capital ?capital.
+    ?coin cryma:maximum_supply ?supply.
+  	?coin cryma:percent_change_24h ?change.
+  	?coin cryma:price_USD ?price.
+  	?coin cryma:volume ?volume
+  } ORDER BY DESC(?capital) LIMIT 25
+  
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  cryma: <http://purl.org/cryma#>
+
+SELECT  *
+WHERE
+  { 
+  	?coin rdf:type cryma:Cryptocurrency .
+    ?coin cryma:abbreviation ?abbreviation.
+  	?coin cryma:market_capital ?capital.
+    ?coin cryma:maximum_supply ?supply.
+  	?coin cryma:percent_change_24h ?change.
+  	?coin cryma:price_USD ?price.
+  	?coin cryma:volume ?volume.
+  	{
+      SELECT ?price_history ?date WHERE{
+           ?value rdf:type cryma:Value.
+           ?value cryma:coin ?coin.
+           ?value cryma:price_USD ?price_history.
+           ?value cryma:dateTime ?date
+      }
+    }
+    FILTER regex(?abbreviation, "BTC")
+}

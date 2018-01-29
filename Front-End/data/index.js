@@ -1,4 +1,3 @@
-//Flot Pie Chart
 var baseURL="https://cryma.cfapps.io/api/"
 
 $(function() {
@@ -44,6 +43,36 @@ $(function() {
 $(function() {
 	 $.ajax({
             type: "GET",
+            url: "https://cryma-news.cfapps.io/news/?limit=25&format=JSON-LD",
+            contentType: 'application/json;charset=UTF-8',
+            success: function (values) {
+			
+			values=jQuery.parseJSON(values);
+			
+			values=values["@graph"];
+							
+			for(var iterator=0;iterator<values.length;iterator++){
+				var info=values[iterator]["rs:value"];
+				if(info!=null&&info.length<100){
+					$("#newsBodyUL").append(`
+				<li class="clearfix">
+                                    <div class="chat-body clearfix">
+                                        <div class="header">
+                                            <strong class="primary-font">
+											<a href="">`+info+`
+											</a></strong>
+                                        </div>
+                                    </div>
+                                </li>`);
+				}
+			}
+           }
+        });
+});
+
+$(function() {
+	 $.ajax({
+            type: "GET",
             url: "https://cryma-plot.cfapps.io/coin",
             contentType: 'application/json;charset=UTF-8',
             success: function (values) {
@@ -55,7 +84,7 @@ $(function() {
 					$("#cryptocurencyTop-dataTable tbody").append(`
 										<tr class=\"odd gradeX\">
 										<td class=\"center\">`+iterator+`</td>
-                                        <td class=\"center\"><a href="bitcoin.html">`+values[iterator].name+`</a></td>
+                                        <td class=\"center\"><a href="coin.html">`+values[iterator].name+`</a></td>
                                         <td class=\"center\">`+values[iterator].price+`</td>
                                         <td class=\"center\">`+values[iterator].marketCap+`</td>
                                         <td class=\"center\">`+values[iterator].volume+`</td>
@@ -63,7 +92,13 @@ $(function() {
 										<td class=\"center\">`+values[iterator].change+`</td>
 										</tr>`);
 				}
-			}
+				
+				 $(document).ready(function() {
+					$('#cryptocurencyTop-dataTable').DataTable({
+						responsive: true
+					});
+				});
+				}
         });
 });
 
@@ -72,55 +107,20 @@ $(function() {
      Morris.Area({
         element: 'topCryptocurrenciesGrowth',
         data: [{
-            period: '2010 Q1',
-            Bitcoin: 2666,
-            Etherium: null,
-            Btcash: 2647
+            period: '2015',
+            Bitcoin: 275,
+            Etherium: 0,
+            Btcash: 0
         }, {
-            period: '2010 Q2',
-            Bitcoin: 2778,
-            Etherium: 2294,
-            Btcash: 2441
+            period: '2016 ',
+            Bitcoin: 450,
+            Etherium: 0,
+            Btcash: 0
         }, {
-            period: '2010 Q3',
-            Bitcoin: 4912,
-            Etherium: 1969,
-            Btcash: 2501
-        }, {
-            period: '2010 Q4',
-            Bitcoin: 3767,
-            Etherium: 3597,
-            Btcash: 5689
-        }, {
-            period: '2011 Q1',
-            Bitcoin: 6810,
-            Etherium: 1914,
-            Btcash: 2293
-        }, {
-            period: '2011 Q2',
-            Bitcoin: 5670,
-            Etherium: 4293,
-            Btcash: 1881
-        }, {
-            period: '2011 Q3',
-            Bitcoin: 4820,
-            Etherium: 3795,
-            Btcash: 1588
-        }, {
-            period: '2011 Q4',
-            Bitcoin: 15073,
-            Etherium: 5967,
-            Btcash: 5175
-        }, {
-            period: '2012 Q1',
-            Bitcoin: 10687,
-            Etherium: 4460,
-            Btcash: 2028
-        }, {
-            period: '2012 Q2',
-            Bitcoin: 8432,
-            Etherium: 5713,
-            Btcash: 1791
+            period: '2017',
+            Bitcoin: 20000,
+            Etherium: 1200,
+            Btcash: 1500
         }],
         xkey: 'period',
         ykeys: ['Bitcoin', 'Etherium', 'Btcash'],

@@ -1,0 +1,770 @@
+@prefix : <http://purl.org/cryma#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ns: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix ccy: <http://purl.org/net/bel-epa/ccy> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix doacc: <http://purl.org/net/bel-epa/doacc#> .
+@base <http://purl.org/cryma#> .
+
+<http://purl.org/cryma#> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/2002/07/owl#equivalentClass
+owl:equivalentClass rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
+ns:term_status rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+skos:prefLabel rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://purl.org/cryma#aboutCoin
+:aboutCoin rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/cryma#coin
+:coin rdf:type owl:ObjectProperty ,
+               owl:FunctionalProperty ;
+      rdfs:domain :Cryptocurrency ;
+      rdfs:range <http://purl.org/net/bel-epa/ccy#ElectronicCoin> ;
+      rdfs:comment "Electronic coin"@en ;
+      rdfs:isDefinedBy <http://purl.org/net/bel-epa/doacc> ;
+      rdfs:label "coin"@en ;
+      ns:term_status "unstable" ;
+      skos:prefLabel "coin"@en .
+
+
+###  http://purl.org/cryma#developer
+:developer rdf:type owl:ObjectProperty ;
+           rdfs:domain :Cryptocurrency ;
+           rdfs:range foaf:Person ;
+           rdfs:comment "Desarrollador de software para la cryptodivisa."@es ,
+                        "Developer of software for the cryptocurrency."@en ,
+                        "Développeur pour la crypto-monnaie."@fr ,
+                        "Software-Entwickler für eine Crypto-Währung."@de ,
+                        "Vývojář softwaru kryptomena."@cs ,
+                        "プロジェクトのソフトウェアの開発者"@ja ;
+           rdfs:isDefinedBy <http://purl.org/net/bel-epa/doacc> ;
+           rdfs:label "Entwickler"@de ,
+                      "desarrollador"@es ,
+                      "developer"@en ,
+                      "développeur"@fr ,
+                      "vývojář"@cs ,
+                      "開発者"@ja ;
+           skos:prefLabel "developer"@en .
+
+
+###  http://purl.org/cryma#distribution-scheme
+:distribution-scheme rdf:type owl:ObjectProperty ,
+                              owl:FunctionalProperty ;
+                     rdfs:domain :Cryptocurrency ;
+                     rdfs:range :DistributionScheme ;
+                     rdfs:comment "Coin distribution scheme"@en ;
+                     rdfs:isDefinedBy <http://purl.org/net/bel-epa/doacc> ;
+                     rdfs:label "distribution scheme"@en ;
+                     ns:term_status "unstable" ;
+                     skos:prefLabel "distribution scheme"@en .
+
+
+###  http://purl.org/cryma#hashfn
+:hashfn rdf:type owl:ObjectProperty ;
+        rdfs:domain :PoWscheme ;
+        rdfs:range :HashFunction .
+
+
+###  http://purl.org/cryma#helper
+:helper rdf:type owl:ObjectProperty ;
+        rdfs:domain :Cryptocurrency ;
+        rdfs:range foaf:Person ;
+        rdfs:comment "Colaborador del la cryptodivisa."@es ,
+                     "Collaborateur au projet."@fr ,
+                     "Crypto-Währung-Mitarbeiter."@de ,
+                     "Project contributor."@en ,
+                     "Spoluautor kryptomena."@cs ,
+                     "このプロジェクトの貢献者"@ja ;
+        rdfs:isDefinedBy <http://purl.org/net/bel-epa/doacc> ;
+        rdfs:label "Helfer"@de ,
+                   "colaborador"@es ,
+                   "collaborateur"@fr ,
+                   "helper"@en ,
+                   "spoluautor"@cs ,
+                   "貢献者"@ja ;
+        ns:term_status "unstable" ;
+        skos:prefLabel "helper"@en .
+
+
+###  http://purl.org/cryma#logo
+:logo rdf:type owl:ObjectProperty ;
+      rdfs:domain :Cryptocurrency ;
+      rdfs:range :PNG_Image .
+
+
+###  http://purl.org/cryma#maintainer
+:maintainer rdf:type owl:ObjectProperty ;
+            rdfs:domain :Cryptocurrency ;
+            rdfs:range foaf:Person ;
+            rdfs:comment "Desarrollador principal de una cryptodivisa, un líder de la cryptodivisa."@es ,
+                         "Développeur principal d'une crypto-monnaie, un meneur de la crypto-monnaie."@fr ,
+                         "Hauptentwickler eines Crypto-Währungen"@de ,
+                         "Maintainer of a cryptocurrency, a project leader."@en ,
+                         "Správce kryptomena, vedoucí kryptomena."@cs ,
+                         "このプロジェクトのメンテなー及びリーダ。"@ja ;
+            rdfs:isDefinedBy <http://purl.org/net/bel-epa/doacc> ;
+            rdfs:label "Crypto-Währungverantwortlicher"@de ,
+                       "desarrollador principal"@es ,
+                       "développeur principal"@fr ,
+                       "maintainer"@en ,
+                       "správce"@cs ,
+                       "メンテナー"@ja ;
+            ns:term_status "unstable" ;
+            skos:prefLabel "maintainer"@en .
+
+
+###  http://purl.org/cryma#pos
+:pos rdf:type owl:ObjectProperty ,
+              owl:FunctionalProperty ;
+     rdfs:domain :ProtectionScheme ;
+     rdfs:range :PoSscheme ;
+     rdfs:isDefinedBy <http://purl.org/net/bel-epa/doacc> ;
+     rdfs:label "proof of stake scheme"@en ;
+     skos:prefLabel "proof of stake scheme"@en .
+
+
+###  http://purl.org/cryma#pow
+:pow rdf:type owl:ObjectProperty ,
+              owl:FunctionalProperty ;
+     rdfs:domain :ProtectionScheme ;
+     rdfs:range :PoWscheme ;
+     rdfs:isDefinedBy <http://purl.org/net/bel-epa/doacc> ;
+     rdfs:label "proof of work scheme"@en ;
+     skos:prefLabel "proof of work scheme"@en .
+
+
+###  http://purl.org/cryma#protection-scheme
+:protection-scheme rdf:type owl:ObjectProperty ,
+                            owl:FunctionalProperty ;
+                   rdfs:domain :Cryptocurrency ;
+                   rdfs:range :ProtectionScheme ;
+                   rdfs:comment "Transaction record protection scheme"@en ;
+                   rdfs:isDefinedBy <http://purl.org/net/bel-epa/doacc> ;
+                   rdfs:label "protection scheme"@en ;
+                   ns:term_status "unstable" ;
+                   skos:prefLabel "protection scheme"@en .
+
+
+###  http://purl.org/cryma#release
+:release rdf:type owl:ObjectProperty ;
+         rdfs:domain :Cryptocurrency ;
+         rdfs:range :Version ;
+         rdfs:comment "A project release."@en ,
+                      "Ein Release (Version) eines Crypto-Währung."@de ,
+                      "Relase (verze) kryptomena."@cs ,
+                      "Un release (versión) de una cryptodivisa."@es ,
+                      "Une release (révision) d'une crypto-monnaie."@fr ,
+                      "このプロジェクトのリリース"@ja ;
+         rdfs:isDefinedBy <http://purl.org/net/bel-epa/doacc> ;
+         rdfs:label "Release"@de ,
+                    "release"@cs ,
+                    "release"@en ,
+                    "release"@es ,
+                    "release"@fr ,
+                    "リリース"@ja ;
+         skos:prefLabel "release"@en .
+
+
+###  http://purl.org/cryma#repository
+:repository rdf:type owl:ObjectProperty ;
+            rdfs:domain :Cryptocurrency ;
+            rdfs:range :Repository ;
+            rdfs:comment "Dépôt du code source."@fr ,
+                         "Quellcode-Versionierungssystem."@de ,
+                         "Repositorio del código fuente."@es ,
+                         "Source code repository."@en ,
+                         "Úložiště zdrojových kódů."@cs ,
+                         "このプロジェクトのソースコードのリポジトリ"@ja ;
+            rdfs:isDefinedBy <http://purl.org/net/bel-epa/doacc> ;
+            rdfs:label "Repository"@de ,
+                       "dépôt"@fr ,
+                       "repositorio"@es ,
+                       "repository"@en ,
+                       "úložiště"@cs ,
+                       "リポジトリ"@ja ;
+            skos:prefLabel "repository"@en .
+
+
+###  http://purl.org/cryma#slug
+:slug rdf:type owl:ObjectProperty ,
+               owl:FunctionalProperty ,
+               owl:InverseFunctionalProperty ;
+      rdfs:domain :Cryptocurrency .
+
+
+###  http://purl.org/cryma#tester
+:tester rdf:type owl:ObjectProperty ;
+        rdfs:domain :Cryptocurrency ;
+        rdfs:range foaf:Person ;
+        rdfs:comment "A tester or other quality control contributor."@en ,
+                     "Ein Tester oder anderer Mitarbeiter der Qualitätskontrolle."@de ,
+                     "Tester nebo jiný spoluautor kontrolující kvalitu."@cs ,
+                     "Un tester u otro proveedor de control de calidad."@es ,
+                     "Un testeur ou un collaborateur au contrôle qualité."@fr ,
+                     "このプロジェクトのため、試験をする人や品質メンテナー。"@en ;
+        rdfs:isDefinedBy <http://purl.org/net/bel-epa/doacc> ;
+        rdfs:label "Tester"@de ,
+                   "tester"@cs ,
+                   "tester"@en ,
+                   "tester"@es ,
+                   "testeur"@fr ,
+                   "試験者"@ja ;
+        ns:term_status "unstable" ;
+        skos:prefLabel "tester"@en .
+
+
+###  http://purl.org/cryma#translator
+:translator rdf:type owl:ObjectProperty ;
+            rdfs:domain :Cryptocurrency ;
+            rdfs:range foaf:Person ;
+            rdfs:comment "Collaborateur à la traduction de la crypto-monnaie."@fr ,
+                         "Contributor of translations to the cryptocurrency."@en ,
+                         "Mitarbeiter an den Übersetzungen eines Crypto-Währungen."@de ,
+                         "Proveedor de traducciones al cryptodivisa."@es ,
+                         "Spoluautor překladu kryptomena."@cs ,
+                         "このプロジェクトを翻訳する貢献者"@ja ;
+            rdfs:isDefinedBy <http://purl.org/net/bel-epa/doacc> ;
+            rdfs:label "překladatel"@cs ,
+                       "traducteur"@fr ,
+                       "traductor"@es ,
+                       "translator"@en ,
+                       "Übersetzer"@de ,
+                       "翻訳者"@ja ;
+            ns:term_status "unstable" ;
+            skos:prefLabel "translator"@en .
+
+
+###  http://purl.org/cryma#vendor
+:vendor rdf:type owl:ObjectProperty ;
+        rdfs:domain :Cryptocurrency ;
+        rdfs:range foaf:Organization ;
+        rdfs:comment "Vendor organization: commercial, free or otherwise"@en ,
+                     "提供組織、商業の組織や自由の組織。"@ja ;
+        rdfs:isDefinedBy <http://purl.org/net/bel-epa/doacc> ;
+        rdfs:label "vendor"@en ,
+                   "提供組織"@ja ;
+        ns:term_status "unstable" ;
+        skos:prefLabel "vendor"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://purl.org/cryma#abbreviation
+:abbreviation rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Cryptocurrency ;
+              rdfs:range xsd:string .
+
+
+###  http://purl.org/cryma#anon-root
+:anon-root rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Repository ;
+           rdfs:range rdfs:Literal ;
+           rdfs:comment "Dépôt pour accès anonyme."@fr ,
+                        "Repositorio para acceso anónimo."@es ,
+                        "Repository for anonymous access."@en ,
+                        "Repository für anonymen Zugriff"@de ,
+                        "Úložiště pro anonymní přístup."@cs ,
+                        "匿名でアクセスできるパス"@ja ;
+           rdfs:isDefinedBy <http://purl.org/net/bel-epa/doacc> ;
+           rdfs:label "Anonymes Root"@de ,
+                      "anonymní kořen"@cs ,
+                      "anonymous root"@en ,
+                      "racine anonyme"@fr ,
+                      "raíz anónima"@es ,
+                      "匿名ルート"@ja ;
+           skos:prefLabel "anonymous root"@en .
+
+
+###  http://purl.org/cryma#audience
+:audience rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Cryptocurrency ;
+          rdfs:range rdfs:Literal ;
+          rdfs:comment "Description of target user base"@en ,
+                       "目指したユーザたちの説明"@ja ;
+          rdfs:isDefinedBy <http://purl.org/net/bel-epa/doacc> ;
+          rdfs:label "audience"@en ,
+                     "目指したユーザ"@ja ;
+          ns:term_status "unstable" ;
+          skos:prefLabel "audience"@en .
+
+
+###  http://purl.org/cryma#block-reward
+:block-reward rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Cryptocurrency ;
+              rdfs:range rdfs:Literal ;
+              rdfs:isDefinedBy <http://purl.org/net/bel-epa/doacc> ;
+              rdfs:label "block reward scheme"@en ;
+              ns:term_status "unstable" ;
+              skos:prefLabel "block reward scheme"@en .
+
+
+###  http://purl.org/cryma#block-target-time
+:block-target-time rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Cryptocurrency ;
+                   rdfs:range rdfs:Literal ;
+                   rdfs:isDefinedBy <http://purl.org/net/bel-epa/doacc> ;
+                   rdfs:label "block target time"@en ;
+                   ns:term_status "unstable" ;
+                   skos:prefLabel "block target time"@en .
+
+
+###  http://purl.org/cryma#category
+:category rdf:type owl:DatatypeProperty ,
+                   owl:FunctionalProperty ;
+          rdfs:domain :Cryptocurrency ;
+          rdfs:range rdfs:Literal ;
+          rdfs:comment "A category of cryptocurrency."@en ,
+                       "Eine Kategorie eines Crypto-Währungen."@de ,
+                       "Kategorie kryptomena."@cs ,
+                       "Una categoría de cryptodivisa."@es ,
+                       "Une catégorie de crypto-monnaie."@fr ,
+                       "このプロジェクトの分類。"@ja ;
+          rdfs:isDefinedBy <http://purl.org/net/bel-epa/doacc> ;
+          rdfs:label "Kategorie"@de ,
+                     "category"@en ,
+                     "categoría"@es ,
+                     "catégorie"@fr ,
+                     "kategorie"@cs ,
+                     "分類"@ja ;
+          ns:term_status "unstable" ;
+          skos:prefLabel "category"@en .
+
+
+###  http://purl.org/cryma#circulating_supply
+:circulating_supply rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :Cryptocurrency ;
+                    rdfs:range xsd:double .
+
+
+###  http://purl.org/cryma#confirmations
+:confirmations rdf:type owl:DatatypeProperty ,
+                        owl:FunctionalProperty ;
+               rdfs:domain :Cryptocurrency ;
+               rdfs:range rdfs:Literal ;
+               rdfs:isDefinedBy <http://purl.org/net/bel-epa/doacc> ;
+               rdfs:label "Number of blocks required to confirm a transaction"@en ;
+               ns:term_status "unstable" ;
+               skos:prefLabel "Number of blocks required to confirm a transaction"@en .
+
+
+###  http://purl.org/cryma#dateTime
+:dateTime rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf owl:topDataProperty ;
+          rdfs:domain :Value ;
+          rdfs:range xsd:dateTime .
+
+
+###  http://purl.org/cryma#download-mirror
+:download-mirror rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Cryptocurrency ;
+                 rdfs:range rdfs:Literal ;
+                 rdfs:comment "Miroir de la page de téléchargement du programme."@fr ,
+                              "Mirror de la página web de descarga."@es ,
+                              "Mirror of software download web page."@en ,
+                              "Spiegel der Seite von die Software heruntergeladen werden kann."@de ,
+                              "Zrcadlo stránky pro stažení softwaru."@cs ,
+                              "このプロジェクトのダウンロードミラー"@ja ;
+                 rdfs:isDefinedBy <http://purl.org/net/bel-epa/doacc> ;
+                 rdfs:label "Spiegel der Seite zum Herunterladen"@de ,
+                            "download mirror"@en ,
+                            "miroir pour le téléchargement"@fr ,
+                            "mirror de descarga"@es ,
+                            "zrcadlo stránky pro stažení"@cs ,
+                            "ダウンロードミラー"@ja ;
+                 ns:term_status "unstable" ;
+                 skos:prefLabel "download mirror"@en .
+
+
+###  http://purl.org/cryma#download-page
+:download-page rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Cryptocurrency ;
+               rdfs:range rdfs:Literal ;
+               rdfs:comment "Page web à partir de laquelle on peut télécharger le programme."@fr ,
+                            "Página web de la cuál se puede bajar el software."@es ,
+                            "Web page from which the software can be downloaded."@en ,
+                            "Web-Seite von der die Software heruntergeladen werden kann."@de ,
+                            "Webová stránka, na které lze stáhnout software."@cs ,
+                            "このプロジェクトのダウンロードできるウェブページ"@ja ;
+               rdfs:isDefinedBy <http://purl.org/net/bel-epa/doacc> ;
+               rdfs:label "Seite zum Herunterladen"@de ,
+                          "download page"@en ,
+                          "page de téléchargement"@fr ,
+                          "página de descarga"@es ,
+                          "stránka pro stažení"@cs ,
+                          "ダウンロードページ"@ja ;
+               ns:term_status "unstable" ;
+               skos:prefLabel "download page"@en .
+
+
+###  http://purl.org/cryma#file-release
+:file-release rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Cryptocurrency ;
+              rdfs:range rdfs:Literal ;
+              rdfs:comment "URI adresa stažení asociované s revizí."@cs ,
+                           "URI of download associated with this release."@en ;
+              rdfs:isDefinedBy <http://purl.org/net/bel-epa/doacc> ;
+              rdfs:label "file-release"@en ,
+                         "soubor revize"@cs ,
+                         "このリリースのダウンロードできるファイルのURI"@ja ,
+                         "ファイル"@ja ;
+              ns:term_status "unstable" ;
+              skos:prefLabel "file-release"@en .
+
+
+###  http://purl.org/cryma#forum
+:forum rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Cryptocurrency ;
+       rdfs:range xsd:anyURI ;
+       rdfs:comment "Forum web page."@en ;
+       rdfs:label "forum"@en ;
+       ns:term_status "unstable" ;
+       skos:prefLabel "forum"@en .
+
+
+###  http://purl.org/cryma#hashfn
+:hashfn rdf:type owl:DatatypeProperty .
+
+
+###  http://purl.org/cryma#license
+:license rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Cryptocurrency ;
+         rdfs:range rdfs:Literal ;
+         rdfs:comment "Die URI einer RDF-Beschreibung einer Lizenz unter der die Software herausgegeben wird."@de ,
+                      "El URI de una descripción RDF de la licencia bajo la cuál se distribuye el software."@es ,
+                      "L'URI d'une description RDF de la licence sous laquelle le programme est distribué."@fr ,
+                      "The URI of an RDF description of the license the software is distributed under."@en ,
+                      "URI adresa RDF popisu licence, pod kterou je software distribuován."@cs ,
+                      "このプロジェクトの散布ライセンスのRDF説明のURI"@ja ;
+         rdfs:isDefinedBy <http://purl.org/net/bel-epa/doacc> ;
+         rdfs:label "Lizenz"@de ,
+                    "licence"@cs ,
+                    "licence"@fr ,
+                    "licencia"@es ,
+                    "license"@en ,
+                    "ライセンス"@ja ;
+         ns:term_status "unstable" ;
+         skos:prefLabel "license"@en .
+
+
+###  http://purl.org/cryma#market_capital
+:market_capital rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Cryptocurrency ;
+                rdfs:range xsd:double .
+
+
+###  http://purl.org/cryma#maturation
+:maturation rdf:type owl:DatatypeProperty ,
+                     owl:FunctionalProperty ;
+            rdfs:domain :Cryptocurrency ;
+            rdfs:range rdfs:Literal ;
+            rdfs:comment "Additional depth of chain required for mined blocks to mature"@en ;
+            rdfs:isDefinedBy <http://purl.org/net/bel-epa/doacc> ;
+            rdfs:label "maturation"@en ;
+            skos:prefLabel "maturation"@en .
+
+
+###  http://purl.org/cryma#maximum_supply
+:maximum_supply rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Cryptocurrency ;
+                rdfs:range xsd:double .
+
+
+###  http://purl.org/cryma#percent_change_24h
+:percent_change_24h rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :Cryptocurrency ;
+                    rdfs:range xsd:double .
+
+
+###  http://purl.org/cryma#price_USD
+:price_USD rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Cryptocurrency ,
+                       :Value ;
+           rdfs:range xsd:double .
+
+
+###  http://purl.org/cryma#retarget-time
+:retarget-time rdf:type owl:DatatypeProperty ,
+                        owl:FunctionalProperty ;
+               rdfs:domain :Cryptocurrency ;
+               rdfs:range rdfs:Literal ;
+               rdfs:comment "Difficulty retargeting period."@en ;
+               rdfs:label "retarget-time"@en ;
+               skos:prefLabel "retarget-time"@en .
+
+
+###  http://purl.org/cryma#revision
+:revision rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Cryptocurrency ;
+          rdfs:range rdfs:Literal ;
+          rdfs:comment "Identifiant de révision d'une release du programme."@fr ,
+                       "Identifikátor zpřístupněné revize softwaru."@cs ,
+                       "Indentificador de la versión de un release de software."@es ,
+                       "Revision identifier of a software release."@en ,
+                       "Versionsidentifikator eines Software-Releases."@de ,
+                       "このリリースのリビジョン識別子"@ja ;
+          rdfs:isDefinedBy <http://purl.org/net/bel-epa/doacc> ;
+          rdfs:label "Version"@de ,
+                     "revision"@en ,
+                     "révision"@fr ,
+                     "versión"@es ,
+                     "verze"@cs ,
+                     "リビジョンコート"@ja ;
+          skos:prefLabel "revision"@en .
+
+
+###  http://purl.org/cryma#service-endpoint
+:service-endpoint rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Cryptocurrency ;
+                  rdfs:range xsd:anyURI ;
+                  rdfs:comment "The URI of a web service endpoint where software as a service may be accessed"@en ,
+                               "ことプロジェクトが提供したサーブスを載せるサイト。"@ja ;
+                  rdfs:isDefinedBy <http://purl.org/net/bel-epa/doacc> ;
+                  rdfs:label "service endpoint"@en ,
+                             "サービスサイト"@ja ;
+                  skos:prefLabel "service endpoint"@en .
+
+
+###  http://purl.org/cryma#slug
+:slug rdf:type owl:DatatypeProperty ,
+               owl:FunctionalProperty ;
+      rdfs:range rdfs:Literal ,
+                 xsd:string .
+
+
+###  http://purl.org/cryma#source
+:source rdf:type owl:DatatypeProperty ;
+        rdfs:domain :PNG_Image ;
+        rdfs:range xsd:anyURI .
+
+
+###  http://purl.org/cryma#symbol
+:symbol rdf:type owl:DatatypeProperty ,
+                 owl:FunctionalProperty ;
+        rdfs:domain :Cryptocurrency ;
+        rdfs:range rdfs:Literal ;
+        rdfs:isDefinedBy <http://purl.org/net/bel-epa/doacc> ;
+        rdfs:label "exchange trading symbol"@en ;
+        skos:prefLabel "exchange trading symbol"@en .
+
+
+###  http://purl.org/cryma#total-coins
+:total-coins rdf:type owl:DatatypeProperty ,
+                      owl:FunctionalProperty ;
+             rdfs:domain :Cryptocurrency ;
+             rdfs:range rdfs:Literal ;
+             rdfs:isDefinedBy <http://purl.org/net/bel-epa/doacc> ;
+             rdfs:label "total coins produced"@en ;
+             skos:prefLabel "total coins produced"@en .
+
+
+###  http://purl.org/cryma#total_supply
+:total_supply rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Cryptocurrency ;
+              rdfs:range xsd:double .
+
+
+###  http://purl.org/cryma#volume
+:volume rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Cryptocurrency ;
+        rdfs:range xsd:double .
+
+
+###  http://purl.org/cryma#website
+:website rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Cryptocurrency ;
+         rdfs:range xsd:anyURI .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://dbpedia.org/resource/Algorithm
+<http://dbpedia.org/resource/Algorithm> rdf:type owl:Class ;
+                                        owl:equivalentClass :Algorithm .
+
+
+###  http://dbpedia.org/resource/Cryptographic_hash_function
+<http://dbpedia.org/resource/Cryptographic_hash_function> rdf:type owl:Class ;
+                                                          owl:equivalentClass :HashFunction .
+
+
+###  http://purl.org/cryma#Algorithm
+:Algorithm rdf:type owl:Class ;
+           rdfs:comment "Use of one or more cryptographic hash functions to secure a cryptocurrency p2p network."@en ;
+           rdfs:isDefinedBy <http://purl.org/net/bel-epa/doacc> ;
+           rdfs:label "Hashing Algorithm"@en ;
+           skos:prefLabel "Hashing Algorithm"@en .
+
+
+###  http://purl.org/cryma#Cryptocurrency
+:Cryptocurrency rdf:type owl:Class ;
+                rdfs:comment "A cryptocurrency."@en ,
+                             "Ein Crypto-Währung."@de ,
+                             "Kryptomena."@cs ,
+                             "Una cryptodivisa."@es ,
+                             "Une crypto-monnaie."@fr ,
+                             "暗号の通貨"@ja ;
+                rdfs:isDefinedBy <http://purl.org/net/bel-epa/doacc> ;
+                rdfs:label "Crypto-Währung"@de ,
+                           "Crypto-monnaie"@fr ,
+                           "Cryptocurrency"@en ,
+                           "Cryptodivisa"@es ,
+                           "Kryptomena"@cs ,
+                           "暗号通貨"@ja ;
+                skos:prefLabel "Cryptocurrency"@en .
+
+
+###  http://purl.org/cryma#Distribution
+:Distribution rdf:type owl:Class ;
+              rdfs:comment "Method of distributing coins of a cryptocurrency."@en ;
+              rdfs:isDefinedBy <http://purl.org/net/bel-epa/doacc> ;
+              rdfs:label "Coin distribution scheme"@en ;
+              skos:prefLabel "Coin distribution scheme"@en .
+
+
+###  http://purl.org/cryma#DistributionScheme
+:DistributionScheme rdf:type owl:Class .
+
+
+###  http://purl.org/cryma#HashFunction
+:HashFunction rdf:type owl:Class ;
+              rdfs:comment "Cryptographic function for producing hashes."@en ;
+              rdfs:isDefinedBy <http://purl.org/net/bel-epa/doacc> ;
+              rdfs:label "Cryptographic hash function"@en ;
+              skos:prefLabel "Cryptographic hash function"@en .
+
+
+###  http://purl.org/cryma#PNG_Image
+:PNG_Image rdf:type owl:Class .
+
+
+###  http://purl.org/cryma#PoSscheme
+:PoSscheme rdf:type owl:Class ;
+           rdfs:subClassOf :ProtectionScheme ;
+           rdfs:comment "A method of securing a cryptocurrency p2p network through requesting users to show ownership of a certain amount of currency"@en ;
+           rdfs:isDefinedBy <http://purl.org/net/bel-epa/doacc> ;
+           rdfs:label "Proof of Stake"@en ;
+           skos:prefLabel "Proof of Stake"@en .
+
+
+###  http://purl.org/cryma#PoWscheme
+:PoWscheme rdf:type owl:Class ;
+           rdfs:subClassOf :ProtectionScheme ;
+           rdfs:comment "A method of securing a cryptocurrency p2p network through requesting proof from users that (computational) work has been done."@en ;
+           rdfs:isDefinedBy <http://purl.org/net/bel-epa/doacc> ;
+           rdfs:label "Proof of Work"@en ;
+           owl:equivalentClass "" ;
+           skos:prefLabel "Proof of Work"@en .
+
+
+###  http://purl.org/cryma#Protection
+:Protection rdf:type owl:Class ;
+            rdfs:comment "Means of protecting cryptocurrency transaction records from tampering."@en ;
+            rdfs:isDefinedBy <http://purl.org/net/bel-epa/doacc> ;
+            rdfs:label "Transaction record protection scheme"@en ;
+            skos:prefLabel "Transaction record protection scheme"@en .
+
+
+###  http://purl.org/cryma#ProtectionScheme
+:ProtectionScheme rdf:type owl:Class .
+
+
+###  http://purl.org/cryma#Repository
+:Repository rdf:type owl:Class ;
+            rdfs:comment "Dépôt du code source."@fr ,
+                         "Quellcode-Versionierungssystem."@de ,
+                         "Repositorio del código fuente."@es ,
+                         "Source code repository."@en ,
+                         "Úložiště zdrojových kódů."@cs ,
+                         "ソースコードのリポジトリ"@ja ;
+            rdfs:isDefinedBy <http://purl.org/net/bel-epa/doacc> ;
+            rdfs:label "Dépôt"@fr ,
+                       "Repositorio"@es ,
+                       "Repository"@de ,
+                       "Repository"@en ,
+                       "Úložiště"@cs ,
+                       "リポジトリ"@ja ;
+            skos:prefLabel "Repository"@en .
+
+
+###  http://purl.org/cryma#Value
+:Value rdf:type owl:Class ;
+       rdfs:comment "A value of a cryptocurrency at some point"^^xsd:string .
+
+
+###  http://purl.org/cryma#Version
+:Version rdf:type owl:Class ;
+         rdfs:comment "Détails sur une version d'une realease."@fr ,
+                      "Informace o uvolněné verzi."@cs ,
+                      "Información sobre la versión de un release."@es ,
+                      "Version information of a release."@en ,
+                      "Versionsinformation eines Releases."@de ,
+                      "リリースのバーション情報"@ja ;
+         rdfs:isDefinedBy <http://purl.org/net/bel-epa/doacc> ;
+         rdfs:label "Version"@de ,
+                    "Version"@en ,
+                    "Version"@fr ,
+                    "Versión"@es ,
+                    "Verze"@cs ,
+                    "バーション"@ja ;
+         skos:prefLabel "Version"@en .
+
+
+###  http://purl.org/net/bel-epa/ccy#ElectronicCoin
+<http://purl.org/net/bel-epa/ccy#ElectronicCoin> rdf:type owl:Class .
+
+
+###  http://www.w3.org/2002/07/owl#Property
+owl:Property rdf:type owl:Class .
+
+
+###  http://xmlns.com/foaf/0.1/Organization
+foaf:Organization rdf:type owl:Class .
+
+
+###  http://xmlns.com/foaf/0.1/Person
+foaf:Person rdf:type owl:Class .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+:hashfn skos:prefLabel "algorithm implementing the scheme"@en ;
+        rdfs:isDefinedBy <http://purl.org/net/bel-epa/doacc> ;
+        rdfs:label "algorithm implementing the scheme"@en .
+
+
+:slug rdfs:isDefinedBy <http://purl.org/net/bel-epa/doacc> ;
+      skos:prefLabel "slug"@en ;
+      rdfs:label "slug"@en .
+
+
+###  Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi

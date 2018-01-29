@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="frontend:war">
-    <output-path>$PROJECT_DIR$/cryma-frontend/target</output-path>
-    <root id="archive" name="cryma-frontend-1.0.0-BUILD-SNAPSHOT.war">
-      <element id="artifact" artifact-name="frontend:war exploded" />
-    </root>
-  </artifact>
-</component>

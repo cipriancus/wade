@@ -1,0 +1,10 @@
+http://localhost:8082/api/cryma-plot/plot/BTC?format=TURTLE&startDate=2014-05-23T10:20:13%2B05:30&endDate=2019-05-23T10:20:13%2B05:30
+http://localhost:8082/api/cryma-plot/coin
+http://localhost:8082/api/cryma-plot/coin/2
+http://localhost:8082/api/cryma-plot/coin?page=2&size=20
+https://cryma-news.cfapps.io/news/?limit=25&format=TURTLE
+http://localhost:8082/api/cryma-news/news/coin/BTC?limit=25&format=TURTLE
+http://localhost:8082/api/cryma-prediction/predict/2
+http://localhost:8082/api/cryma-cointology/cointology/?limit=25&format=TURTLE
+http://localhost:8082/api/cryma-cointology/cointology/BTC?limit=25&format=TURTLE
+http://cryma-fuseki-cryma.1d35.starter-us-east-1.openshiftapps.com/dataset.html

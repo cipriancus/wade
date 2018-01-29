@@ -1,0 +1,15 @@
+PREFIX doacc: <http://purl.org/net/bel-epa/doacc#>
+SELECT * { ?x doacc:price_USD ?y }
+
+SELECT * { doacc:Bitcoin doacc:price_USD ?y }
+
+SELECT * 
+WHERE {?y doacc:source ?x .
+ doacc:Bitcoin doacc:logo ?y .
+}
+
+SELECT *
+WHERE {
+ doacc:Bitcoin ?x ?y .
+}
+
