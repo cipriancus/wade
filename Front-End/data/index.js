@@ -41,31 +41,31 @@ $(function() {
         });
 });
 
-$(function() {
-	 $.ajax({
-            type: "GET",
-            url: "https://cryma-plot.cfapps.io/coin",
-            contentType: 'application/json;charset=UTF-8',
-            success: function (values) {
-				values=values._embedded.coin;
+// $(function() {
+// 	 $.ajax({
+//             type: "GET",
+//             url: "https://cryma-plot.cfapps.io/coin",
+//             contentType: 'application/json;charset=UTF-8',
+//             success: function (values) {
+// 				values=values._embedded.coin;
 			
-				var data=[];
+// 				var data=[];
 				
-				for(var iterator=0;iterator<values.length;iterator++){
-					$("#cryptocurencyTop-dataTable tbody").append(`
-										<tr class=\"odd gradeX\">
-										<td class=\"center\">`+iterator+`</td>
-                                        <td class=\"center\"><a href="bitcoin.html">`+values[iterator].name+`</a></td>
-                                        <td class=\"center\">`+values[iterator].price+`</td>
-                                        <td class=\"center\">`+values[iterator].marketCap+`</td>
-                                        <td class=\"center\">`+values[iterator].volume+`</td>
-										<td class=\"center\">`+values[iterator].supply+`</td>
-										<td class=\"center\">`+values[iterator].change+`</td>
-										</tr>`);
-				}
-			}
-        });
-});
+// 				for(var iterator=0;iterator<values.length;iterator++){
+// 					$("#cryptocurencyTop-dataTable tbody").append(`
+// 										<tr class=\"odd gradeX\">
+// 										<td class=\"center\">`+iterator+`</td>
+//                                         <td class=\"center\"><a href="bitcoin.html">`+values[iterator].name+`</a></td>
+//                                         <td class=\"center\">`+values[iterator].price+`</td>
+//                                         <td class=\"center\">`+values[iterator].marketCap+`</td>
+//                                         <td class=\"center\">`+values[iterator].volume+`</td>
+// 										<td class=\"center\">`+values[iterator].supply+`</td>
+// 										<td class=\"center\">`+values[iterator].change+`</td>
+// 										</tr>`);
+// 				}
+// 			}
+//         });
+// });
 
 $(function() {
    
