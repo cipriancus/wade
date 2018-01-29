@@ -1,0 +1,1536 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="462c5a0b-54bb-4915-ae8f-6369e45c5a76" name="Default" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/cryma-frontend/target/" />
+    <ignored path="$PROJECT_DIR$/cryma-news/target/" />
+    <ignored path="$PROJECT_DIR$/cryma-prediction/target/" />
+    <ignored path="$PROJECT_DIR$/cryma-zuul-apigateway/target/" />
+    <ignored path="$PROJECT_DIR$/cryma-eureka-service/target/" />
+    <ignored path="$PROJECT_DIR$/cryma-cointology/target/" />
+    <ignored path="$PROJECT_DIR$/cryma-model/target/" />
+    <ignored path="$PROJECT_DIR$/cryma-coin-conversion/target/" />
+    <ignored path="$PROJECT_DIR$/cryma-python-prediction/target/" />
+    <ignored path="$PROJECT_DIR$/cryma-parent/target/" />
+    <ignored path="$PROJECT_DIR$/cryma-plot/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="cryma-core" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>eureka</find>
+      <find>dispa</find>
+      <find>predict</find>
+      <find>PredictionEndpoint</find>
+      <find>cryma-python-prediction</find>
+      <find>toRe</find>
+      <find>jpa</find>
+      <find>8094</find>
+      <find>8093</find>
+      <find>slf</find>
+      <find>jar</find>
+      <find>parent</find>
+      <find>model.Coin</find>
+      <find>model.News</find>
+      <find>cryma-model</find>
+      <find>RequestNoResponseException</find>
+      <find>.io</find>
+      <find>start</find>
+      <find>DIR`</find>
+      <find>read</find>
+      <find>db</find>
+      <find>org.apache.jena.fuseki.embedded</find>
+      <find>Date</find>
+      <find>ResultSet</find>
+      <find>id</find>
+      <find>coinId</find>
+      <find>RDFnODE</find>
+      <find>/predict</find>
+      <find>solr</find>
+      <find>Cointology</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+      <replace>fuseki</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>D:\taip-project\CryMa\cryma-core</dir>
+      <dir>C:\Users\cipri\Documents\GitHub\CryMa\cryma-core\cryma-python-prediction</dir>
+      <dir>C:\Users\uidn1606\Desktop\CryMa\cryma-core</dir>
+      <dir>C:\Users\cipri\Documents\GitHub\CryMa\cryma-core\cryma-cointology\src\main\resources</dir>
+      <dir>C:\Users\cipri\Documents\GitHub\CryMa\cryma-core</dir>
+    </dirStrings>
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/cryma-cointology/src/test/org/apache/jena/fuseki/embedded/TestMultipleEmbedded.java" />
+        <option value="$PROJECT_DIR$/cryma-cointology/src/test/org/apache/jena/fuseki/embedded/FusekiTestAuth.java" />
+        <option value="$PROJECT_DIR$/cryma-cointology/src/test/org/apache/jena/fuseki/embedded/examples/ExtendFuseki_AddService_1.java" />
+        <option value="$PROJECT_DIR$/cryma-cointology/src/test/org/apache/jena/fuseki/embedded/examples/ExtendFuseki_AddService_2.java" />
+        <option value="$PROJECT_DIR$/cryma-cointology/src/test/org/apache/jena/fuseki/embedded/examples/ExtendFuseki_AddService_3.java" />
+        <option value="$PROJECT_DIR$/cryma-cointology/src/test/org/apache/jena/fuseki/embedded/TS_EmbeddedFuseki.java" />
+        <option value="$PROJECT_DIR$/cryma-cointology/src/test/org/apache/jena/fuseki/embedded/TestEmbeddedFuseki.java" />
+        <option value="$PROJECT_DIR$/cryma-cointology/src/main/resources/config.ttl" />
+        <option value="$PROJECT_DIR$/cryma-cointology/src/test/fuseki/examples/ExtendFuseki_AddService_1.java" />
+        <option value="$PROJECT_DIR$/cryma-cointology/src/main/java/com/wade/cryma/cointology/fuseki/FusekiEndpoint.java" />
+        <option value="$PROJECT_DIR$/cryma-news/src/main/java/com/wade/cryma/news/interceptor/DateInterceptor.java" />
+        <option value="$PROJECT_DIR$/cryma-prediction/src/main/java/com/wade/cryma/crymaprediction/interceptor/DateInterceptor.java" />
+        <option value="$PROJECT_DIR$/cryma-news/src/main/java/com/wade/cryma/news/model/News.java" />
+        <option value="$PROJECT_DIR$/cryma-cointology/src/main/java/com/wade/cryma/cointology/app/CrymaCointologyApplication.java" />
+        <option value="$PROJECT_DIR$/cryma-news/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/cryma-news/src/main/java/com/wade/cryma/news/configuration/InterceptorConfiguration.java" />
+        <option value="$PROJECT_DIR$/cryma-news/src/main/java/com/wade/cryma/news/model/JenaOutputFormats.java" />
+        <option value="$PROJECT_DIR$/cryma-news/src/main/java/com/wade/cryma/news/service/INewsService.java" />
+        <option value="$PROJECT_DIR$/cryma-news/src/main/java/com/wade/cryma/news/service/impl/NewsService.java" />
+        <option value="$PROJECT_DIR$/cryma-news/src/main/java/com/wade/cryma/news/repository/INewsRepository.java" />
+        <option value="$PROJECT_DIR$/cryma-news/src/main/java/com/wade/cryma/news/interceptor/RequestInterceptor.java" />
+        <option value="$PROJECT_DIR$/cryma-news/src/main/java/com/wade/cryma/news/configuration/ConfigurationClass.java" />
+        <option value="$PROJECT_DIR$/cryma-news/src/main/java/com/wade/cryma/news/interceptor/RequestFilter.java" />
+        <option value="$PROJECT_DIR$/cryma-plot/pom.xml" />
+        <option value="$PROJECT_DIR$/cryma-news/src/main/java/com/wade/cryma/news/repository/impl/NewsRepository.java" />
+        <option value="$PROJECT_DIR$/cryma-plot/src/main/java/com/wade/cryma/crymaplot/model/Coin.java" />
+        <option value="$PROJECT_DIR$/cryma-plot/src/main/java/com/wade/cryma/crymaplot/model/JenaOutputFormats.java" />
+        <option value="$PROJECT_DIR$/cryma-plot/src/main/java/com/wade/cryma/crymaplot/service/ICoinService.java" />
+        <option value="$PROJECT_DIR$/cryma-prediction/src/main/java/com/wade/cryma/crymaprediction/service/IPredictionService.java" />
+        <option value="$PROJECT_DIR$/cryma-prediction/src/main/java/com/wade/cryma/crymaprediction/service/impl/PredictionService.java" />
+        <option value="$PROJECT_DIR$/cryma-python-prediction/src/main/java/com/wade/cryma/crymapythonprediction/library/LibraryRequest.java" />
+        <option value="$PROJECT_DIR$/cryma-plot/src/main/java/com/wade/cryma/crymaplot/model/CoinValue.java" />
+        <option value="$PROJECT_DIR$/cryma-plot/src/main/java/com/wade/cryma/crymaplot/service/impl/CoinService.java" />
+        <option value="$PROJECT_DIR$/cryma-plot/src/main/java/com/wade/cryma/crymaplot/repository/ICoinRepository.java" />
+        <option value="$PROJECT_DIR$/cryma-plot/src/main/java/com/wade/cryma/crymaplot/interceptor/DateInterceptor.java" />
+        <option value="$PROJECT_DIR$/cryma-plot/src/main/java/com/wade/cryma/crymaplot/repository/impl/CoinRepository.java" />
+        <option value="$PROJECT_DIR$/cryma-plot/src/main/java/com/wade/cryma/crymaplot/configuration/ConfigurationClass.java" />
+        <option value="$PROJECT_DIR$/cryma-plot/src/main/java/com/wade/cryma/crymaplot/interceptor/RequestFilter.java" />
+        <option value="$PROJECT_DIR$/cryma-plot/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/cryma-plot/src/main/java/com/wade/cryma/crymaplot/endpoint/PlotEndpoint.java" />
+        <option value="$PROJECT_DIR$/cryma-cointology/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/cryma-cointology/src/main/java/com/wade/cryma/cointology/repository/ICoinRepository.java" />
+        <option value="$PROJECT_DIR$/cryma-cointology/src/main/java/com/wade/cryma/cointology/repository/impl/CoinRepository.java" />
+        <option value="$PROJECT_DIR$/cryma-cointology/src/main/java/com/wade/cryma/cointology/repository/impl/CointologytRepository.java" />
+        <option value="$PROJECT_DIR$/cryma-cointology/src/main/java/com/wade/cryma/cointology/configuration/ConfigurationClass.java" />
+        <option value="$PROJECT_DIR$/cryma-cointology/src/main/java/com/wade/cryma/cointology/endpoint/CointologyEndpoint.java" />
+        <option value="$PROJECT_DIR$/cryma-cointology/src/main/java/com/wade/cryma/cointology/repository/ICointologyRepository.java" />
+        <option value="$PROJECT_DIR$/cryma-cointology/src/main/java/com/wade/cryma/cointology/repository/impl/CointologyRepository.java" />
+        <option value="$PROJECT_DIR$/cryma-news/src/main/java/com/wade/cryma/news/endpoint/NewsEndpoint.java" />
+        <option value="$PROJECT_DIR$/cryma-prediction/src/main/java/com/wade/cryma/crymaprediction/endpoint/PredictionEndpoint.java" />
+        <option value="$PROJECT_DIR$/cryma-python-prediction/src/main/java/com/wade/cryma/crymapythonprediction/endpoint/PredictionEndpoint.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="cryma" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="cryma" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="cryma" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="width" value="976" />
+    <option name="height" value="1038" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="cryma-core" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cryma-core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cryma-core" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cryma-core" type="462c0819:PsiDirectoryNode" />
+              <item name="cryma-cointology" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cryma-core" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cryma-core" type="462c0819:PsiDirectoryNode" />
+              <item name="cryma-cointology" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cryma-core" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cryma-core" type="462c0819:PsiDirectoryNode" />
+              <item name="cryma-cointology" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cryma-core" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cryma-core" type="462c0819:PsiDirectoryNode" />
+              <item name="cryma-cointology" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cryma-core" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cryma-core" type="462c0819:PsiDirectoryNode" />
+              <item name="cryma-cointology" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cointology" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cryma-core" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cryma-core" type="462c0819:PsiDirectoryNode" />
+              <item name="cryma-cointology" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cointology" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cryma-core" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cryma-core" type="462c0819:PsiDirectoryNode" />
+              <item name="cryma-cointology" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cointology" type="462c0819:PsiDirectoryNode" />
+              <item name="configuration" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cryma-core" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cryma-core" type="462c0819:PsiDirectoryNode" />
+              <item name="cryma-cointology" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cointology" type="462c0819:PsiDirectoryNode" />
+              <item name="endpoint" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cryma-core" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cryma-core" type="462c0819:PsiDirectoryNode" />
+              <item name="cryma-cointology" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cointology" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cryma-core" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cryma-core" type="462c0819:PsiDirectoryNode" />
+              <item name="cryma-cointology" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cointology" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cryma-core" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cryma-core" type="462c0819:PsiDirectoryNode" />
+              <item name="cryma-cointology" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cryma-core" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cryma-core" type="462c0819:PsiDirectoryNode" />
+              <item name="cryma-eureka-service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cryma-core" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cryma-core" type="462c0819:PsiDirectoryNode" />
+              <item name="cryma-eureka-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cryma-core" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cryma-core" type="462c0819:PsiDirectoryNode" />
+              <item name="cryma-eureka-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cryma-core" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cryma-core" type="462c0819:PsiDirectoryNode" />
+              <item name="cryma-eureka-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cryma-core" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cryma-core" type="462c0819:PsiDirectoryNode" />
+              <item name="cryma-eureka-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cryma-core" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cryma-core" type="462c0819:PsiDirectoryNode" />
+              <item name="cryma-news" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cryma-core" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cryma-core" type="462c0819:PsiDirectoryNode" />
+              <item name="cryma-news" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cryma-core" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cryma-core" type="462c0819:PsiDirectoryNode" />
+              <item name="cryma-news" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cryma-core" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cryma-core" type="462c0819:PsiDirectoryNode" />
+              <item name="cryma-news" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cryma-core" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cryma-core" type="462c0819:PsiDirectoryNode" />
+              <item name="cryma-news" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="news" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cryma-core" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cryma-core" type="462c0819:PsiDirectoryNode" />
+              <item name="cryma-news" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="news" type="462c0819:PsiDirectoryNode" />
+              <item name="endpoint" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cryma-core" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cryma-core" type="462c0819:PsiDirectoryNode" />
+              <item name="cryma-plot" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cryma-core" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cryma-core" type="462c0819:PsiDirectoryNode" />
+              <item name="cryma-plot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cryma-core" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cryma-core" type="462c0819:PsiDirectoryNode" />
+              <item name="cryma-plot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cryma-core" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cryma-core" type="462c0819:PsiDirectoryNode" />
+              <item name="cryma-plot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cryma-core" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cryma-core" type="462c0819:PsiDirectoryNode" />
+              <item name="cryma-plot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="crymaplot" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cryma-core" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cryma-core" type="462c0819:PsiDirectoryNode" />
+              <item name="cryma-plot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="crymaplot" type="462c0819:PsiDirectoryNode" />
+              <item name="endpoint" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cryma-core" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cryma-core" type="462c0819:PsiDirectoryNode" />
+              <item name="cryma-prediction" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cryma-core" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cryma-core" type="462c0819:PsiDirectoryNode" />
+              <item name="cryma-prediction" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cryma-core" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cryma-core" type="462c0819:PsiDirectoryNode" />
+              <item name="cryma-prediction" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cryma-core" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cryma-core" type="462c0819:PsiDirectoryNode" />
+              <item name="cryma-prediction" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cryma-core" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cryma-core" type="462c0819:PsiDirectoryNode" />
+              <item name="cryma-prediction" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="crymaprediction" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cryma-core" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cryma-core" type="462c0819:PsiDirectoryNode" />
+              <item name="cryma-prediction" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="crymaprediction" type="462c0819:PsiDirectoryNode" />
+              <item name="endpoint" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cryma-core" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cryma-core" type="462c0819:PsiDirectoryNode" />
+              <item name="cryma-python-prediction" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cryma-core" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cryma-core" type="462c0819:PsiDirectoryNode" />
+              <item name="cryma-python-prediction" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cryma-core" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cryma-core" type="462c0819:PsiDirectoryNode" />
+              <item name="cryma-python-prediction" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cryma-core" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cryma-core" type="462c0819:PsiDirectoryNode" />
+              <item name="cryma-python-prediction" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cryma-core" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cryma-core" type="462c0819:PsiDirectoryNode" />
+              <item name="cryma-python-prediction" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="crymapythonprediction" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cryma-core" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cryma-core" type="462c0819:PsiDirectoryNode" />
+              <item name="cryma-python-prediction" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="crymapythonprediction" type="462c0819:PsiDirectoryNode" />
+              <item name="endpoint" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cryma-core" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cryma-core" type="462c0819:PsiDirectoryNode" />
+              <item name="cryma-python-prediction" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cryma-core" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cryma-core" type="462c0819:PsiDirectoryNode" />
+              <item name="cryma-zuul-apigateway" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cryma-core" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cryma-core" type="462c0819:PsiDirectoryNode" />
+              <item name="cryma-zuul-apigateway" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cryma-core" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cryma-core" type="462c0819:PsiDirectoryNode" />
+              <item name="cryma-zuul-apigateway" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cryma-core" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cryma-core" type="462c0819:PsiDirectoryNode" />
+              <item name="cryma-zuul-apigateway" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cryma-core" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cryma-core" type="462c0819:PsiDirectoryNode" />
+              <item name="cryma-zuul-apigateway" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cryma" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="cryma-core" type="58d84e3e:PackageViewProjectNode" />
+              <item name="cryma-coin-conversion" type="616d4139:PackageViewModuleNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Fuseki Server" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.33639705" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth2" value="75" />
+    <property name="RequestMappingsPanelOrder2" value="2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="ToolWindowDebug.ShowToolbar" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\cipri\Documents\GitHub\CryMa\cryma-core\cryma-cointology\src\main\resources" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.wade.cryma.crymaplot" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.wade.cryma.cointology.endpoint" />
+      <recent name="com.wade.cryma.cointology.repository.impl" />
+      <recent name="com.wade.cryma.cointology.repository" />
+      <recent name="com.wade.cryma.cointology.configuration" />
+      <recent name="com.wade.cryma.crymaplot.model" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\cipri\Documents\GitHub\CryMa\cryma-core\cryma-cointology\src\main\resources" />
+      <recent name="C:\Users\cipri\Documents\GitHub\CryMa\cryma-core\cryma-news\src\main\java\com\wade\cryma\news" />
+      <recent name="C:\Users\uidn1606\Desktop\CryMa\cryma-core\cryma-news\src\main\java\com\wade\cryma\news" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.CrymaCointologyApplication (1)">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+    </configuration>
+    <configuration name="CrymaModelApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.wade.cryma.crymamodel.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.wade.cryma.crymamodel.app.CrymaModelApplication" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="cryma-model" />
+      <envs />
+    </configuration>
+    <configuration name="CrymaNewsApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.wade.cryma.news.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.wade.cryma.news.app.CrymaNewsApplication" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="cryma-news" />
+      <envs />
+    </configuration>
+    <configuration name="EurekaServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.wade.cryma.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.wade.cryma.app.EurekaServiceApplication" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="cryma-eureka-service" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
+    <configuration name="TestEmbeddedFuseki.embedded_01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="org.apache.jena.fuseki.embedded.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="cryma-cointology" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="org.apache.jena.fuseki.embedded" />
+      <option name="MAIN_CLASS_NAME" value="org.apache.jena.fuseki.embedded.TestEmbeddedFuseki" />
+      <option name="METHOD_NAME" value="embedded_01" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="TestEmbeddedFuseki.embedded_08" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="org.apache.jena.fuseki.embedded.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="cryma-cointology" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="org.apache.jena.fuseki.embedded" />
+      <option name="MAIN_CLASS_NAME" value="org.apache.jena.fuseki.embedded.TestEmbeddedFuseki" />
+      <option name="METHOD_NAME" value="embedded_08" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration name="CrymaCointologyApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wade.cryma.cointology.app.CrymaCointologyApplication" />
+      <module name="cryma-cointology" />
+      <envs />
+    </configuration>
+    <configuration name="CrymaCointologyApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wade.cryma.app.CrymaCointologyApplication" />
+      <module name="cryma-cointology" />
+      <envs />
+    </configuration>
+    <configuration name="CrymaNewsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wade.cryma.news.app.CrymaNewsApplication" />
+      <module name="cryma-news" />
+      <envs />
+    </configuration>
+    <configuration name="CrymaParentApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wade.cryma.crymaparent.CrymaParentApplication" />
+      <module name="cryma-parent" />
+      <envs />
+    </configuration>
+    <configuration name="CrymaPlotApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wade.cryma.crymaplot.app.CrymaPlotApplication" />
+      <module name="cryma-plot" />
+      <envs />
+    </configuration>
+    <configuration name="CrymaPredictionApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wade.cryma.crymaprediction.app.CrymaPredictionApplication" />
+      <module name="cryma-prediction" />
+      <envs />
+    </configuration>
+    <configuration name="CrymaPythonPredictionApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wade.cryma.crymapythonprediction.app.CrymaPythonPredictionApplication" />
+      <module name="cryma-python-prediction" />
+      <envs />
+    </configuration>
+    <configuration name="CrymaZuulApigatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wade.cryma.CrymaZuulApigatewayApplication" />
+      <module name="cryma-zuul-apigateway" />
+      <envs />
+    </configuration>
+    <configuration name="CrymaZuulApigatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wade.cryma.CrymaZuulApigatewayApplication" />
+      <module name="cryma-zuul-apigateway" />
+      <envs />
+    </configuration>
+    <configuration name="EurekaServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wade.cryma.app.EurekaServiceApplication" />
+      <module name="cryma-eureka-service" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+    </configuration>
+    <list size="14">
+      <item index="0" class="java.lang.String" itemvalue="Spring Boot.CrymaNewsApplication" />
+      <item index="1" class="java.lang.String" itemvalue="Spring Boot.CrymaPredictionApplication" />
+      <item index="2" class="java.lang.String" itemvalue="Spring Boot.CrymaPythonPredictionApplication" />
+      <item index="3" class="java.lang.String" itemvalue="Spring Boot.EurekaServiceApplication" />
+      <item index="4" class="java.lang.String" itemvalue="Spring Boot.CrymaParentApplication" />
+      <item index="5" class="java.lang.String" itemvalue="Spring Boot.CrymaZuulApigatewayApplication" />
+      <item index="6" class="java.lang.String" itemvalue="Spring Boot.CrymaPlotApplication" />
+      <item index="7" class="java.lang.String" itemvalue="Spring Boot.CrymaCointologyApplication" />
+      <item index="8" class="java.lang.String" itemvalue="Spring Boot.CrymaCointologyApplication (1)" />
+      <item index="9" class="java.lang.String" itemvalue="Application.EurekaServiceApplication" />
+      <item index="10" class="java.lang.String" itemvalue="Application.CrymaModelApplication" />
+      <item index="11" class="java.lang.String" itemvalue="Application.CrymaNewsApplication" />
+      <item index="12" class="java.lang.String" itemvalue="JUnit.TestEmbeddedFuseki.embedded_01" />
+      <item index="13" class="java.lang.String" itemvalue="JUnit.TestEmbeddedFuseki.embedded_08" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Application.EurekaServiceApplication" />
+        <item index="1" class="java.lang.String" itemvalue="Application.CrymaNewsApplication" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.TestEmbeddedFuseki.embedded_01" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.TestEmbeddedFuseki.embedded_08" />
+        <item index="4" class="java.lang.String" itemvalue="Application.CrymaModelApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="462c5a0b-54bb-4915-ae8f-6369e45c5a76" name="Default" comment="" />
+      <created>1515223341023</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1515223341023</updated>
+      <workItem from="1515223345045" duration="901000" />
+      <workItem from="1515225021058" duration="94000" />
+      <workItem from="1515225268891" duration="20000" />
+      <workItem from="1515225316306" duration="227000" />
+      <workItem from="1515225673846" duration="179000" />
+      <workItem from="1515226049194" duration="84000" />
+      <workItem from="1515226152915" duration="14000" />
+      <workItem from="1515226200212" duration="65000" />
+      <workItem from="1515226322318" duration="346000" />
+      <workItem from="1515226858784" duration="37000" />
+      <workItem from="1515233192153" duration="3896000" />
+      <workItem from="1515242705082" duration="1707000" />
+      <workItem from="1515244542880" duration="4679000" />
+      <workItem from="1515271726176" duration="747000" />
+      <workItem from="1515309270034" duration="13510000" />
+      <workItem from="1515324110447" duration="10193000" />
+      <workItem from="1515353484103" duration="1771000" />
+      <workItem from="1515391825937" duration="19369000" />
+      <workItem from="1515420776631" duration="467000" />
+      <workItem from="1515432405722" duration="1940000" />
+      <workItem from="1515513291102" duration="1566000" />
+      <workItem from="1515606371324" duration="9937000" />
+      <workItem from="1515654244980" duration="10909000" />
+      <workItem from="1515741031830" duration="6914000" />
+      <workItem from="1515754727634" duration="3628000" />
+      <workItem from="1515833061342" duration="125000" />
+      <workItem from="1515837789799" duration="1631000" />
+      <workItem from="1515919097711" duration="7352000" />
+      <workItem from="1515997845876" duration="311000" />
+      <workItem from="1516037635611" duration="1212000" />
+      <workItem from="1516043526619" duration="68000" />
+      <workItem from="1516043731581" duration="5178000" />
+      <workItem from="1516083193847" duration="106000" />
+      <workItem from="1516085656736" duration="5147000" />
+      <workItem from="1516605872782" duration="9053000" />
+      <workItem from="1516693880604" duration="1057000" />
+      <workItem from="1516695104794" duration="799000" />
+      <workItem from="1516695946281" duration="222000" />
+      <workItem from="1516779024037" duration="3109000" />
+      <workItem from="1516796708213" duration="5000" />
+      <workItem from="1516821933146" duration="5000" />
+      <workItem from="1516862104044" duration="7273000" />
+      <workItem from="1516887800847" duration="217000" />
+      <workItem from="1516949080433" duration="15831000" />
+      <workItem from="1516970173313" duration="601000" />
+      <workItem from="1516987729306" duration="3862000" />
+      <workItem from="1516992336257" duration="1358000" />
+      <workItem from="1517123529923" duration="90000" />
+      <workItem from="1517123702462" duration="8431000" />
+      <workItem from="1517134832525" duration="3708000" />
+      <workItem from="1517138760141" duration="3453000" />
+      <workItem from="1517249914973" duration="54000" />
+      <workItem from="1517251254813" duration="45000" />
+      <workItem from="1517251329566" duration="448000" />
+      <workItem from="1517258251433" duration="116000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="TestEmbeddedFuseki_embedded_01 - 2018.01.22 at 10h 41m 22s.xml">
+      <configuration name="TestEmbeddedFuseki.embedded_01" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestEmbeddedFuseki_embedded_01 - 2018.01.23 at 10h 19m 53s.xml">
+      <configuration name="TestEmbeddedFuseki.embedded_01" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestEmbeddedFuseki_embedded_01 - 2018.01.23 at 10h 21m 14s.xml">
+      <configuration name="TestEmbeddedFuseki.embedded_01" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestEmbeddedFuseki_embedded_08 - 2018.01.22 at 11h 11m 06s.xml">
+      <configuration name="TestEmbeddedFuseki.embedded_08" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestEmbeddedFuseki_embedded_08 - 2018.01.22 at 11h 14m 18s.xml">
+      <configuration name="TestEmbeddedFuseki.embedded_08" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestEmbeddedFuseki_embedded_08 - 2018.01.22 at 11h 14m 25s.xml">
+      <configuration name="TestEmbeddedFuseki.embedded_08" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestEmbeddedFuseki_embedded_08 - 2018.01.22 at 11h 14m 58s.xml">
+      <configuration name="TestEmbeddedFuseki.embedded_08" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestEmbeddedFuseki_embedded_08 - 2018.01.22 at 11h 16m 34s.xml">
+      <configuration name="TestEmbeddedFuseki.embedded_08" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="174067000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28652322" sideWeight="0.50966704" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28878823" sideWeight="0.48872182" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2604726" sideWeight="0.48820755" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21750806" sideWeight="0.506542" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973147" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22771214" sideWeight="0.5117925" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28878823" sideWeight="0.49033296" order="3" side_tool="false" content_ui="tabs" x="30" y="381" width="1862" height="272" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run Dashboard" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="134" />
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="((GraphTripleStoreMem)((GraphMem)((MultiUnion)((OntModelImpl)((NewsRepository)this).base).graph).m_baseGraph).store).subjects" custom="org.apache.jena.mem.GraphTripleStoreMem,org.apache.jena.ontology.impl.OntModelImpl,org.apache.jena.mem.GraphMem,org.apache.jena.graph.compose.MultiUnion,com.wade.cryma.news.repository.impl.NewsRepository" />
+        <watch expression="((Request)((RequestFacade)this.request).request).mappingData" custom="javax.servlet.http.HttpServletRequestWrapper,org.apache.catalina.connector.RequestFacade,org.apache.catalina.connector.Request" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/cryma-news/src/main/java/com/wade/cryma/news/model/JenaOutputFormats.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.13.RELEASE/spring-webmvc-4.3.13.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-11">
+          <caret line="451" column="0" lean-forward="false" selection-start-line="451" selection-start-column="0" selection-end-line="451" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.13.RELEASE/spring-web-4.3.13.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="123" column="0" lean-forward="false" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cryma-plot/src/main/java/com/wade/cryma/crymaplot/model/TopCoin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cryma-news/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="27" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cryma-plot/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="27" column="17" lean-forward="false" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cryma-news/src/main/java/com/wade/cryma/news/service/impl/NewsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cryma-news/src/main/java/com/wade/cryma/news/repository/INewsRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="12" column="11" lean-forward="false" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cryma-plot/src/main/java/com/wade/cryma/crymaplot/repository/impl/CoinRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="23" column="25" lean-forward="false" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cryma-plot/src/main/java/com/wade/cryma/crymaplot/repository/ICoinRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="80" lean-forward="true" selection-start-line="6" selection-start-column="80" selection-end-line="6" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cryma-news/src/main/java/com/wade/cryma/news/configuration/ConfigurationClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="682">
+          <caret line="51" column="5" lean-forward="true" selection-start-line="41" selection-start-column="4" selection-end-line="51" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cryma-plot/src/main/java/com/wade/cryma/crymaplot/configuration/InterceptorConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cryma-plot/src/main/java/com/wade/cryma/crymaplot/model/JenaOutputFormats.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cryma-news/src/main/java/com/wade/cryma/news/repository/impl/NewsRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="41" column="14" lean-forward="false" selection-start-line="24" selection-start-column="4" selection-end-line="48" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cryma-plot/src/main/java/com/wade/cryma/crymaplot/service/ICoinService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cryma-prediction/src/main/java/com/wade/cryma/crymaprediction/service/IPredictionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="9" column="51" lean-forward="false" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cryma-python-prediction/src/main/java/com/wade/cryma/crymapythonprediction/configuration/ConfigurationClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cryma-python-prediction/src/main/java/com/wade/cryma/crymapythonprediction/library/LibraryRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="22" column="30" lean-forward="false" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cryma-prediction/src/main/java/com/wade/cryma/crymaprediction/service/impl/PredictionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cryma-plot/src/main/java/com/wade/cryma/crymaplot/model/CoinValue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="20" column="26" lean-forward="false" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cryma-zuul-apigateway/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cryma-plot/src/main/java/com/wade/cryma/crymaplot/service/impl/CoinService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="62" lean-forward="false" selection-start-line="4" selection-start-column="62" selection-end-line="4" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cryma-plot/src/main/java/com/wade/cryma/crymaplot/configuration/ConfigurationClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="37" column="48" lean-forward="false" selection-start-line="37" selection-start-column="48" selection-end-line="37" selection-end-column="48" />
+          <folding>
+            <element signature="e#935#936#0" expanded="false" />
+            <element signature="e#976#977#0" expanded="false" />
+            <element signature="e#1027#1028#0" expanded="false" />
+            <element signature="e#1067#1068#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cryma-news/src/main/java/com/wade/cryma/news/app/CrymaNewsApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="15" column="42" lean-forward="false" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cryma-plot/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cryma-news/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cryma-news/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="19" lean-forward="true" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cryma-plot/src/main/java/com/wade/cryma/crymaplot/app/CrymaPlotApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cryma-prediction/src/main/java/com/wade/cryma/crymaprediction/app/CrymaPredictionApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cryma-python-prediction/src/main/java/com/wade/cryma/crymapythonprediction/app/CrymaPythonPredictionApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="e#638#639#0" expanded="false" />
+            <element signature="e#712#713#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cryma-plot/src/main/java/com/wade/cryma/crymaplot/repository/impl/CoinRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="50" column="5" lean-forward="true" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cryma-plot/src/main/java/com/wade/cryma/crymaplot/repository/TopCoinRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="14" column="17" lean-forward="false" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cryma-zuul-apigateway/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="19" column="29" lean-forward="false" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cryma-plot/src/main/java/com/wade/cryma/crymaplot/interceptor/RequestFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="34" column="53" lean-forward="false" selection-start-line="34" selection-start-column="53" selection-end-line="34" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cryma-plot/src/main/java/com/wade/cryma/crymaplot/interceptor/DateInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="15" column="54" lean-forward="true" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cryma-plot/src/main/java/com/wade/cryma/crymaplot/repository/ICoinRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cryma-prediction/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="28" lean-forward="false" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cryma-prediction/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cryma-plot/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="36" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cryma-cointology/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cryma-cointology/src/main/java/com/wade/cryma/cointology/configuration/ConfigurationClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="29" column="39" lean-forward="false" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cryma-cointology/src/main/java/com/wade/cryma/cointology/repository/ICointologyRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="32" lean-forward="false" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cryma-cointology/src/main/java/com/wade/cryma/cointology/repository/impl/CointologyRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="21" column="42" lean-forward="false" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cryma-eureka-service/src/main/java/com/wade/cryma/app/EurekaServiceApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cryma-cointology/src/main/java/com/wade/cryma/cointology/app/CrymaCointologyApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cryma-news/src/main/java/com/wade/cryma/news/endpoint/NewsEndpoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cryma-plot/src/main/java/com/wade/cryma/crymaplot/endpoint/PlotEndpoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="8" column="29" lean-forward="false" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cryma-prediction/src/main/java/com/wade/cryma/crymaprediction/endpoint/PredictionEndpoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="19" column="6" lean-forward="true" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cryma-python-prediction/src/main/java/com/wade/cryma/crymapythonprediction/endpoint/PredictionEndpoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cryma-zuul-apigateway/src/main/java/com/wade/cryma/CrymaZuulApigatewayApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cryma-cointology/src/main/java/com/wade/cryma/cointology/endpoint/CointologyEndpoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="8" column="8" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>frontend:war</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>cryma-prediction</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.33639705" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: aopalliance:aopalliance:1.0</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

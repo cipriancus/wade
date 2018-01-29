@@ -1,0 +1,10 @@
+  spring:
+    application:
+      name: cryma-news
+  server:
+    port: 8094
+
+  eureka:
+    client:
+      serviceUrl:
+        defaultZone: http://localhost:8080/eureka/
