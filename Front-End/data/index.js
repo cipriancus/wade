@@ -54,7 +54,7 @@ $(function() {
 				for(var iterator=0;iterator<values.length;iterator++){
 					$("#cryptocurencyTop-dataTable tbody").append(`
 										<tr class=\"odd gradeX\">
-										<td class=\"center\">0</td>
+										<td class=\"center\">"+iterator+"</td>
                                         <td class=\"center\"><a href="bitcoin.html">`+values[iterator].name+`</a></td>
                                         <td class=\"center\">`+values[iterator].price+`</td>
                                         <td class=\"center\">`+values[iterator].marketCap+`</td>
