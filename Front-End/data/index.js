@@ -59,8 +59,8 @@ $(function() {
                                     <div class="chat-body clearfix">
                                         <div class="header">
                                             <strong class="primary-font">
-											<a href="">`+info+`
-											</a></strong>
+						<a href="">`+info+`
+					     </a></strong>
                                         </div>
                                     </div>
                                 </li>`);
@@ -84,7 +84,7 @@ $(function() {
 					$("#cryptocurencyTop-dataTable tbody").append(`
 										<tr class=\"odd gradeX\">
 										<td class=\"center\">`+iterator+`</td>
-                                        <td class=\"center\"><a href="coin.html">`+values[iterator].name+`</a></td>
+                                        <td class=\"center\"><a href="coin.html?id=`+values[iterator].id+`">`+values[iterator].name+`</a></td>
                                         <td class=\"center\">`+values[iterator].price+`</td>
                                         <td class=\"center\">`+values[iterator].marketCap+`</td>
                                         <td class=\"center\">`+values[iterator].volume+`</td>
