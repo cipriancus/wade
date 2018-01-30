@@ -413,11 +413,15 @@
 		    </p>
 			<h3>9.2 Modelling</h3>
 			<p>
-				Studying the <a property="schema:citation" href="https://doacc.github.io/concepts/doacc-owl.html">DOACC</a>
-				and  <a property="schema:citation" href="https://doacc.github.io/concepts/ccy-owl.html">CCY</a>
-				<a property="schema:citation" href="https://www.w3.org/TR/owl-features/">OWL</a>
-				will reveal lots of cryptocurrency related properties, it was chosen to select only the
-				most important ones and they were modelled them in the following scheme.
+				In order to model our data, we used the open source ontology editor <a property="schema:citation" href="https://protege.stanford.edu/">Protege</a> 
+				which allowed us to create owr own ontology, load an existing ontology and edit it, query the loaded ontologies using SPARQL etc. 
+				For the model of a cryptocurrency, we started with the <a property="schema:citation" href="https://doacc.github.io/concepts/doacc-owl.html">DOACC</a> 
+				(Description Of A Crpto Currency) ontology, which already models important aspect of a cryptocurrencies, such as its download page or cryptographic 
+				algorithm and we added the elements that we were interested in, such as a class for the logo of a cryptocurrency, an object property to assign a logo 
+				to a cryptocurrency, dataproperties for price, market capital, maximum supply of a coin etc.
+				In order to populate the ontology with individuals, we used a python script that made calls to the <a property="schema:citation" href="https://coinmarketcap.com/api/">CoinMarketCap API</a>.,
+				which provides real time values for the existing cryptocurrencies and rewrote the json responses in order to fit the description of our ontology.
+				
 			</p>
 			<figure typeof="sa:Image">
 			  <img src="../scholarly/UML/coin_model.PNG" >	
