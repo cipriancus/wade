@@ -18,6 +18,8 @@ OpenAPI : https://app.swaggerhub.com/apis/cipriancus1/CryMa/1.0.0#/ or https://g
 
 *You can look at our Tasks Board by installing ZENHUB : https://chrome.google.com/webstore/detail/zenhub-for-github/ogcgkffhplmphkaahpmffcafajaocjbd*
 
+Video : https://youtu.be/GAhKon0JwWA
+
 *We also like to write on the Wiki page : https://github.com/cipriancus/CryMa/wiki*
 
 <h3>Members :</h3>
