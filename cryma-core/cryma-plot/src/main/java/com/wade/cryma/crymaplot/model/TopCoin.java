@@ -27,6 +27,9 @@ public class TopCoin {
     @Column(name = "CHANGEVALUE")
     public float change;
 
+    @Column(name = "ABBREVIATION")
+    public String abbreviation;
+
 
     public String getName() {
         return name;
@@ -34,6 +37,14 @@ public class TopCoin {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getAbbreviation() {
+        return abbreviation;
+    }
+
+    public void setAbbreviation(String abbreviation) {
+        this.abbreviation = abbreviation;
     }
 
     public float getMarketCap() {

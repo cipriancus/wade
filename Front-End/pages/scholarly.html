@@ -56,18 +56,16 @@
         <p>
           CryMa, short for Cryptocurrency Manager, is an online application
 		  with the purpose of managing cryptocurrency  information. The website
-		  uses the power of semantic web and information found on diverse ontologies
-		  to keep the information presented on the site as accurate as possible, with
-		  as little as possible human interaction, so that users are updated in real time
-		  with the information they need for a better understanding of the world-wide crypto currencies market.
+		  uses the power of semantic web and combines ontology engineering to model
+		  cryptocurrency knowlege.
         </p>
       </section>
 	  
       <section typeof="sa:MaterialsAndMethods" id="motivation">
         <h2>2 Motivation</h2>
         <p>
-          The world of today grows one's need to adapt to a faster tomorrow, thus it is critical
-		  that everybody gets information with as little delay as possible. 
+          The world of today grows one's need to model information in such a way
+		  that both machines and humans understand.
         </p>
 		<p>
 		  Systems capable of displaying diverse, up to date information are very sought after.
@@ -85,11 +83,10 @@
 				The website wishes to provide the following big features :
 			</p>
             <ul>
-				<li>Rich front end client.</li>
 				<li>Top cryptocurrency value : value ( in $ ), change in 24h ( with percentage ), market share and an evolution graphic.</li>
-				<li>The top chart can be ordered ascending or descending for each information in the table header.</li>
 				<li>Machine Learning prediction of the coin values' tendencies</li>
 				<li>News about cryptocurrencies</li>
+				<li>Distribute server architecture using modern architectural patterns</li>
 				<li>OpenAPI specification for developers.</li>
 			</ul>
 				
@@ -131,11 +128,16 @@
 				the GatewayAPI, having the following functions:
 			</p>
 			<ul>
-				<li><code>News</code> : will pull data from the web that are news, related to the cryptocurrencies</li>
+				<li><code>News</code> : will model data related to the cryptocurrency news</li>
 				<li><code>Plot</code> : using the Prediction microservice, that will predict future coin data based on past information, it's
-					purpose is providing plot data for the front end, based on the filters and preferences set by the latter</li>
-				<li><code>CoinTology</code> : will store the data about the cryptocurrencies, pull it from the web and manage it 
-					so that every service is up to date and has a source of information</li>
+										purpose is providing plot data for the front end, based on the filters and preferences set by the latter</li>
+				<li><code>Prediction</code> : based on a coin it calls the Python Prediction microservice to predict a future value of a coin </li>
+				<li><code>Python Prediction</code> : calls the python library to give Python Prediction a response </li>
+				<li><code>Python Library</code> : runs the neural network algorithm to predict the value of a coin </li>
+				<li><code>CoinTology</code> : will give information related to coins </li>
+				<li><code>Fuseki Server</code> : stores all the ontology data and supports SPARQL Queries </li>
+				<li><code>Zuul</code> : proxy for the microservices </li>
+				<li><code>Eureka</code> : registry for resilient mid-tier load balancing </li>
 			</ul>
 			<h3>
 				4.2 Class Diagram
@@ -144,21 +146,21 @@
 				For each microservice a class diagram has been made, in order to fully detail the system.
 			</p>
 			<figure typeof="sa:Image">
-			  <img src="../scholarly/UML/coinconvertion class diagram.png" >	
+			  <img src="../scholarly/UML/news class diagram.png" >	
 			  <figcaption>
-				News Class Diagram ( figure 3 )
+				News Class Diagram ( figure 2 )
 			  </figcaption>
 			</figure>
 			<figure typeof="sa:Image">
 			  <img src="..//scholarly/UML//classPlot.PNG" >	
 			  <figcaption>
-				Plot Class Diagram ( figure 4 )
+				Plot Class Diagram ( figure 3 )
 			  </figcaption>
 			</figure>
 			<figure typeof="sa:Image">
 			  <img src="..//scholarly/UML//cointology class diagram.png" >	
 			  <figcaption>
-				Cointology Class Diagram ( figure 5 )
+				Cointology Class Diagram ( figure 4 )
 			  </figcaption>
 			</figure>
 		</section>
@@ -172,7 +174,7 @@
 			<figure typeof="sa:Image">
 			  <img src="..//scholarly/UML//usecase.PNG" >	
 			  <figcaption>
-				Use-Case Diagram ( figure 6 )
+				Use-Case Diagram ( figure 5 )
 			  </figcaption>
 			</figure>
 		</section>
@@ -187,7 +189,7 @@
 			<figure typeof="sa:Image">
 			  <img src="..//scholarly/UML//activity diagram.png" >	
 			  <figcaption>
-				Activity Diagram ( figure 7 )
+				Activity Diagram ( figure 6 )
 			  </figcaption>
 			</figure>
 		</section>
@@ -195,15 +197,15 @@
 		<section typeof="sa:MaterialsAndMethods" id="modelling">
 		    <h1>7 Front-End</h1>
 			<p>
-				Besides using the classic 
+				The technologies used are
 				<a property="schema:citation" href="https://www.w3.org/Style/CSS/Overview.en.html">CSS</a> and 
 				<a property="schema:citation" href="https://www.w3.org/html/">HTML</a>
-				it was choosen
-				<a property="schema:citation" href="https://v2.angular.io/docs/ts/latest/">Angular 2</a>, in order to
+				and
+				<a property="schema:citation" href="https://jquery.com/">jQuery</a>, in order to
 				ease the development process and to decouple the "smart" front-end from the cloud based, REST back-end.	
 			</p>
 			<h3>
-				7.1 Mocks
+				7.1 Charts
 			</h3>
 			<p>
 				As with every application, the first thing the user sees is the main page, so with use
@@ -213,14 +215,20 @@
 			<figure typeof="sa:Image">
 			  <img src="../scholarly/Photos/first_page_top_chart.png" >	
 			  <figcaption>
-				Top currency table ( figure 8 )
+				Top currency table ( figure 7 )
 			  </figcaption>
 			</figure>
 			<p>
 				The users can filter the information; they can choose to order every information in the
-				header ascending or descending; they can see the price, market cap, change and a small plot.
+				header ascending or descending; they can see the price, market cap, change etc.
 				A nice feature is the fact that they can search for a specific currency.
 			</p>
+			<figure typeof="sa:Image">
+			  <img src="../scholarly/Photos/first_page_top_chart_order_volume.png" >	
+			  <figcaption>
+				Top currency table order by volume( figure 8 )
+			  </figcaption>
+			</figure>
 			<p>
 				Also visible on the main page is an overall pie chart of the market, that
 				gives the user possible investment perspective on the market.
@@ -228,85 +236,33 @@
 			<figure typeof="sa:Image">
 			  <img src="../scholarly/Photos/first_page_distribution.PNG" >	
 			  <figcaption>
-				Distribution in percentage of the top cryptocurrencies ( figure 9 )
+				Distribution in percentage of the cryptocurrencies ( figure 9 )
 			  </figcaption>
 			</figure>
 			<p>
 				The distribution of the top currencyes is easy to read and takes up
 				little space, bringing insight of the market.
-			</p>
+			</p>	
 			<p>
-				By clicking on a specific cryptocurrency ( e.g Bitcoin ) the user will be presented
-				detailed information about it. A wide range of graphs are available for the user
-				to choose.
-			</p>
-			<figure typeof="sa:Image">
-			  <img src="../scholarly/Photos/bitcoin_distribution.PNG" >	
-			  <figcaption>
-				Evolution price graph ( figure 10 )
-			  </figcaption>
-			</figure>
-			<p>
-				The user can select the period of which the graph will show data,
-				in our case it was selected from the first of May until the 12th of May
-				and it was rendered the above graph.
-			</p>
-			<p>
-				If the graph is based on present day, the prediction algorithm will	
-				predict the next days possible values and show them with interrupted lines.
-			</p>
-			<figure typeof="sa:Image">
-			  <img src="../scholarly/Photos/bitcoin_distribution_prediction.PNG" >	
-			  <figcaption>
-				Evolution price graph with prediction ( figure 11 )
-			  </figcaption>
-			</figure>
-			<p>
-				It is assumed the current day is the 12th of May and predicted the 13th of May,
-				as it can pe seen, there is a dotted line from 12th till 13th predicting a growth.
-			</p>
-			<p>
-				Another visualisation tool is the monthly price average, as seen below.
-			</p>
-			<figure typeof="sa:Image">
-			  <img src="../scholarly/Photos/bitcoin_distribution_mothly.png" >	
-			  <figcaption>
-				Mothly price average ( figure 12 )
-			  </figcaption>
-			</figure>
-			<p>
-				Just like the graphs presented in the past, the output periods can be changed
-				and the user can choose what to see. The users can also see a price prediction for 
-				the following month if the timeframe consists of the current months.
-			</p>
-			<figure typeof="sa:Image">
-			  <img src="../scholarly/Photos/bitcoin_distribution_mothly_prediction.png" >	
-			  <figcaption>
-				Mothly price average with prediction ( figure 13 )
-			  </figcaption>
-			</figure>
-			<p>
-				The algorithm estimates an increase, an informs the user with a red
-				rectangle about the prediction.
-			</p>
-			<p>
-				Having the most recent news is crucial in the financial system, thus
-				it is necessary that the user gets the latest news regarding the cryptocurrencies. 
-			</p>
-			<p>
-				A special page regarding news has been put in place, as it 
-				can be seen below.
+				The ontology we created also associates coins with news,
+				we are able to list all the news available by preference to the user.
 			</p>
 			<figure typeof="sa:Image">
 			  <img src="../scholarly/Photos/top_news.PNG" >	
 			  <figcaption>
-				Top news ( figure 15 )
+				Top news ( figure 10 )
 			  </figcaption>
 			</figure>
 			<figure typeof="sa:Image">
 			  <img src="../scholarly/Photos/first_page.PNG" >	
 			  <figcaption>
-				First page complete mock ( figure 16 )
+				First page complete ( figure 11 )
+			  </figcaption> 
+			</figure>
+			<figure typeof="sa:Image">
+			  <img src="../scholarly/Photos/first_page_bottom.PNG" >	
+			  <figcaption>
+				First page complete bottom part ( figure 12 )
 			  </figcaption> 
 			</figure>
 			<p>
@@ -315,23 +271,36 @@
 				As it can be seen it has a feature of "Top currency growth"
 				that shows the top three biggest cryptocurrencies.
 			</p>
-			<figure typeof="sa:Image">
-			  <img src="../scholarly/Photos/coin_p1.PNG" >	
-			  <figcaption>
-				Cryptocurrency page ( figure 17 )
-			  </figcaption>
-			</figure>
+			<h3>
+				7.1 Coin
+			</h3>
 			<p>
-				As it can be seen, the page has all the features explained above.
-				The page shows important information such as the coin website,
-				price evolution, prediction and many more.
+				Selectin a coin ( e.g Bitcoin ) in the top chart will
+				redirect the user to a page dedicated to that coin.
 			</p>
+			<p>
+				The coin page exposes information such as current value,
+				market capital, volume, supply and 24h change.
+			</p>
+			<p>
+				The news will be sorted only for the coin selected.
+			</p>
+			<p>
+				A price evolution chart is also available,
+				this price also includes a prediction for the next day.
+			</p>
+			<figure typeof="sa:Image">
+			  <img src="../scholarly/Photos/bitcoin_coin_page.PNG" >	
+			  <figcaption>
+				First page complete bottom part ( figure 13 )
+			  </figcaption> 
+			</figure>
 		</section>
 			
 		<section typeof="sa:MaterialsAndMethods" id="back_end">
 		    <h1>8 Back-End</h1>
 			<p>
-				The back-end application will be written in <a property="schema:citation" href="https://www.java.com/en/">Java</a>  
+				The back-end application was written in <a property="schema:citation" href="https://www.java.com/en/">Java</a>  
 				using the <a property="schema:citation" href="https://projects.spring.io/spring-boot/">Spring Boot Framework</a>.
 				Also, as a dependency management tool it was chosen <a property="schema:citation" href="https://maven.apache.org/">Maven</a>.
 			</p>    
@@ -341,10 +310,9 @@
 				<a property="schema:citation" href="https://www.w3.org/standards/semanticweb/data">Linked Data</a> applications.
 			</p>
 			<p>
-				From Jena it was chosen to use the following functionalities :
+				From Jena it we used the following functionalities :
 				<ul>
 					<li><a property="schema:citation" href="https://jena.apache.org/documentation/rdf/index.html">RDF API</a></li>
-					<li><a property="schema:citation" href="https://jena.apache.org/documentation/query/index.html">ARQ - SPARQL</a></li>
 					<li><a property="schema:citation" href="https://jena.apache.org/documentation/tdb/index.html">TDB</a></li>
 					<li><a property="schema:citation" href="https://jena.apache.org/documentation/fuseki2/index.html">Fuseki</a></li>
 					<li><a property="schema:citation" href="https://jena.apache.org/documentation/ontology/">Onthology API</a></li>
@@ -352,45 +320,273 @@
 				</ul>
 			</p>
 			<p>
-				In order to build a modern application, in the development phase it was chosen a new approach, that of
+				In order to build a modern application, in the development phase, as stated in the start of the paper, we used
 				<a property="schema:citation" href="http://microservices.io/">Microservices</a>
 			</p>
 			<p>
-				Each microservice created will register to a service using the 
-				<a property="schema:citation" href="https://spring.io/blog/2015/01/20/microservice-registration-and-discovery-with-spring-cloud-and-netflix-s-eureka">Eureka</a> Service
-				and <a property="schema:citation" href="http://projects.spring.io/spring-cloud/">Spring Cloud</a>.				
+				Each microservice created registers to a service using the 
+				<a property="schema:citation" href="https://spring.io/blog/2015/01/20/microservice-registration-and-discovery-with-spring-cloud-and-netflix-s-eureka">Eureka</a> Service.				
+			</p>	
+			<h3>8.1 Eureka</h3>
+			<p>
+				All the microservices register to eureka in order to keep track of them.
 			</p>
 			<p>
-				Each microservice described in the architecture part will serve its sole purpose in the Spring environment,
-				responding to it's REST API, tha API will be helped by a <a property="schema:citation" href="https://sourcemaking.com/design_patterns/proxy">proxy</a> 
-				called <a property="schema:citation" href="https://spring.io/guides/gs/routing-and-filtering/">Netflix Zuul</a>.
+				In order to send a request to another microservice, it doesn't use the absolute path,
+				but a relative one, comprised of it's used name at registry time; thus eureka
+				resolves the name and an abstraction between microservices is achieved.
+			</p>
+			<p><code>@Autowired private RestTemplate restTemplate;</code></p>
+			<p><code>private String predictionURL = "http://cryma-python-prediction/predict/";</code></p>
+			<p>
+				The RestTemplate object prior to sending the request to the microservice resolves the name
+				by asking eureka and then, with the resolved url can use it.
 			</p>
 			<p>
-				In order to have consitency across the application data there are two solutions :
-				<ol>
-					<li>Synchronization via event query using <a property="schema:citation" href="https://www.rabbitmq.com/">RabbitMQ</a>.</li>
-					<li>Each microservice will query data via GatewayAPI SPARQL endpoint.</li>
-				</ol>
+				Eureka offers a clean solution for seeing the online services.
+			</p>
+			<figure typeof="sa:Image">
+			  <img src="../scholarly/Photos/eureka-interface.png" >	
+			  <figcaption>
+				Eurela interface ( figure 14 )
+			  </figcaption>
+			</figure>
+			<h3>8.2 Zuul</h3>
+			<p>
+				Netflix Zuul is the front door for all requests from devices and web sites to the backend.
+				It's a proxy server that routes different request to specific microservices.
+				It is also a microservice that registers to Eureka.
+			</p>
+			<figure typeof="sa:Image">
+			  <img src="../scholarly/Photos/zuul-path.png" >	
+			  <figcaption>
+				Zuul path configuration ( figure 15 )
+			  </figcaption>
+			</figure>	
+			<p>
+				As it can be seen Zuul creates routes for each microservice that is registered to Eureka.
+			</p>
+			<h3>8.3 News</h3>
+			<p>
+				The news microservice provides news data related to the coins.
+			<p>
+			<p>
+				The news was modeled in the OWL and the data is stored inside the fuseki server, the data
+				is queried via HTTP.
 			</p>
 			<p>
-				Communication between the GatewayAPI and the microservices will be done via 
-				<a property="schema:citation" href="http://microservices.io/patterns/communication-style/rpi.html">Remote Procedure Invocation ( RPI )</a>.
-				In the back, Spring will convert the url to the url of the microservice and parse the response in order to form the required objects.
+				The news microservice exposes an endpoint capable of querying news in fuseki in two ways:
+				<ul>
+					<li>Get all coin news</li>
+					<li>Get news only for a certain coin</li>
+				</ul>
 			</p>
 			<p>
-				Cloud deployment will be done in the <a property="schema:citation" href="https://www.cloudfoundry.org">CloudFoundry</a>
-				ecosystem, allowing the application to be used across the globe.
+				The endpoint return information such as :
+				<ul>
+					<li>Name</li>
+					<li>Description</li>
+					<li>Url</li>
+					<li>Date</li>
+					<li>Photos</li>
+				</ul>
 			</p>
-		</section>
-		
+			<figure typeof="sa:Image">
+			  <img src="..//scholarly/Photos//news_all.png" >	
+			  <figcaption>
+				https://cryma-news.cfapps.io/news/?limit=25&format=TURTLE ( figure 16 )
+			  </figcaption>
+			</figure>
+			<p>
+				Example of request to the news microservice with turle output selecting
+				all news for all coins.
+			</p>
+			<figure typeof="sa:Image">
+			  <img src="..//scholarly/Photos//news bitcoin.png" >	
+			  <figcaption>
+				https://cryma-news.cfapps.io/news/coin/BTC?limit=25&format=TURTLE	( figure 17 )
+			</figcaption>
+			</figure>
+			<p>
+				Example of request to the news microservice with JSON-LD output
+				selecting news only for bitcoin.
+			</p>
+			<h3>8.4 Plot</h3>
+			<p>
+				The plot microservice provides plot data related to the coins.
+			<p>
+			<p>
+				It uses both fuseki and a database for storing data.
+			</p>
+			<p>
+				In order to provide Top Coin Data a database for the coins was
+				created, the database was populated using a python script found in the 
+				"Database" folder on Github.
+			</p>
+			<p>
+				The TopCoin return information such as :
+				<ul>
+					<li>Id</li>
+					<li>Name</li>
+					<li>Market Capital</li>
+					<li>Price</li>
+					<li>Supply</li>
+					<li>Volume</li>
+					<li>Change value in 24h</li>
+					<li>Abbreviation</li>
+				</ul>
+			</p>
+			<p>
+				This provides data for the top currency table on the front end.
+			</p>
+			<p>
+				This microservice supports multiple pagination and sorting options, such as:
+				<ul>
+					<li>Read data by page with a certain size</li>
+					<li>Sort by any information above, ASC or DESC</li>
+				</ul>
+				Information regarding sorting and querying capabilities are found in the bottom of the 
+				response: 
+				<xmp>
+				"_links" : {
+					"first" : {
+					  "href" : "https://cryma-plot.cfapps.io/coin?page=0&size=20"
+					},
+					"self" : {
+					  "href" : "https://cryma-plot.cfapps.io/coin{?page,size,sort}",
+					  "templated" : true
+					},
+					"next" : {
+					  "href" : "https://cryma-plot.cfapps.io/coin?page=1&size=20"
+					},
+					"last" : {
+					  "href" : "https://cryma-plot.cfapps.io/coin?page=4&size=20"
+					},
+					"profile" : {
+					  "href" : "https://cryma-plot.cfapps.io/profile/coin"
+					}
+				  }
+				</xmp>
+			<figcaption>Code example 1</figcaption>
+			</p>
+			<p>
+				Besides this database endpoint the service creates queries
+				to the SPARQL Fuseki endpoint. Exposing information such as 
+				querying by a coin abbreviation, start date and end date.
+			</p>
+			<p>
+				The endpoint searches all the data related to a coin ( from a plotting view ).
+				The query returns a list of all data : value, date and the coin associated with them.
+			</p>
+			<figure typeof="sa:Image">
+			  <img src="../scholarly/Photos/plot coin all.PNG" >	
+			  <figcaption>
+				https://cryma-plot.cfapps.io/coin ( figure 18 )
+			  </figcaption>
+			</figure>
+			<figure typeof="sa:Image">
+			  <img src="../scholarly/Photos/plot coin call one.PNG" >	
+			  <figcaption>
+				https://cryma-plot.cfapps.io/coin/1 ( figure 19 )
+			  </figcaption>
+			</figure>
+			<p>
+				Examples :
+					<ul>
+					<li>https://cryma-plot.cfapps.io/coin?page=1&size=50&sort=volume,asc</li>
+					<li>https://cryma-plot.cfapps.io/coin?page=1&size=50&sort=price,desc</li>
+			</p>
+			<figure typeof="sa:Image">
+			  <img src="../scholarly/Photos/plot btc.PNG" >	
+			  <figcaption>
+				https://cryma-plot.cfapps.io/plot/BTC?format=RDF/XML&startDate=2014-05-23T10:20:13%2B05:30&endDate=2019-05-23T10:20:13%2B05:30 ( figure 20 )	  
+				</figcaption>
+			</figure>
+			<p>
+				As it can be seen selecting a bitcoin between 2014-05-23T10:20:13 and 2019-05-23T10:20:13
+				in the RDF/XML format returns values.
+			<p>
+			<h3>8.5 Cointology</h3>
+			<p>
+				The endpoint searches all the data related to a coin information in the
+				onthology.
+			</p>
+			<p>
+				One endpoint queries all the coins exposing both information and values
+				and one can query only for one coin.
+			<p>
+			<p>
+				As stated in the previous microservices the endpoints give out data in many kind of formats.
+			</p>
+			<figure typeof="sa:Image">
+			  <img src="../scholarly/Photos/cointology all.PNG" >	
+			  <figcaption>
+				https://cryma-cointology.cfapps.io/cointology/?limit=25&format=NT  ( figure 21 )				  
+				</figcaption>
+			</figure>
+			<figure typeof="sa:Image">
+			  <img src="../scholarly/Photos/cointology btc.PNG" >	
+			  <figcaption>
+				https://cryma-cointology.cfapps.io/cointology/BTC?limit=25&format=N3	 ( figure 22 )	  
+				</figcaption>
+			</figure>
+			
+			
+			<h3>8.6 Prediction</h3>
+			<p>
+				This multitude of microservices are used to predict a future value of a coin.
+			</p>
+			<p>
+				We use a python library that runs a neural network over a set of
+				history data for the coins.
+			</p>
+			<p>
+				When the application requests a prediction, the microservices start working
+				giving a possible future value.
+			</p>
+			<h3>8.7 Approach</h3>
+			<p>
+				In order to create a proficient application we used several software engineering
+				patterns.
+			</p>
+			<p>
+				First of all, Spring by default is an IoC container that helps us inject dependencies.
+			</p>
+			<p>
+				We also used the MVC pattern, the model is the front-end that is deployed on a 
+				server and though REST it communicates with the controller and the latter with the model.
+			</p>
+			<p>
+				Zuul Proxy hides the system complexity by automatically redirecting requests to the desired
+				microservices.
+			</p>
+			<p>
+				Most of the microservices use a service interface that creates all the business logic
+				and a repository interface that handles all the data handling.
+			</p>
+			<p>
+				To filter the request and check the parameters we used Interceptors and Filters that were 
+				provided either by Spring or either by the JavaEE platform. Some checkings include :
+				<ul>
+					<li>Date checking in order to see if format respects the ISO 8601 date format</li>
+					<li>If Jena format is in supported ranges, for example : "JSON-LD","TURTLE" etc</li>
+				</ul>
+			</p>
+			<p>
+				In order to model the fuseki queries, Jena comes into play, it is able to model
+				the response graph and it eases our development time considerably. Jena helped in :
+				<ul>
+					<li>Modelling the received graph and modifying diverse properties</li>
+					<li>Translating the model in diverse formats</li>
+					<li>Creating queries that are sent to the fuseki endpoint</li>
+			</p>
+		</section>	
 		<section typeof="sa:MaterialsAndMethods" id="modelling">
 			<h1>9 Modelling And Prediction
 			</h1>
 			<h3>9.1 Prediction</h3>
 			<p>
-				The predictions about the monetary value of the cryptocurrencies will be a feature of the application.
-				These predictions will be made by machine learning algorithms based on the historical data
-				available for these coins.
+				Our application provides a prediction feature for the tendencies of a coin's value.
 		      </p>
 		      <p>
 			      	Our approach is based on artificial neural networks. 
@@ -411,43 +607,320 @@
 				task </a> and <a property="schema:citation" href="https://www.ijsr.net/archive/v6i4/ART20172755.pdf">
 				Predicting Stock Prices Using LSTM </a>.
 		    </p>
+			<p>
+				Our module is built with LSTM neural networks which were trained on the historical data of many cryptocurrencies to try to find structure in the price fluctuations. The training consists in giving the network an array with a consecutive values of a cryptocurrency as input and the value that follows that sequence as a target. 
+				The network adapts its inner parameters to minimize the difference between its outputs and the target outputs.
+			</p>
+			<p>
+				A neural network trains with a huge amount of data (because its hidden features are multidimensional, which means that the training inputs will be sparse in the hyperspace of the network), and cryptocurencies have a relatively recent history. As expected, the network didn’t fit the test data very closely, but it predicted correctly the tendencies of the cryptocurrency.
+			</p>
+			<figure typeof="sa:Image">
+			  <img src="../scholarly/Photos/prediction results.PNG" >	
+			  <figcaption>
+				Model evaluation ( figure 23 )
+			  </figcaption>
+			</figure>
+			<figure typeof="sa:Image">
+			  <img src="../scholarly/Photos/prediction endpoint call.PNG" >	
+			  <figcaption>
+				Model output ( figure 24)
+			  </figcaption>
+			</figure>
+			<p>
+				Model predicts 649.2086298$.
+				Current value is 400.17$ thus the model predicts an increase of 250$
+			</p>
+			<p>
+				The accuracy may vary, as seen in the model evaluation figure.
+				Unfortunately a lot of data was older and considering that the cryptocurrency
+				market has risen very sharply in the last months it set the model off with a certain degree.
+			</p>
 			<h3>9.2 Modelling</h3>
 			<p>
 				In order to model our data, we used the open source ontology editor <a property="schema:citation" href="https://protege.stanford.edu/">Protege</a> 
-				which allowed us to create owr own ontology, load an existing ontology and edit it, query the loaded ontologies using SPARQL etc. 
+				which allowed us to create our own ontology, load an existing ontology and edit it, query the loaded ontologies using SPARQL etc. 
+			</p>
+			<p>
 				For the model of a cryptocurrency, we started with the <a property="schema:citation" href="https://doacc.github.io/concepts/doacc-owl.html">DOACC</a> 
 				(Description Of A Crpto Currency) ontology, which already models important aspect of a cryptocurrencies, such as its download page or cryptographic 
 				algorithm and we added the elements that we were interested in, such as a class for the logo of a cryptocurrency, an object property to assign a logo 
 				to a cryptocurrency, dataproperties for price, market capital, maximum supply of a coin etc.
 				In order to populate the ontology with individuals, we used a python script that made calls to the <a property="schema:citation" href="https://coinmarketcap.com/api/">CoinMarketCap API</a>.,
-				which provides real time values for the existing cryptocurrencies and rewrote the json responses in order to fit the description of our ontology.
-				
+				which provides real time values for the existing cryptocurrencies and rewrote the JSON responses in order to fit the description of our ontology.
 			</p>
-			<figure typeof="sa:Image">
-			  <img src="../scholarly/UML/coin_model.PNG" >	
-			  <figcaption>
-				First page complete mock ( figure 18 )
-			  </figcaption>
-			</figure>
 			<p>
-				This eases the class modelling that was done for the 
+				The combination of ontologies was called <a property="schema:citation" href="https://http://purl.org/cryma/">Cryma</a>
+				and it was decided to be stored, as many other ontologies have, on <a property="schema:citation" href="https://http://purl.org">Purl</a>.
+			</p>
+			<p>
+				Cryma is a combination of other ontologies such as :
+				<ul>
+					<li>dc: http://purl.org/dc/elements/1.1/</li>
+					<li>ns: http://www.w3.org/2003/06/sw-vocab-status/ns#</li>
+					<li>ccy: http://purl.org/net/bel-epa/ccy</li>
+					<li>owl: http://www.w3.org/2002/07/owl#</li>
+					<li>rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#</li>
+					<li>xml: http://www.w3.org/XML/1998/namespace</li>
+					<li>xsd: http://www.w3.org/2001/XMLSchema#</li>
+					<li>foaf: http://xmlns.com/foaf/0.1/</li>
+					<li>rdfs: http://www.w3.org/2000/01/rdf-schema#</li>
+					<li>skos: http://www.w3.org/2004/02/skos/core#</li>
+					<li>vann: http://purl.org/vocab/vann/</li>
+					<li>doacc: http://purl.org/net/bel-epa/doacc#</li>
+				</ul>
+			</p>
+			<p>
+				We also used <a property="schema:citation" href="http://wiki.dbpedia.org/">DBpedia</a>
+				to link data such as coin entities with already existing DBpedia entries.
+				<p>For example <code>:Bitcoin rdfs:seeAlso  http://dbpedia.org/page/Bitcoin</code></p>
+			</p>
+		</section>
+		
+		<section typeof="sa:MaterialsAndMethods" id="modelling">
+			<h1>10 Open API</h1>
+			<p>
+				The OpenApi specification can be found at : 
 				<a property="schema:citation" href="https://app.swaggerhub.com/apis/cipriancus1/CryMa/1.0.0#/">OpenAPI</a>.
 			</p>
 		</section>
+		
+		<section typeof="sa:MaterialsAndMethods" id="modelling">
+			<h1>11 SPARQL And Fuseki</h1>
+			<h3>11.1 Fuseki</h3>
+			<p>
+				In order to process all the SPARQL requests
+				a deployed Fuseki server was deployed into cloud.
+			</p>
+			<p>
+				The fuseki war was deployed on <a property="schema:citation" href="www.openshift.com">OpenShift</a>
+				and combined with persistent storage in order to save the created fuseki model.
+			</p>
+			<p>
+				All the data was uploaded from a TTL format file.
+			</p>
+			<p>
+				The fuseki server is available at the address :
+				<a property="schema:citation" href="http://cryma-fuseki-cryma.1d35.starter-us-east-1.openshiftapps.com">Fuseki Server</a>
+			</p>
+			<p>
+				The server has a very high up time, since it was first deployed it has run with 100% uptime.
+			</p>
+			<figure typeof="sa:Image">
+			  <img src="../scholarly/Photos/fuseki server main page.PNG" >	
+			  <figcaption>
+				Fuseki server main page and query page ( figure 25 )
+			  </figcaption>
+			</figure>
+			<h3>11.2 SPARQL</h3>
+			<p>
+				SPARQL queries were sent using Jena to the Fuseki server.
+			</p>
+			<xmp>
+   @Override
+    public String getCoinValues(String abbreviation, String startDate, String endDate, String format) {
+        final StringBuilder response = new StringBuilder();
+        query(fusekiEndpoint, "" +
+                "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n" +
+                "PREFIX cryma: <http://purl.org/cryma#>\n" +
+                "PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> \n" +
+                "\n" +
+                "SELECT ?coin_name ?price ?date\n" +
+                "WHERE {\n" +
+                " \t ?coin rdf:type cryma:Cryptocurrency.\n" +
+                "  \t ?coin cryma:abbreviation ?coin_name.\n" +
+                "  \t ?value rdf:type cryma:Value.\n" +
+                "  \t ?value cryma:coin ?coin.\n" +
+                "  \t ?value cryma:price_USD ?price.\n" +
+                "\t ?value cryma:dateTime ?date\n" +
+                "     FILTER regex(?coin_name,\"" + abbreviation + "\")\n" +
+                "  \t FILTER (?date > \"" + startDate + "\"^^xsd:dateTime)\n" +
+                "  \t FILTER (?date < \"" + endDate + "\"^^xsd:dateTime)\n" +
+                "}", qExec -> {
+            Model model = RDFOutput.encodeAsModel(qExec.execSelect());
+            StringWriter out = new StringWriter();
+            model.write(out, format);
+            response.append(out.toString());
+        });
+        return response.toString();
+    }
+
+    static void query(String URL, String query, Consumer<QueryExecution> body) {
+        try (QueryExecution qExec = QueryExecutionFactory.sparqlService(URL, query)) {
+            body.accept(qExec);
+        }
+    }
+			</xmp>
+			<figcaption>Code example 2</figcaption>
+			<p>
+				This code send a request to fuseki for the plot endpoint to select all values
+				related to a coin, filtering by start date and end date. An jena, with this line
+				<code>model.write(out, format);</code> outputs in a certain format specified.
+			</p>
+			<p>
+				Examples of SPARQL queries are as follows :
+			</p>
+			<xmp>
+				PREFIX rnews: <http://dev.iptc.org/files/rNews/rnews_1.0_draft1.owl#>
+				PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+				PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+				SELECT ?name ?description ?date ?url
+				WHERE {
+				 ?subject rdf:type rnews:Article.
+				 ?subject rnews:name ?name.
+				 ?subject rnews:description ?description.
+				 OPTIONAL {
+				   ?subject rnews:datePublished ?date.
+				   ?subject rnews:url ?url
+				  }
+				}
+
+				LIMIT 5
+			</xmp>
+			<figcaption>Code example 3</figcaption>
+			<p>
+				Select all the news related to a coins. As some fields 
+				are optional they were marked accordingly.
+			</p>
+			<xmp>
+				SELECT ?name ?description ?date ?url
+				WHERE {
+					 ?subject rdf:type rnews:Article.
+					 ?subject rnews:name ?name.
+					 ?subject rnews:description ?description.
+					 OPTIONAL {
+					   ?subject rnews:datePublished ?date.
+					   ?subject rnews:url ?url
+					  }
+					?subject cryma:aboutCoin ?coin.
+					?coin cryma:abbreviation "BTC"       
+				}
+
+			</xmp>
+			<figcaption>Code example 4</figcaption>
+			<p>
+				Select only the news that are related to a specific coin, in this
+				case Bitcoin was chosen.
+			</p>
+			<xmp>
+			  SELECT  *
+				WHERE
+				  { 
+					?coin rdf:type cryma:Cryptocurrency .
+					?coin cryma:abbreviation ?abbreviation.
+					?coin cryma:market_capital ?capital.
+					?coin cryma:maximum_supply ?supply.
+					?coin cryma:percent_change_24h ?change.
+					?coin cryma:volume ?volume
+				}LIMIT 25
+			</xmp>
+			<figcaption>Code example 5</figcaption>
+			<p>
+				Only 25 coins with some details were selected, details such as
+				abbreviation, capital, supply, 24h change and volume.
+			</p>
+			<p>
+				In another query we ordered the coins by capital,
+				adding the <code>ORDER BY DESC(?capital) LIMIT 25</code> at the end of the query
+			</p>
+			<xmp>
+			SELECT  *
+			WHERE
+			  { 
+				?coin rdf:type cryma:Cryptocurrency .
+				?coin cryma:abbreviation ?abbreviation.
+				?coin cryma:market_capital ?capital.
+				?coin cryma:maximum_supply ?supply.
+				?coin cryma:percent_change_24h ?change.
+				?coin cryma:price_USD ?price.
+				?coin cryma:volume ?volume.
+				{
+				  SELECT ?price_history ?date WHERE{
+					   ?value rdf:type cryma:Value.
+					   ?value cryma:coin ?coin.
+					   ?value cryma:price_USD ?price_history.
+					   ?value cryma:dateTime ?date
+				  }
+				}
+				FILTER regex(?abbreviation, "BTC")
+			}
+			</xmp>
+			<figcaption>Code example 6</figcaption>
+			<p>
+				To select a certai coin with all it's values
+				we created the above query.
+			</p>
+			<p>
+				The formats available on the site are :
+				<ul>
+					<li>TURTLE</li>
+					<li>N-Triples</li>
+					<li>JSON-LD</li>
+					<li>RDF/XML-ABBREV</li>
+					<li>RDF/XML</li>
+					<li>N3</li>
+					<li>RDF/JSON</li>
+				</ul>
+			</p>
+		</section>
+		
+		<section typeof="sa:MaterialsAndMethods" id="modelling">
+			<h1>12 Deployment</h1>
+			<p>
+				The microservices were deployed on the cloud.
+				Some on <a property="schema:citation" href="https://pivotal.io/platform">Pivotal</a> and
+				Fuseki on <a property="schema:citation" href="https:/openshift.com">OpenShift</a>.
+			</p>
+			<p>
+				We embraced a <a property="schema:citation" href="https://martinfowler.com/articles/serverless.html">serverless architecture</a>. Our
+				apps run on the Pivotal Cloud Foundry Web Application container, Pivotal beeing a PaaS service.
+			</p>
+			<p>
+				Web applications are managed via Web UI or basic client CLI commands, the deployment process beeing 
+				very easy : specify the jar and the application on the cloud. The system takes care of the rest.
+			</p>
+			<p>
+				Some applications needed an SQL database, thus a database was attached to the service with only a few clicks
+				and connection string changes. The SQL database was populated using a Python script that pulls data
+				from the web and inserts it into the cloud.
+			</p>
+			<p>
+				Same as SQL database the Fuseki server needed a persistent storage service, OpenShift provides such a 
+				posibility, simply specify the ammount of storage and the mounting path to the service.
+			</p>
+			<p>
+				In order to ease de deployment process an automated bat script was created that logins, builds and pushes the apps.
+			</p>
+			<p>
+				In order to take advantage of free hosting we created several accounts to host our apps, this shows that microservices
+				offer a great flexibility, only for the fact that a normal application would have needed a great deal of processing power
+				thus costing in the long term. This flexibility was also translated into running the aplication on multiple clouds, we have three.
+				bat line.
+			</p>
+			<p>Addresses :</p>
+			<p>Fuseki : <code>http://cryma-fuseki-cryma.1d35.starter-us-east-1.openshiftapps.com</code></p>
+			<p>Eureka : <code>https://cryma-eureka-service.cfapps.io</code></p>
+			<p>Zuul Gateway API: <code>https://cryma.cfapps.io/</code></p>
+			<p>Plot : <code>https://cryma-plot.cfapps.io</code></p>
+			<p>Cointology : <code>https://cryma-cointology.cfapps.io/</code></p>
+			<p>Prediction : <code>https://cryma-prediction.cfapps.io/</code></p>
+			<p>Python Prediction : <code>https://cryma-python-prediction.cfapps.io</code></p>
+			<p>Python Prediction Library : <code>https://cryma-python-library.herokuapp.com/BTC</code></p>
+		</section>
+		
 		<section typeof="sa:MaterialsAndMethods" id="conclusion">
-		<h1>10 Conclusion
+		<h1>13 Conclusion
 		</h1>
 		<p>
 			To conclude the technical paper, CryMa takes advantage of many modern technologies mentioned above
 			( i.e : <a property="schema:citation" href="http://microservices.io/">Microservices</a>,
 			<a property="schema:citation" href="https://www.w3.org/TR/owl-features/">OWL</a> and so on )
-			in order to create a smart application with input from many sources so that users receive
-			realtime information to make the best business decisions.
+			in order to create a smart extensible application.
 		</p>
 		</section>
 
 		<section typeof="sa:MaterialsAndMethods" id="conclusion">
-		<h1>11 Bibliography
+		<h1>14 Bibliography
 		</h1>
 		<p>	1.<a property="schema:citation" href="http://www.bioinf.jku.at/publications/older/2604.pdf">Hochreiter S. et al, Long Short Term Memory architecture (1997)</a></p>
 		<p>	2.<a property="schema:citation" href="https://people.cs.pitt.edu/~hashemi/papers/CISIM2010_HBHashemi.pdf">Naeini M. P. et al, Stock Market Value Prediction Using Neural Networks (2010)</a></p>

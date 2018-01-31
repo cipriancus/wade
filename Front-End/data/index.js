@@ -1,4 +1,3 @@
-var baseURL="https://cryma.cfapps.io/api/"
 
 $(function() {
 	 $.ajax({
@@ -71,6 +70,7 @@ $(function() {
 });
 
 $(function() {
+	//https://cryma-plot.cfapps.io/coin
 	 $.ajax({
             type: "GET",
             url: "https://cryma-plot.cfapps.io/coin",

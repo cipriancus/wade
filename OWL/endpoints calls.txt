@@ -8,3 +8,5 @@ http://localhost:8082/api/cryma-prediction/predict/2
 http://localhost:8082/api/cryma-cointology/cointology/?limit=25&format=TURTLE
 http://localhost:8082/api/cryma-cointology/cointology/BTC?limit=25&format=TURTLE
 http://cryma-fuseki-cryma.1d35.starter-us-east-1.openshiftapps.com/dataset.html
+
+http://cryma-python-prediction.cfapps.io/predict/BTC

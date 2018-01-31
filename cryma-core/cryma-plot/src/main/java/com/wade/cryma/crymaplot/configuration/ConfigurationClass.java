@@ -1,6 +1,7 @@
 package com.wade.cryma.crymaplot.configuration;
 
 import com.wade.cryma.crymaplot.interceptor.RequestFilter;
+import com.wade.cryma.crymaplot.model.TopCoin;
 import com.wade.cryma.crymaplot.repository.ICoinRepository;
 import com.wade.cryma.crymaplot.repository.impl.CoinRepository;
 import com.wade.cryma.crymaplot.service.ICoinService;
@@ -10,6 +11,7 @@ import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.data.rest.core.config.RepositoryRestConfiguration;
 import org.springframework.web.client.RestTemplate;
 
 import java.util.ArrayList;

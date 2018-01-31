@@ -6,6 +6,7 @@ import numpy as np
 import pandas as pd
 from keras.models import model_from_json
 
+port = os.getenv('VCAP_APP_PORT', '5000')
 
 def get_price_data(coinId, startDate, endDate, normalized=0):
     name = os.path.join("Top100Cryptos", coinId + ".csv")
@@ -80,7 +81,7 @@ api.add_resource(HelloWorld, '/<coinId>')
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0',port=int(port),debug=True)
 
 # @PathVariable(value = "coinId") String coinId,
 # @RequestParam(value = "startDate") String startDate,

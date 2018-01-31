@@ -16,15 +16,15 @@ public class PredictionEndpoint {
     IPredictionService predictionService;
 
     /**
-     * GET /predict/{coinId}
+     * GET /predict/{abbreviation}
      *
      * @param coinId    The coin id that is searched
      * @return a map of data
      */
-    @RequestMapping(method = RequestMethod.GET, path = "/predict/{coinId}", produces = "application/json")
-    public Map<String, List<String>> predict(@PathVariable(value = "coinId") String coinId) {
+    @RequestMapping(method = RequestMethod.GET, path = "/predict/{abbreviation}", produces = "application/json")
+    public Map<String, List<String>> predict(@PathVariable(value = "abbreviation") String abbreviation) {
 
-        Map<String, List<String>> predictionResult = predictionService.predict(coinId);
+        Map<String, List<String>> predictionResult = predictionService.predict(abbreviation);
 
         if (predictionResult != null && predictionResult.keySet().isEmpty() == false) {
             return predictionResult;
