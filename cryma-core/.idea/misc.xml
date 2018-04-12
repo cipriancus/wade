@@ -2,17 +2,21 @@
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/cryma-frontend" />
+    <file type="web" url="file://$PROJECT_DIR$/cryma-news" />
+    <file type="web" url="file://$PROJECT_DIR$/cryma-plot" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/cryma-cointology/pom.xml" />
         <option value="$PROJECT_DIR$/cryma-eureka-service/pom.xml" />
         <option value="$PROJECT_DIR$/cryma-news/pom.xml" />
         <option value="$PROJECT_DIR$/cryma-prediction/pom.xml" />
         <option value="$PROJECT_DIR$/cryma-python-prediction/pom.xml" />
         <option value="$PROJECT_DIR$/cryma-zuul-apigateway/pom.xml" />
+        <option value="$PROJECT_DIR$/cryma-plot/pom.xml" />
+        <option value="$PROJECT_DIR$/cryma-eureka/pom.xml" />
+        <option value="$PROJECT_DIR$/cryma-convert/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

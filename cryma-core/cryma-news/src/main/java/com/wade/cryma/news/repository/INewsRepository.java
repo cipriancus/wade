@@ -1,14 +1,17 @@
 package com.wade.cryma.news.repository;
 
 import com.wade.cryma.news.model.News;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Repository;
+import org.springframework.data.domain.Page;
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.rest.core.annotation.RepositoryRestResource;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.data.domain.Pageable;
 
-import java.util.List;
+@CrossOrigin
+@RepositoryRestResource(collectionResourceRel = "news",path = "news")
+public interface INewsRepository extends CrudRepository<News,Long> {
+    Page<News> findAll(Pageable page);
 
-@Repository
-public interface INewsRepository {
-    String getNews(String limit, String format);
-
-    String getCoinNewsByAbbreviation(String abbreviation, String limit, String format);
+    @Override
+    <S extends News> S save(S entity);
 }

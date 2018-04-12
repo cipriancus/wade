@@ -1,0 +1,10 @@
+  spring:
+    application:
+      name: cryma-convert
+  server:
+    port: 8084
+
+  eureka:
+    client:
+      serviceUrl:
+        defaultZone: http://localhost:8081/eureka/
