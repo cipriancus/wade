@@ -17,6 +17,7 @@
     <ignored path="$PROJECT_DIR$/cryma-plot/target/" />
     <ignored path="$PROJECT_DIR$/cryma-eureka/target/" />
     <ignored path="$PROJECT_DIR$/cryma-convert/target/" />
+    <ignored path="$PROJECT_DIR$/cryma-auth/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,7 +43,17 @@
     <favorites_list name="cryma-core" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cryma-auth/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="42" column="12" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -55,7 +66,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>b1823e5dc0f9c0</find>
       <find>pos</find>
       <find>postgres</find>
       <find>ad_fd3f9cb8680c16c</find>
@@ -85,6 +95,7 @@
       <find>feig</find>
       <find>fei</find>
       <find>ConvertService</find>
+      <find> </find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -106,9 +117,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/cryma-eureka/src/main/java/com/wade/cryma/eureka/EurekaApplication.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/cryma-eureka-service/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/cryma-eureka-service/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/cryma-plot/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/cryma-news/pom.xml" />
@@ -157,6 +165,9 @@
         <option value="$PROJECT_DIR$/cryma-convert/src/main/java/com/wade/cryma/convert/service/MoneyService.java" />
         <option value="$PROJECT_DIR$/cryma-convert/src/main/java/com/wade/cryma/convert/configuration/ConvertConfiguration.java" />
         <option value="$PROJECT_DIR$/cryma-convert/src/main/java/com/wade/cryma/convert/service/ConvertService.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/cryma-auth/pom.xml" />
+        <option value="$PROJECT_DIR$/cryma-auth/src/main/java/com/wade/cryma/auth/AuthServerOAuth2Config.java" />
       </list>
     </option>
   </component>
@@ -222,8 +233,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="739" />
-    <option name="width" value="1188" />
+    <option name="x" value="516" />
+    <option name="width" value="1411" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectView">
@@ -231,12 +242,49 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="cryma-core" type="58d84e3e:PackageViewProjectNode" />
+              <item name="cryma-coin-conversion" type="616d4139:PackageViewModuleNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="cryma-core" type="b2602c69:ProjectViewProjectNode" />
               <item name="cryma-core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cryma-core" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cryma-core" type="462c0819:PsiDirectoryNode" />
+              <item name="cryma-auth" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cryma-core" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cryma-core" type="462c0819:PsiDirectoryNode" />
+              <item name="cryma-auth" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cryma-core" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cryma-core" type="462c0819:PsiDirectoryNode" />
+              <item name="cryma-auth" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cryma-core" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cryma-core" type="462c0819:PsiDirectoryNode" />
+              <item name="cryma-auth" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cryma-core" type="b2602c69:ProjectViewProjectNode" />
@@ -541,17 +589,6 @@
       </pane>
       <pane id="Scope" />
       <pane id="AndroidView" />
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="cryma-core" type="58d84e3e:PackageViewProjectNode" />
-              <item name="cryma-coin-conversion" type="616d4139:PackageViewModuleNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -567,7 +604,7 @@
     <property name="ToolWindowDebug.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/PiggyMetrics-master" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/spring-security-oauth-master" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -722,6 +759,10 @@
         </option>
       </MavenSettings>
     </configuration>
+    <configuration name="AuthApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="cryma-auth" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wade.cryma.auth.AuthApplication" />
+    </configuration>
     <configuration name="CrymaCointologyApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="cryma-cointology" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.wade.cryma.cointology.app.CrymaCointologyApplication" />
@@ -837,6 +878,7 @@
       <item itemvalue="Spring Boot.EurekaApplication" />
       <item itemvalue="Spring Boot.CrymaconvertApplication" />
       <item itemvalue="Spring Boot.CrymaConvertApplication" />
+      <item itemvalue="Spring Boot.AuthApplication" />
       <item itemvalue="Application.CrymaModelApplication" />
       <item itemvalue="JUnit.TestEmbeddedFuseki.embedded_01" />
       <item itemvalue="JUnit.TestEmbeddedFuseki.embedded_08" />
@@ -938,6 +980,9 @@
       <workItem from="1523453566284" duration="1335000" />
       <workItem from="1523509751227" duration="19446000" />
       <workItem from="1523535807943" duration="29000" />
+      <workItem from="1523536186262" duration="30000" />
+      <workItem from="1523536781183" duration="1872000" />
+      <workItem from="1523597259756" duration="614000" />
     </task>
     <servers />
   </component>
@@ -968,7 +1013,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="296314000" />
+    <option name="totallyTimeSpent" value="298830000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -984,7 +1029,7 @@
     <layout>
       <window_info anchor="right" id="Palette" order="5" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.51197916" side_tool="true" weight="0.64718616" />
-      <window_info active="true" anchor="right" id="Maven Projects" order="3" visible="true" weight="0.32942432" />
+      <window_info anchor="right" id="Maven Projects" order="3" weight="0.32942432" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Designer" order="2" />
@@ -1002,7 +1047,7 @@
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.48687088" weight="0.44047618" />
       <window_info anchor="bottom" id="Spring" order="13" weight="0.32900432" />
       <window_info anchor="bottom" id="Terminal" order="12" weight="0.32568306" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48820755" visible="true" weight="0.17430703" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48820755" visible="true" weight="0.15618336" />
       <window_info anchor="right" id="Bean Validation" order="8" weight="0.32889125" />
       <window_info id="Web" order="4" sideWeight="0.506542" side_tool="true" weight="0.21750806" />
       <window_info anchor="right" id="Theme Preview" order="7" />
@@ -1040,21 +1085,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/cryma-news/src/main/java/com/wade/cryma/news/configuration/NewsConfigurationClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="8" column="35" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cryma-news/src/main/java/com/wade/cryma/news/service/impl/NewsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="15" column="29" lean-forward="true" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cryma-news/src/main/java/com/wade/cryma/news/chron/TopCoinChron.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/1.13.9.RELEASE/spring-data-commons-1.13.9.RELEASE-sources.jar!/org/springframework/data/repository/core/CrudMethods.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -1379,6 +1409,34 @@
             <element signature="e#791#792#0" expanded="true" />
             <element signature="e#865#866#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cryma-auth/src/main/java/com/wade/cryma/auth/AuthServerOAuth2Config.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="5" column="60" selection-start-line="5" selection-start-column="60" selection-end-line="5" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cryma-auth/src/main/java/com/wade/cryma/auth/AuthApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cryma-auth/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="42" column="12" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="12" />
         </state>
       </provider>
     </entry>
