@@ -1,0 +1,15 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: cryma-convert
+spec:
+  template:
+    metadata:
+      labels:
+        app: cipriancus/cryma-convert:latest
+    spec:
+      containers:
+        - name: cryma-convert
+          image: cipriancus/cryma-convert:latest
+          ports:
+            - containerPort: 8084

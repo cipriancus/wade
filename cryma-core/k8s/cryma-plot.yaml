@@ -1,0 +1,15 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: cryma-plot
+spec:
+  template:
+    metadata:
+      labels:
+        app: cipriancus/cryma-plot:latest
+    spec:
+      containers:
+        - name: cryma-plot
+          image: cipriancus/cryma-plot:latest
+          ports:
+            - containerPort: 8080

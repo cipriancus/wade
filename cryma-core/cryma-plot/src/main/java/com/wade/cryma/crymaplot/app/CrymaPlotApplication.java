@@ -25,5 +25,4 @@ public class CrymaPlotApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(CrymaPlotApplication.class, args);
 	}
-
 }

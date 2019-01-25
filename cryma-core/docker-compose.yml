@@ -1,0 +1,26 @@
+version: '2.1'
+services:
+  cryma-eureka-service:
+    hostname: cryma-eureka-service
+    image: cipriancus/cryma-eureka-service:latest
+    ports:
+      - '8081:8081'
+    container_name: cryma-eureka-service
+  cryma-convert:
+    hostname: cryma-convert
+    image: cipriancus/cryma-convert:latest
+    ports:
+      - '8084:8084'
+    container_name: cryma-convert
+  cryma-news:
+    hostname: cryma-news
+    image: cipriancus/cryma-news:latest
+    ports:
+      - '8094:8094'
+    container_name: cryma-news
+  cryma-plot:
+    hostname: cryma-plot
+    image: cipriancus/cryma-plot:latest
+    ports:
+      - '8080:8080'
+    container_name: cryma-plot

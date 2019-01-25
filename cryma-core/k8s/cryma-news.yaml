@@ -1,0 +1,15 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: cryma-news
+spec:
+  template:
+    metadata:
+      labels:
+        app: cipriancus/cryma-news:latest
+    spec:
+      containers:
+        - name: cryma-news
+          image: cipriancus/cryma-news:latest
+          ports:
+            - containerPort: 8094

@@ -1,6 +1,13 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="cryma-news:war exploded">
     <output-path>$PROJECT_DIR$/cryma-news/target/cryma-news-0.0.1-SNAPSHOT</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>cryma-news</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
@@ -20,6 +27,7 @@
           <element id="library" level="project" name="Maven: io.github.openfeign:feign-slf4j:9.5.0" />
           <element id="library" level="project" name="Maven: io.github.openfeign:feign-hystrix:9.5.0" />
           <element id="library" level="project" name="Maven: com.netflix.archaius:archaius-core:0.7.4" />
+          <element id="library" level="project" name="Maven: com.google.code.findbugs:jsr305:3.0.1" />
           <element id="library" level="project" name="Maven: com.netflix.hystrix:hystrix-core:1.5.12" />
           <element id="library" level="project" name="Maven: org.hdrhistogram:HdrHistogram:2.1.9" />
           <element id="library" level="project" name="Maven: org.springframework.cloud:spring-cloud-starter-netflix-ribbon:1.4.0.RELEASE" />
@@ -29,8 +37,13 @@
           <element id="library" level="project" name="Maven: io.reactivex:rxnetty-servo:0.4.9" />
           <element id="library" level="project" name="Maven: javax.inject:javax.inject:1" />
           <element id="library" level="project" name="Maven: io.reactivex:rxnetty:0.4.9" />
+          <element id="library" level="project" name="Maven: io.netty:netty-codec-http:4.0.27.Final" />
+          <element id="library" level="project" name="Maven: io.netty:netty-codec:4.0.27.Final" />
+          <element id="library" level="project" name="Maven: io.netty:netty-handler:4.0.27.Final" />
           <element id="library" level="project" name="Maven: io.netty:netty-transport-native-epoll:4.0.27.Final" />
           <element id="library" level="project" name="Maven: io.netty:netty-common:4.0.27.Final" />
+          <element id="library" level="project" name="Maven: io.netty:netty-buffer:4.0.27.Final" />
+          <element id="library" level="project" name="Maven: io.netty:netty-transport:4.0.27.Final" />
           <element id="library" level="project" name="Maven: com.netflix.ribbon:ribbon-core:2.2.4" />
           <element id="library" level="project" name="Maven: commons-lang:commons-lang:2.6" />
           <element id="library" level="project" name="Maven: com.netflix.ribbon:ribbon-httpclient:2.2.4" />
@@ -41,6 +54,7 @@
           <element id="library" level="project" name="Maven: io.reactivex:rxjava:1.2.0" />
           <element id="library" level="project" name="Maven: org.springframework.cloud:spring-cloud-starter-netflix-archaius:1.4.0.RELEASE" />
           <element id="library" level="project" name="Maven: commons-configuration:commons-configuration:1.8" />
+          <element id="library" level="project" name="Maven: com.google.guava:guava:18.0" />
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter:1.5.9.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot:1.5.9.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-context:4.3.13.RELEASE" />
@@ -53,7 +67,7 @@
           <element id="library" level="project" name="Maven: org.slf4j:log4j-over-slf4j:1.7.25" />
           <element id="library" level="project" name="Maven: org.springframework:spring-core:4.3.13.RELEASE" />
           <element id="library" level="project" name="Maven: org.yaml:snakeyaml:1.17" />
-          <element id="library" level="project" name="Maven: com.microsoft.sqlserver:sqljdbc42:4.2" />
+          <element id="library" level="project" name="Maven: com.microsoft.sqlserver:sqljdbc42:6.0.8112" />
           <element id="library" level="project" name="Maven: org.springframework.cloud:spring-cloud-starter-eureka:1.4.0.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:1.4.0.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.cloud:spring-cloud-netflix-eureka-client:1.4.0.RELEASE" />
@@ -63,8 +77,10 @@
           <element id="library" level="project" name="Maven: com.netflix.netflix-commons:netflix-eventbus:0.3.0" />
           <element id="library" level="project" name="Maven: com.netflix.netflix-commons:netflix-infix:0.3.0" />
           <element id="library" level="project" name="Maven: commons-jxpath:commons-jxpath:1.3" />
+          <element id="library" level="project" name="Maven: joda-time:joda-time:2.9.9" />
           <element id="library" level="project" name="Maven: org.antlr:antlr-runtime:3.4" />
           <element id="library" level="project" name="Maven: org.antlr:stringtemplate:3.2.1" />
+          <element id="library" level="project" name="Maven: com.google.code.gson:gson:2.8.2" />
           <element id="library" level="project" name="Maven: org.apache.commons:commons-math:2.2" />
           <element id="library" level="project" name="Maven: javax.ws.rs:jsr311-api:1.1.1" />
           <element id="library" level="project" name="Maven: com.netflix.servo:servo-core:0.10.1" />
@@ -137,86 +153,6 @@
           <element id="library" level="project" name="Maven: org.springframework:spring-web:4.3.13.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:4.3.13.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-expression:4.3.13.RELEASE" />
-          <element id="library" level="project" name="Maven: com.google.cloud:google-cloud:0.8.0" />
-          <element id="library" level="project" name="Maven: com.google.cloud:google-cloud-bigquery:0.8.0-beta" />
-          <element id="library" level="project" name="Maven: com.google.apis:google-api-services-bigquery:v2-rev330-1.22.0" />
-          <element id="library" level="project" name="Maven: com.google.api-client:google-api-client:1.22.0" />
-          <element id="library" level="project" name="Maven: com.google.cloud:google-cloud-compute:0.8.0" />
-          <element id="library" level="project" name="Maven: com.google.apis:google-api-services-compute:v1-rev103-1.21.0" />
-          <element id="library" level="project" name="Maven: com.google.cloud:google-cloud-core:0.8.0" />
-          <element id="library" level="project" name="Maven: com.google.auth:google-auth-library-credentials:0.6.0" />
-          <element id="library" level="project" name="Maven: com.google.auth:google-auth-library-oauth2-http:0.6.0" />
-          <element id="library" level="project" name="Maven: com.google.http-client:google-http-client-jackson2:1.19.0" />
-          <element id="library" level="project" name="Maven: com.google.http-client:google-http-client:1.21.0" />
-          <element id="library" level="project" name="Maven: com.google.code.findbugs:jsr305:1.3.9" />
-          <element id="library" level="project" name="Maven: com.google.oauth-client:google-oauth-client:1.21.0" />
-          <element id="library" level="project" name="Maven: com.google.guava:guava:18.0" />
-          <element id="library" level="project" name="Maven: com.google.api-client:google-api-client-appengine:1.21.0" />
-          <element id="library" level="project" name="Maven: com.google.oauth-client:google-oauth-client-appengine:1.21.0" />
-          <element id="library" level="project" name="Maven: com.google.oauth-client:google-oauth-client-servlet:1.21.0" />
-          <element id="library" level="project" name="Maven: com.google.http-client:google-http-client-jdo:1.21.0" />
-          <element id="library" level="project" name="Maven: javax.servlet:servlet-api:2.5" />
-          <element id="library" level="project" name="Maven: com.google.api-client:google-api-client-servlet:1.21.0" />
-          <element id="library" level="project" name="Maven: javax.jdo:jdo2-api:2.3-eb" />
-          <element id="library" level="project" name="Maven: javax.transaction:transaction-api:1.1" />
-          <element id="library" level="project" name="Maven: com.google.http-client:google-http-client-appengine:1.21.0" />
-          <element id="library" level="project" name="Maven: com.google.http-client:google-http-client-jackson:1.21.0" />
-          <element id="library" level="project" name="Maven: org.codehaus.jackson:jackson-core-asl:1.9.11" />
-          <element id="library" level="project" name="Maven: joda-time:joda-time:2.9.9" />
-          <element id="library" level="project" name="Maven: org.json:json:20140107" />
-          <element id="library" level="project" name="Maven: com.google.protobuf:protobuf-java:3.0.0" />
-          <element id="library" level="project" name="Maven: io.grpc:grpc-protobuf:1.0.1" />
-          <element id="library" level="project" name="Maven: com.google.protobuf:protobuf-java-util:3.0.0" />
-          <element id="library" level="project" name="Maven: com.google.code.gson:gson:2.8.2" />
-          <element id="library" level="project" name="Maven: io.grpc:grpc-core:1.0.1" />
-          <element id="library" level="project" name="Maven: io.grpc:grpc-context:1.0.1" />
-          <element id="library" level="project" name="Maven: io.grpc:grpc-protobuf-lite:1.0.1" />
-          <element id="library" level="project" name="Maven: com.google.api:gax:0.0.25" />
-          <element id="library" level="project" name="Maven: com.google.auto.value:auto-value:1.2" />
-          <element id="library" level="project" name="Maven: com.google.api.grpc:grpc-google-common-protos:0.1.3" />
-          <element id="library" level="project" name="Maven: com.google.api:api-common:0.0.2" />
-          <element id="library" level="project" name="Maven: com.google.api.grpc:grpc-google-iam-v1:0.1.3" />
-          <element id="library" level="project" name="Maven: com.google.cloud:google-cloud-datastore:0.8.0-beta" />
-          <element id="library" level="project" name="Maven: com.google.cloud.datastore:datastore-v1-protos:1.3.0" />
-          <element id="library" level="project" name="Maven: com.google.cloud.datastore:datastore-v1-proto-client:1.3.0" />
-          <element id="library" level="project" name="Maven: com.google.http-client:google-http-client-protobuf:1.20.0" />
-          <element id="library" level="project" name="Maven: com.google.cloud:google-cloud-dns:0.8.0" />
-          <element id="library" level="project" name="Maven: com.google.apis:google-api-services-dns:v1-rev7-1.21.0" />
-          <element id="library" level="project" name="Maven: commons-fileupload:commons-fileupload:1.3.1" />
-          <element id="library" level="project" name="Maven: commons-io:commons-io:2.2" />
-          <element id="library" level="project" name="Maven: com.google.cloud:google-cloud-errorreporting:0.8.0" />
-          <element id="library" level="project" name="Maven: io.netty:netty-tcnative-boringssl-static:1.1.33.Fork19" />
-          <element id="library" level="project" name="Maven: com.google.api.grpc:grpc-google-cloud-error-reporting-v1beta1:0.1.3" />
-          <element id="library" level="project" name="Maven: io.grpc:grpc-netty:1.0.1" />
-          <element id="library" level="project" name="Maven: io.netty:netty-codec-http2:4.1.3.Final" />
-          <element id="library" level="project" name="Maven: io.netty:netty-codec-http:4.1.3.Final" />
-          <element id="library" level="project" name="Maven: io.netty:netty-codec:4.1.3.Final" />
-          <element id="library" level="project" name="Maven: io.netty:netty-handler:4.1.3.Final" />
-          <element id="library" level="project" name="Maven: io.netty:netty-buffer:4.1.3.Final" />
-          <element id="library" level="project" name="Maven: io.netty:netty-transport:4.1.3.Final" />
-          <element id="library" level="project" name="Maven: io.netty:netty-resolver:4.1.3.Final" />
-          <element id="library" level="project" name="Maven: io.grpc:grpc-stub:1.0.1" />
-          <element id="library" level="project" name="Maven: io.grpc:grpc-auth:1.0.1" />
-          <element id="library" level="project" name="Maven: com.google.cloud:google-cloud-language:0.8.0" />
-          <element id="library" level="project" name="Maven: com.google.api.grpc:grpc-google-cloud-language-v1:0.1.3" />
-          <element id="library" level="project" name="Maven: com.google.cloud:google-cloud-logging:0.8.0-beta" />
-          <element id="library" level="project" name="Maven: com.google.api.grpc:grpc-google-cloud-logging-v2:0.1.4" />
-          <element id="library" level="project" name="Maven: com.google.cloud:google-cloud-monitoring:0.8.0" />
-          <element id="library" level="project" name="Maven: com.google.api.grpc:grpc-google-cloud-monitoring-v3:0.1.3" />
-          <element id="library" level="project" name="Maven: com.google.cloud:google-cloud-pubsub:0.8.0" />
-          <element id="library" level="project" name="Maven: com.google.api.grpc:grpc-google-cloud-pubsub-v1:0.1.3" />
-          <element id="library" level="project" name="Maven: com.google.cloud:google-cloud-resourcemanager:0.8.0" />
-          <element id="library" level="project" name="Maven: com.google.apis:google-api-services-cloudresourcemanager:v1beta1-rev10-1.21.0" />
-          <element id="library" level="project" name="Maven: com.google.cloud:google-cloud-speech:0.8.0" />
-          <element id="library" level="project" name="Maven: com.google.api.grpc:grpc-google-cloud-speech-v1beta1:0.1.3" />
-          <element id="library" level="project" name="Maven: com.google.cloud:google-cloud-storage:0.8.0-beta" />
-          <element id="library" level="project" name="Maven: com.google.apis:google-api-services-storage:v1-rev85-1.22.0" />
-          <element id="library" level="project" name="Maven: com.google.cloud:google-cloud-trace:0.8.0" />
-          <element id="library" level="project" name="Maven: com.google.api.grpc:grpc-google-cloud-trace-v1:0.1.3" />
-          <element id="library" level="project" name="Maven: com.google.cloud:google-cloud-translate:0.8.0" />
-          <element id="library" level="project" name="Maven: com.google.apis:google-api-services-translate:v2-rev47-1.22.0" />
-          <element id="library" level="project" name="Maven: com.google.cloud:google-cloud-vision:0.8.0" />
-          <element id="library" level="project" name="Maven: com.google.api.grpc:grpc-google-cloud-vision-v1:0.1.3" />
         </element>
       </element>
       <element id="directory" name="META-INF">

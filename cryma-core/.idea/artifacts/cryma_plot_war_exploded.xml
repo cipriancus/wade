@@ -1,6 +1,13 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="cryma-plot:war exploded">
     <output-path>$PROJECT_DIR$/cryma-plot/target/cryma-plot-0.0.1-SNAPSHOT</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>cryma-plot</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
@@ -41,7 +48,7 @@
           <element id="library" level="project" name="Maven: org.springframework.hateoas:spring-hateoas:0.23.0.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.plugin:spring-plugin-core:1.2.0.RELEASE" />
           <element id="library" level="project" name="Maven: org.atteo:evo-inflector:1.2.2" />
-          <element id="library" level="project" name="Maven: com.microsoft.sqlserver:sqljdbc42:4.2" />
+          <element id="library" level="project" name="Maven: com.microsoft.sqlserver:sqljdbc42:6.0.8112" />
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-actuator:1.5.9.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-actuator:1.5.9.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter:1.5.9.RELEASE" />
