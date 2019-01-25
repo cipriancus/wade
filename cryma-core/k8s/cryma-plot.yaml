@@ -6,7 +6,7 @@ spec:
   template:
     metadata:
       labels:
-        app: cipriancus/cryma-plot:latest
+        app: cryma-plot
     spec:
       containers:
         - name: cryma-plot

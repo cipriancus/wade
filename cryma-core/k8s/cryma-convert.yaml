@@ -6,7 +6,7 @@ spec:
   template:
     metadata:
       labels:
-        app: cipriancus/cryma-convert:latest
+        app: cryma-convert
     spec:
       containers:
         - name: cryma-convert
