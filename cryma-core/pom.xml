@@ -11,7 +11,7 @@
     <modules>
         <module>cryma-news</module>
         <module>cryma-plot</module>
-        <module>cryma-eureka-service</module>
+        <module>cryma-eureka</module>
         <module>cryma-convert</module>
     </modules>
 </project>

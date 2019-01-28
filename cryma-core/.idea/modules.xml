@@ -5,7 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/cryma-convert/cryma-convert.iml" filepath="$PROJECT_DIR$/cryma-convert/cryma-convert.iml" />
       <module fileurl="file://$PROJECT_DIR$/cryma-core.iml" filepath="$PROJECT_DIR$/cryma-core.iml" />
       <module fileurl="file://$PROJECT_DIR$/cryma-eureka/cryma-eureka.iml" filepath="$PROJECT_DIR$/cryma-eureka/cryma-eureka.iml" />
-      <module fileurl="file://$PROJECT_DIR$/cryma-eureka-service/cryma-eureka-service.iml" filepath="$PROJECT_DIR$/cryma-eureka-service/cryma-eureka-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cryma-eureka/cryma-eureka.iml" filepath="$PROJECT_DIR$/cryma-eureka/cryma-eureka.iml" />
       <module fileurl="file://$PROJECT_DIR$/cryma-news/cryma-news.iml" filepath="$PROJECT_DIR$/cryma-news/cryma-news.iml" />
       <module fileurl="file://$PROJECT_DIR$/cryma-plot/cryma-plot.iml" filepath="$PROJECT_DIR$/cryma-plot/cryma-plot.iml" />
     </modules>

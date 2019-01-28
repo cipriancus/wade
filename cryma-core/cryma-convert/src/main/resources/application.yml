@@ -7,4 +7,4 @@
   eureka:
     client:
       serviceUrl:
-        defaultZone: http://cryma-eureka-service:8081/eureka/
+        defaultZone: http://cryma-eureka:8081/eureka/

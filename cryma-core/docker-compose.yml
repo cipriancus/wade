@@ -1,11 +1,11 @@
 version: '2.1'
 services:
-  cryma-eureka-service:
-    hostname: cryma-eureka-service
-    image: cipriancus/cryma-eureka-service:latest
+  cryma-eureka:
+    hostname: cryma-eureka
+    image: cipriancus/cryma-eureka:latest
     ports:
       - '8081:8081'
-    container_name: cryma-eureka-service
+    container_name: cryma-eureka
   cryma-convert:
     hostname: cryma-convert
     image: cipriancus/cryma-convert:latest

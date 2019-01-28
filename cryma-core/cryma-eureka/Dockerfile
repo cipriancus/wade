@@ -1,6 +1,6 @@
 FROM openjdk:8-jre
 
-ADD target/cryma-eureka-service-0.0.1-SNAPSHOT.jar app.jar
+ADD target/cryma-eureka-0.0.1-SNAPSHOT.jar app.jar
 
 EXPOSE 8081
 

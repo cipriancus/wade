@@ -8,7 +8,6 @@
         <outputRelativeToContentRoot value="true" />
         <module name="cryma-convert" />
         <module name="cryma-eureka" />
-        <module name="cryma-eureka-service" />
         <module name="cryma-frontend" />
         <module name="cryma-news" />
         <module name="cryma-plot" />
@@ -22,7 +21,6 @@
       <module name="cryma-convert" target="1.8" />
       <module name="cryma-core" target="1.5" />
       <module name="cryma-eureka" target="1.8" />
-      <module name="cryma-eureka-service" target="1.8" />
       <module name="cryma-frontend" target="1.5" />
       <module name="cryma-model" target="1.8" />
       <module name="cryma-news" target="1.6" />

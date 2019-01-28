@@ -4,8 +4,8 @@ mvn clean install package
 docker build --tag cipriancus/cryma-convert:latest ./cryma-convert/
 docker push cipriancus/cryma-convert:latest
 
-docker build --tag cipriancus/cryma-eureka-service:latest ./cryma-eureka-service/
-docker push cipriancus/cryma-eureka-service:latest
+docker build --tag cipriancus/cryma-eureka:latest ./cryma-eureka/
+docker push cipriancus/cryma-eureka:latest
 
 docker build --tag cipriancus/cryma-news:latest ./cryma-news/
 docker push cipriancus/cryma-news:latest
