@@ -17,7 +17,7 @@ kind: Service
 metadata:
   name: crymaservice
 spec:
-  type: LoadBalancer
+  type: ClusterIP
   selector:
     app: cryma
   ports:

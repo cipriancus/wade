@@ -2,27 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="462c5a0b-54bb-4915-ae8f-6369e45c5a76" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cryma-convert/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cryma-convert/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cryma-eureka-service/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/cryma-eureka/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cryma-eureka-service/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/cryma-eureka/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cryma-eureka-service/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/cryma-eureka/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cryma-eureka-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/cryma-eureka/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cryma-eureka-service/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/cryma-eureka/mvnw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cryma-eureka-service/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/cryma-eureka/mvnw.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cryma-eureka-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cryma-eureka/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cryma-eureka-service/run.sh" beforeDir="false" afterPath="$PROJECT_DIR$/cryma-eureka/run.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cryma-eureka-service/src/main/java/com/wade/cryma/app/EurekaServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/cryma-eureka/src/main/java/com/wade/cryma/app/EurekaServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cryma-eureka-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/cryma-eureka/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cryma-news/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cryma-news/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cryma-plot/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cryma-plot/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/k8s/cryma-eureka-service.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/k8s/cryma-eureka-service.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run.bat" beforeDir="false" afterPath="$PROJECT_DIR$/run.bat" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -68,8 +49,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/k8s/cryma-eureka-service.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="344">
-              <caret line="41" column="24" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
+            <state relative-caret-position="323">
+              <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -959,7 +940,7 @@
       <workItem from="1548409542132" duration="3593000" />
       <workItem from="1548413178962" duration="5763000" />
       <workItem from="1548671189208" duration="20000" />
-      <workItem from="1548675941656" duration="3257000" />
+      <workItem from="1548675941656" duration="3820000" />
     </task>
     <servers />
   </component>
@@ -990,7 +971,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="327396000" />
+    <option name="totallyTimeSpent" value="327959000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1003,6 +984,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1691" height="917" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48820755" visible="true" weight="0.17004298" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -1024,7 +1006,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.3286119" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" sideWeight="0.49946696" weight="0.3286119" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="12" sideWeight="0.49733475" visible="true" weight="0.31322208" />
+      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.49733475" weight="0.31322208" />
       <window_info anchor="bottom" id="Spring" order="13" weight="0.3286119" />
       <window_info anchor="bottom" id="Run Dashboard" order="14" weight="0.3298969" />
       <window_info anchor="bottom" id="Thumbnails" order="15" weight="0.32900432" />
@@ -1543,8 +1525,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/k8s/cryma-eureka-service.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="41" column="24" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
+        <state relative-caret-position="323">
+          <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
         </state>
       </provider>
     </entry>
