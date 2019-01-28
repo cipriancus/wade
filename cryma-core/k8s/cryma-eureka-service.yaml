@@ -6,7 +6,7 @@ metadata:
 spec:
   type: LoadBalancer
   selector:
-    app: cryma-eureka-service
+    app: cryma
   ports:
     - name: eureka
       port: 8081

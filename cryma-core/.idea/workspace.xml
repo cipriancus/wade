@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="462c5a0b-54bb-4915-ae8f-6369e45c5a76" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/k8s/cryma-eureka-service.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/k8s/cryma-eureka-service.yaml" afterDir="false" />
-    </list>
+    <list default="true" id="462c5a0b-54bb-4915-ae8f-6369e45c5a76" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/cryma-frontend/target/" />
@@ -911,7 +909,7 @@
       <workItem from="1548409542132" duration="3593000" />
       <workItem from="1548413178962" duration="5763000" />
       <workItem from="1548671189208" duration="20000" />
-      <workItem from="1548675941656" duration="1604000" />
+      <workItem from="1548675941656" duration="1928000" />
     </task>
     <servers />
   </component>
@@ -942,7 +940,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="325743000" />
+    <option name="totallyTimeSpent" value="326067000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -955,7 +953,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1691" height="917" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48820755" visible="true" weight="0.17004298" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
