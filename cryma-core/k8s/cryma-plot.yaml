@@ -13,3 +13,18 @@ spec:
           image: cipriancus/cryma-plot:latest
           ports:
             - containerPort: 8080
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: cryma-plot
+  name: cryma-plot-service
+spec:
+  ports:
+    - port: 8080
+      protocol: TCP
+      targetPort: 8080
+  selector:
+    app: cryma-plot
+  type: ClusterIP

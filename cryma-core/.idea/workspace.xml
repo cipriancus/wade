@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="462c5a0b-54bb-4915-ae8f-6369e45c5a76" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/k8s/cryma-convert.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/k8s/cryma-convert.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/k8s/cryma-eureka-service.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/k8s/cryma-eureka-service.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/k8s/cryma-news.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/k8s/cryma-news.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/k8s/cryma-plot.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/k8s/cryma-plot.yaml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -46,11 +49,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/k8s/cryma-eureka-service.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+            <state relative-caret-position="527">
+              <caret line="40" column="21" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -58,8 +61,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/k8s/cryma-convert.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+            <state relative-caret-position="493">
+              <caret line="29" column="17" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -67,17 +70,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/k8s/cryma-news.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+            <state relative-caret-position="510">
+              <caret line="30" column="17" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/k8s/cryma-plot.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            <state relative-caret-position="663">
+              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
             </state>
           </provider>
         </entry>
@@ -95,7 +98,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>den1.mssql5.gear.host</find>
       <find>web</find>
       <find>servlet</find>
       <find>google-clo</find>
@@ -125,6 +127,7 @@
       <find>news</find>
       <find>service</find>
       <find>cryma-eureka-service</find>
+      <find>targetPort</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -198,11 +201,11 @@
         <option value="$PROJECT_DIR$/cryma-plot/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/run.sh" />
         <option value="$PROJECT_DIR$/docker-compose.yml" />
+        <option value="$PROJECT_DIR$/run.bat" />
         <option value="$PROJECT_DIR$/k8s/cryma-convert.yaml" />
+        <option value="$PROJECT_DIR$/k8s/cryma-eureka-service.yaml" />
         <option value="$PROJECT_DIR$/k8s/cryma-news.yaml" />
         <option value="$PROJECT_DIR$/k8s/cryma-plot.yaml" />
-        <option value="$PROJECT_DIR$/run.bat" />
-        <option value="$PROJECT_DIR$/k8s/cryma-eureka-service.yaml" />
       </list>
     </option>
   </component>
@@ -285,10 +288,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1910" />
-    <option name="y" value="-10" />
-    <option name="width" value="1938" />
-    <option name="height" value="1051" />
+    <option name="x" value="18" />
+    <option name="y" value="456" />
+    <option name="width" value="1939" />
+    <option name="height" value="1052" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -527,7 +530,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548081388349" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../microservices-demo-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
@@ -940,7 +943,9 @@
       <workItem from="1548409542132" duration="3593000" />
       <workItem from="1548413178962" duration="5763000" />
       <workItem from="1548671189208" duration="20000" />
-      <workItem from="1548675941656" duration="3820000" />
+      <workItem from="1548675941656" duration="6226000" />
+      <workItem from="1548684987970" duration="1066000" />
+      <workItem from="1548749644368" duration="1819000" />
     </task>
     <servers />
   </component>
@@ -971,7 +976,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="327959000" />
+    <option name="totallyTimeSpent" value="333250000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -983,10 +988,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1691" height="917" extended-state="6" />
+    <frame x="-8" y="-8" width="1691" height="917" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48820755" visible="true" weight="0.17004298" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48820755" visible="true" weight="0.17372622" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" sideWeight="0.5117925" side_tool="true" weight="0.22771214" />
@@ -1006,7 +1011,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.3286119" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" sideWeight="0.49946696" weight="0.3286119" />
-      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.49733475" weight="0.31322208" />
+      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.49733475" weight="0.31241998" />
       <window_info anchor="bottom" id="Spring" order="13" weight="0.3286119" />
       <window_info anchor="bottom" id="Run Dashboard" order="14" weight="0.3298969" />
       <window_info anchor="bottom" id="Thumbnails" order="15" weight="0.32900432" />
@@ -1481,27 +1486,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/k8s/cryma-news.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/k8s/cryma-plot.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/k8s/cryma-convert.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cryma-eureka/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -1525,8 +1509,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/k8s/cryma-eureka-service.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+        <state relative-caret-position="527">
+          <caret line="40" column="21" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/k8s/cryma-convert.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="17" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/k8s/cryma-news.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="17" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/k8s/cryma-plot.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
         </state>
       </provider>
     </entry>

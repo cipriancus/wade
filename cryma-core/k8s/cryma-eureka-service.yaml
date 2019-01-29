@@ -1,30 +1,4 @@
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: loadbalancer
-spec:
-  type: LoadBalancer
-  selector:
-    app: crymaservice
-  ports:
-    - name: eureka
-      port: 80
-      targetPort: 8081
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: crymaservice
-spec:
-  type: ClusterIP
-  selector:
-    app: cryma
-  ports:
-    - name: eureka
-      port: 8081
-      targetPort: 8081
----
+
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
@@ -40,4 +14,34 @@ spec:
           image: cipriancus/cryma-eureka:latest
           ports:
             - containerPort: 8081
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: cryma-eureka
+  name: cryma-eureka-service
+spec:
+  ports:
+    - port: 8081
+      protocol: TCP
+      targetPort: 8081
+  selector:
+    app: cryma-eureka
+  sessionAffinity: None
+  type: ClusterIP
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: cryma-eureka-loadbalancer
+spec:
+  type: ClusterIP
+  selector:
+    app: cryma-eureka
+  ports:
+    - name: eureka
+      port: 8081
+      targetPort: 8081
+
 
