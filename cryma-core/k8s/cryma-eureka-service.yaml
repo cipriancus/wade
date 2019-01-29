@@ -36,7 +36,7 @@ kind: Service
 metadata:
   name: cryma-eureka-loadbalancer
 spec:
-  type: ClusterIP
+  type: LoadBalancer
   selector:
     app: cryma-eureka
   ports:
