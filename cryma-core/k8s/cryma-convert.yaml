@@ -12,7 +12,7 @@ spec:
         - name: cryma-convert
           image: cipriancus/cryma-convert:latest
           ports:
-            - containerPort: 8084
+            - containerPort: 8080
 ---
 apiVersion: v1
 kind: Service
@@ -22,9 +22,9 @@ metadata:
   name: cryma-convert-service
 spec:
   ports:
-    - port: 8084
+    - port: 80
       protocol: TCP
-      targetPort: 8084
+      targetPort: 8080
   selector:
     app: cryma-convert
   type: ClusterIP

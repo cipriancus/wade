@@ -12,7 +12,7 @@ spec:
         - name: cryma-news
           image: cipriancus/cryma-news:latest
           ports:
-            - containerPort: 8094
+            - containerPort: 8080
 ---
 apiVersion: v1
 kind: Service
@@ -22,9 +22,9 @@ metadata:
   name: cryma-news-service
 spec:
   ports:
-    - port: 8094
+    - port: 80
       protocol: TCP
-      targetPort: 8094
+      targetPort: 8080
   selector:
     app: cryma-news
   type: ClusterIP

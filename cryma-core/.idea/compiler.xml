@@ -7,11 +7,16 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="cryma-convert" />
-        <module name="cryma-eureka" />
         <module name="cryma-frontend" />
         <module name="cryma-news" />
         <module name="cryma-plot" />
         <module name="frontend" />
+      </profile>
+      <profile name="Annotation profile for cryma" enabled="true">
+        <sourceOutputDir name="../cryma-eureka-service/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../cryma-eureka-service/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="cryma-eureka" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

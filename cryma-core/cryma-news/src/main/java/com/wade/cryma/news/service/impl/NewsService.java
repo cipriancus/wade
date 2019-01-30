@@ -38,7 +38,6 @@ public class NewsService implements INewsService {
             }
         }
 
-
         News news = new News();
         news.setName(name);
         news.setDescription(description);

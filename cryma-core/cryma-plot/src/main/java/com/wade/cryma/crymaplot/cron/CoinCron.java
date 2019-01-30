@@ -34,7 +34,7 @@ public class CoinCron {
 
     private Long limit = 100L;
 
-    //@Scheduled(cron = "*/30 * * * * *")//*/30 * * * * *    */30 * * * * *"
+    @Scheduled(cron = "*/30 * * * * *")//*/30 * * * * *    */30 * * * * *"
     public void updateCoins() {
 
         List<CronExecution> list = cronExecutionRepository.getLastUpdateCoins();
@@ -61,7 +61,7 @@ public class CoinCron {
     }
 
 
-    //@Scheduled(cron = "*/30 * * * * *")//* * 0 * * *
+    @Scheduled(cron = "*/30 * * * * *")//* * 0 * * *
     public void updateCoinsHistory() {
 
         List<CronExecution> list = cronExecutionRepository.getLastUpdateCoinsHistory();
