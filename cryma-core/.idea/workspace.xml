@@ -2,31 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="462c5a0b-54bb-4915-ae8f-6369e45c5a76" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/k8s/cryma-news-db.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/cryma-plot-db.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_microsoft_sqlserver_sqljdbc42_4_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cryma-convert/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/cryma-convert/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cryma-convert/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/cryma-convert/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cryma-convert/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cryma-convert/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cryma-eureka/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/cryma-eureka/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cryma-eureka/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/cryma-eureka/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cryma-news/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/cryma-news/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cryma-news/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cryma-news/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cryma-news/src/main/java/com/wade/cryma/news/service/impl/NewsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cryma-news/src/main/java/com/wade/cryma/news/service/impl/NewsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cryma-news/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/cryma-news/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cryma-news/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cryma-news/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cryma-plot/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cryma-plot/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cryma-plot/src/main/java/com/wade/cryma/crymaplot/app/CrymaPlotApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/cryma-plot/src/main/java/com/wade/cryma/crymaplot/app/CrymaPlotApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cryma-plot/src/main/java/com/wade/cryma/crymaplot/cron/CoinCron.java" beforeDir="false" afterPath="$PROJECT_DIR$/cryma-plot/src/main/java/com/wade/cryma/crymaplot/cron/CoinCron.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cryma-plot/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/cryma-plot/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cryma-plot/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cryma-plot/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/k8s/cryma-convert.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/k8s/cryma-convert.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/k8s/cryma-eureka-service.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/k8s/cryma-eureka-service.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/k8s/cryma-news.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/k8s/cryma-news.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/k8s/cryma-plot.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/k8s/cryma-plot.yaml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -73,7 +50,7 @@
         <entry file="file://$PROJECT_DIR$/cryma-plot/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
-              <caret line="5" column="53" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="53" />
+              <caret line="5" column="54" selection-start-line="5" selection-start-column="54" selection-end-line="5" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -1071,7 +1048,7 @@
       <workItem from="1548675941656" duration="6226000" />
       <workItem from="1548684987970" duration="1066000" />
       <workItem from="1548749644368" duration="19454000" />
-      <workItem from="1548832287999" duration="1994000" />
+      <workItem from="1548832287999" duration="2788000" />
     </task>
     <servers />
   </component>
@@ -1102,7 +1079,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="352879000" />
+    <option name="totallyTimeSpent" value="353673000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1115,7 +1092,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1691" height="917" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48820755" visible="true" weight="0.2664211" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -1137,7 +1113,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32734275" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" sideWeight="0.49946696" weight="0.3286119" />
-      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.49733475" weight="0.31193838" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="12" sideWeight="0.49733475" visible="true" weight="0.31193838" />
       <window_info anchor="bottom" id="Spring" order="13" weight="0.3286119" />
       <window_info anchor="bottom" id="Run Dashboard" order="14" weight="0.3298969" />
       <window_info anchor="bottom" id="Thumbnails" order="15" weight="0.32900432" />
@@ -1533,7 +1509,7 @@
     <entry file="file://$PROJECT_DIR$/cryma-plot/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" column="53" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="53" />
+          <caret line="5" column="54" selection-start-line="5" selection-start-column="54" selection-end-line="5" selection-end-column="54" />
         </state>
       </provider>
     </entry>
