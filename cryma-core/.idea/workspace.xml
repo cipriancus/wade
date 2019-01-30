@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="462c5a0b-54bb-4915-ae8f-6369e45c5a76" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cryma-plot/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/cryma-plot/src/main/resources/application.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -49,8 +48,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cryma-plot/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="54" selection-start-line="5" selection-start-column="54" selection-end-line="5" selection-end-column="54" />
+            <state relative-caret-position="204">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
@@ -1048,7 +1047,7 @@
       <workItem from="1548675941656" duration="6226000" />
       <workItem from="1548684987970" duration="1066000" />
       <workItem from="1548749644368" duration="19454000" />
-      <workItem from="1548832287999" duration="2788000" />
+      <workItem from="1548832287999" duration="3619000" />
     </task>
     <servers />
   </component>
@@ -1079,7 +1078,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="353673000" />
+    <option name="totallyTimeSpent" value="354504000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1092,6 +1091,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1691" height="917" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48820755" visible="true" weight="0.2664211" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -1508,8 +1508,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cryma-plot/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="54" selection-start-line="5" selection-start-column="54" selection-end-line="5" selection-end-column="54" />
+        <state relative-caret-position="204">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
