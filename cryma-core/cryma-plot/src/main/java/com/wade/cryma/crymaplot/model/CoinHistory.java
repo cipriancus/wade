@@ -6,10 +6,11 @@ import javax.persistence.*;
 import java.util.Date;
 
 @Entity
-@Table(name = "COINS_HISTORY")
+@Table(name = "coins_history")
 public class CoinHistory {
 
     @Id
+    @Column(name="COIN_HISTORY_ID")
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
@@ -21,8 +22,9 @@ public class CoinHistory {
     @DateTimeFormat(pattern = "yyyy-MM-dd'T'hh:mm:ss.SSSZ")
     private Date time;
 
-    @Column(name="COINS_ID")
-    public Long coinsId;
+    @ManyToOne
+    @JoinColumn(name="COIN_ID")
+    public Coin coin;
 
     public Long getId() {
         return id;
@@ -48,11 +50,11 @@ public class CoinHistory {
         this.time = time;
     }
 
-    public Long getCoinId() {
-        return coinsId;
+    public Coin getCoin() {
+        return coin;
     }
 
-    public void setCoinId(Long coinId) {
-        this.coinsId = coinId;
+    public void setCoin(Coin coin) {
+        this.coin = coin;
     }
 }

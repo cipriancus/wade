@@ -72,7 +72,7 @@ public class CoinCron {
         }
 
         if (execution == null || execution.getUpdateCoinsHistory() == 2 ||
-                (execution.getUpdateCoinsHistory() == 1 && (Instant.now().getEpochSecond() - execution.getStartTime()) > 3600)) {
+                (execution.getUpdateCoinsHistory() == 1 && (Instant.now().getEpochSecond() - execution.getStartTime()) > 60)) {
 
             CronExecution newCron = new CronExecution();
             newCron.setUpdateCoinsHistory(1);

@@ -1,0 +1,9 @@
+<div>
+  <h1>Coin history from {{selectedCoin.name}}</h1>
+  <ul class="coins">
+    <li *ngFor="let coin of coinHistory">
+      <p>Value: {{coin.value}}</p>
+      <p>Time: {{coin.time}}</p>
+    </li>
+  </ul>
+</div>>

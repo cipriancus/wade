@@ -1,3 +1,15 @@
-<p>
-  plot works!
-</p>
+<div>
+  <h1>Coin value from plot</h1>
+  <ul class="coins">
+    <li *ngFor="let coin of coins">
+      <a routerLink="/history/{{coin.id}}">{{coin.name}}</a>
+      <p>{{coin.id}}</p>
+      <p>Market cap: {{coin.marketCap}}</p>
+      <p>Price in $ now: {{coin.price}}</p>
+      <p>Supply {{coin.supply}}</p>
+      <p>Volume {{coin.volume}}</p>
+      <p>Change {{coin.change}}</p>
+      <p>Abbreviation {{coin.abbreviation}}</p>
+    </li>
+  </ul>
+</div>>

@@ -10,13 +10,13 @@ services:
     hostname: cryma-convert
     image: cipriancus/cryma-convert:latest
     ports:
-      - '8084:8084'
+      - '8084:8080'
     container_name: cryma-convert
   cryma-news:
     hostname: cryma-news
     image: cipriancus/cryma-news:latest
     ports:
-      - '8094:8094'
+      - '8094:8080'
     container_name: cryma-news
   cryma-plot:
     hostname: cryma-plot

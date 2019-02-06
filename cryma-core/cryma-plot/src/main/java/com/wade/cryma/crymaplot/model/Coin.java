@@ -4,9 +4,10 @@ import javax.persistence.*;
 import java.util.List;
 
 @Entity
-@Table(name = "COINS")
+@Table(name = "coins")
 public class Coin {
     @Id
+    @Column(name="COIN_ID")
     @GeneratedValue(strategy = GenerationType.AUTO)
     public Long id;
 
@@ -31,8 +32,7 @@ public class Coin {
     @Column(name = "ABBREVIATION")
     public String abbreviation;
 
-    @OneToMany
-    @JoinColumn(name="COINS_ID")
+    @OneToMany(cascade=CascadeType.ALL, mappedBy="coin")
     public List<CoinHistory> coinHistory;
 
     public String getName() {

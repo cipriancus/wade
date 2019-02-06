@@ -1,6 +1,7 @@
 package com.wade.cryma.crymaplot.repository;
 
 import com.wade.cryma.crymaplot.model.Coin;
+import com.wade.cryma.crymaplot.model.CoinHistory;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.Query;

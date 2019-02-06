@@ -1,3 +1,13 @@
-<p>
-  news works!
-</p>
+<div>
+  <h1>News about criptocurrency</h1>
+  <ul>
+    <li *ngFor="let news of newsList">
+      <p>{{news.id}}</p>
+      <p>{{news.name}}</p>
+      <p>{{news.description}}</p>
+      <p>{{news.date}}</p>
+      <p>{{news.url}}</p>
+      <p>{{news.aboutCoinId}}</p>
+    </li>
+  </ul>
+</div>

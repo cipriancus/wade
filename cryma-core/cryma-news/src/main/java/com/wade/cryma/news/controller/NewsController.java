@@ -15,7 +15,7 @@ public class NewsController {
     @Autowired
     INewsService newsService;
 
-    @RequestMapping(path = "/news", method = RequestMethod.POST)
+    @RequestMapping(path = "/news/create", method = RequestMethod.POST)
     public ResponseEntity createNews(@RequestParam(name = "name") String name, @RequestParam(name = "description") String description,
                                      @RequestParam(name = "date") String date,
                                      @RequestParam(name = "url") String url,
